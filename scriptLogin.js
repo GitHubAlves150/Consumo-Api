@@ -24,7 +24,7 @@ document.getElementById('btn').addEventListener('click', (event) => {
 
 
         setTimeout(() => {
-            window.location.href = 'index.html';
+            window.location.href = 'APINasa.html';
 
         }, 1000);
 
