@@ -24,7 +24,7 @@ document.getElementById('btn').addEventListener('click', (event) => {
 
 
         setTimeout(() => {
-            window.location.href = 'https://mindsemachine.site/';
+            window.location.href = 'index.html';
 
         }, 1000);
 
