@@ -23,8 +23,9 @@ function delay(ms) {
 
 
 async function NoticiasNew() {
-     const APIKey = '2708f2cc67b64745be4c29e748e7277d';
-     const url = `https://api.worldnewsapi.com/search-news?api-key=${APIKey}&text=tesla`;
+    /* const APIKey = '2708f2cc67b64745be4c29e748e7277d';
+     const url = `https://api.worldnewsapi.com/search-news?api-key=${APIKey}&text=tesla`;*/
+    const url= `https://api.worldnewsapi.com/search-news?api-key=2708f2cc67b64745be4c29e748e7277d&text=tesla`;
      /*  const url= `https://gnews.io/api/v4/search?q=example&apikey=6d6bdcface1b61181abcfbc925d9022f`; */
 
 
