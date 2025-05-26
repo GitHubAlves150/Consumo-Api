@@ -1,35 +1,286 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleLogin.css">
-    <script src="scriptLogin.js" defer></script>
-    <title>Login</title>
+    <link rel="stylesheet" href="./src/style/config_inicial.css">
+    <link rel="stylesheet" href="./src/style/titulo.css">
+    <link rel="stylesheet" href="./src/style/texto.css">
+    <link rel="stylesheet" href="./src/style/dados_atuais.css">
+    <link rel="stylesheet" href="./src/style/dados_semanais.css">
+    <link rel="stylesheet" href="./src/style/artigo00.css">
+    <link rel="stylesheet" href="./src/style/artigo01.css">
+    <link rel="stylesheet" href="./src/style/infovariados.css">
+
+    <link rel="stylesheet" href="./mobile.css" media="screen and (max-width:700px)">
+
+    <script src="./script.js" defer></script>
+    <script src="./script_dolar.js" defer></script>
+    <script src="./scriptSlide.js" defer></script>
+    <script src="./scriptAPINoticias.js" defer></script><!--Slider-Container-Propagandas-->
+    <script src="./scriptAPIInfoVariado.js" defer></script><!--info-variados-->
 
 
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./estilo.css">
+    <script src="./main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
 
-    <title>Login</title>
+    <title>Dados da nasa</title>
+
 </head>
 
 <body>
+    <header>
+        <h1 style="color: black;">InSight: Mars Weather Service API</h1>
+    </header>
     <main>
-        <img class="img_" src="./video_/api.png" alt="simbolo de API">
-        <div class="login-container">
-            <input id="username" type="text" placeholder="admin">
-            <input id="password" type="password" placeholder="admin">
-            <button id="btn" type="submit">Enter</button>
-        </div>        
+
+        <section class="introducao">
+            <div class="Last_Weather">
+                <h1>
+                    Lastest Weather <br>
+                    at Elysiym Planitia
+                </h1>
+            </div>
+            <div class="Texto">
+                <p>
+                    Elysium Planitia é uma extensa e plana planície em Marte, localizada ligeiramente a norte do <br>
+                    equador. É uma zona com grande interesse científico, especialmente para o estudo da estrutura <br>
+                    interna de Marte, e foi o local de pouso da missão InSight da NASA. Esta região é a segunda maior
+                    <br>
+                    província vulcânica de Marte, depois de Tharsis, e inclui vários vulcões como Hecates Tholus, <br>
+                    Elysium Mons e Albor Tholus.
+                </p>
+            </div>
+            <div class="Dados_atuais">
+                <div class="data_dados_atuais">
+                    <p class="sol">sol <span id="sol_atual"> ....</span></p>
+                    <p class="mes" id="mes_"> ...... </p>
+                </div>
+                <div class="temp_dados_atuais">
+                    <p>High: <span id="High_temp"> .... </span> F|C</p>
+                    <p>Low: <span id="Low_temp">...</span> F|C</p>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="dados_anteriores">
+            <div class="sol0">
+                <div class="lado">
+                    <div class="sol_marciano">
+                        <p id="monday">.. </p>
+                    </div>
+                    <div class="mes_maarciano">
+                        <p id="mes_monday">...</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="temp">
+                    <div>
+                        <p>High: <span id="High_temp_monday">...</span>F|C</p>
+                    </div>
+                    <div>
+                        <p>Low: <span id="Low_temp_monday">...</span>F|C</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sol0">
+                <div class="lado">
+                    <div class="sol_marciano">
+                        <p id="Tuesday">...</p>
+                    </div>
+                    <div class="mes_maarciano">
+                        <p id="mes_Tuesday">...</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="temp">
+                    <div>
+                        <p>High: <span id="High_temp_Tuesday">...</span>F|C</p>
+                    </div>
+                    <div>
+                        <p>Low: <span id="Low_temp_Tuesday">-...</span>F|C</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sol0">
+                <div class="lado">
+                    <div class="sol_marciano">
+                        <p id="Wednesday">...</p>
+                    </div>
+                    <div class="mes_maarciano">
+                        <p id="mes_Wednesday">...</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="temp">
+                    <div>
+                        <p>High: <span id="High_temp_Wednesday">...</span>F|C</p>
+                    </div>
+                    <div>
+                        <p>Low: <span id="Low_temp_Wednesday">...</span>F|C</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sol0">
+                <div class="lado">
+                    <div class="sol_marciano">
+                        <p id="Thursday">...</p>
+                    </div>
+                    <div class="mes_maarciano">
+                        <p id="mes_Thursday">...</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="temp">
+                    <div>
+                        <p>High: <span id="High_temp_Thursday">...</span>F|C</p>
+                    </div>
+                    <div>
+                        <p>Low: <span id="Low_temp_Thursday">...</span>F|C</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="sol0">
+                <div class="lado">
+                    <div class="sol_marciano">
+                        <p id="Fryday">...</p>
+                    </div>
+                    <div class="mes_maarciano">
+                        <p id="mes_Fryday">...</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="temp">
+                    <div>
+                        <p>High: <span id="High_temp_Fryday">...</span>F|C</p>
+                    </div>
+                    <div>
+                        <p>Low: <span id="Low_temp_Fryday">...</span>F|C</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="sol0">
+                <div class="lado">
+                    <div class="sol_marciano">
+                        <p id="Satuday">...</p>
+                    </div>
+                    <div class="mes_maarciano">
+                        <p id="mes_Satuday"> ...</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="temp">
+                    <div>
+                        <p>High: <span id="High_temp_Satuday">...</span>F|C</p>
+                    </div>
+                    <div>
+                        <p>Low: <span id="Low_temp_Satuday">...</span>F|C</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </main>
+    <article class="artigo00">
+        <p>
+            A API InSight: Mars Weather Service da NASA forneceu dados meteorológicos contínuos da superfície de Marte,
+            coletados pelo lander InSight na planície de Elysium Planitia, perto do equador marciano. Essa API permitia
+            que cientistas, educadores e o público em geral acessassem informações valiosas sobre a temperatura, o vento
+            e a pressão atmosférica no local de pouso da InSight. Os dados eram disponibilizados em formato JSON,
+            facilitando a integração em diversas aplicações e plataformas para análise e visualização.
+        </p>
+        <p>Através dessa API, era possível acompanhar as variações diárias e sazonais do clima marciano, oferecendo
+            insights importantes sobre a dinâmica da atmosfera do planeta vermelho. Cada dia marciano, ou "sol", era
+            registrado com suas respectivas medições, permitindo a criação de séries temporais e a identificação de
+            padrões
+            climáticos. Essa riqueza de informações contribuía significativamente para a compreensão das condições
+            ambientais em Marte.</p>
+
+        <p>Apesar de a missão InSight ter sido encerrada em 2022, os dados históricos coletados e disponibilizados
+            através desta API continuam sendo um recurso valioso para a pesquisa científica e para o engajamento público
+            com a exploração espacial. As informações sobre o clima de Marte, obtidas diretamente da superfície,
+            oferecem um ponto de referência crucial para futuras missões e para a busca por evidências de habitabilidade
+            no planeta.</p>
+        <p>
+            Para aqueles interessados em explorar os dados históricos, a documentação da API ainda pode ser consultada,
+            embora a coleta de novos dados tenha cessado. Essa API representou uma ferramenta poderosa para a
+            disseminação do conhecimento científico sobre Marte, tornando os dados meteorológicos acessíveis a uma ampla
+            audiência e inspirando a curiosidade sobre o nosso vizinho planetário.
+        </p>
+    </article>
+    <article class="artigo01">
+        <section class="api-dolar">
+            <div class="dolar-container">
+                <div class="dolar_1">
+                    <h6>1 Dólar dos Estados Unidos equivale a</h6>
+                </div>
+                <div class="dolar-atual">
+                    <h1 id="USD-BRD">1,111 </h1>
+                </div>
+                <div class="data-dolar">
+                    <p id="data_dolar" style="color: black;">
+                        ...........Aguardando a data atual do dolar............
+                    </p>
+                </div>
+                <div class="campos_convert">
+                    <input id="dolar_" type="number" placeholder="1 Real"> <br>
+                    <!--<output name="resultado" for="dolar_">Dolar</output>-->
+                    <input id="dolar_saida" type="resultado" placeholder="Dolar" readonly>
+                </div>
+                <h1 style="color: black; box-shadow: 0px 2px 0px rgb(178, 177, 177); margin-top: 40px;">
+                    Noticias sobre Tecnologia
+                </h1>
+            </div>
 
 
+            <div class="slides-container-propaganda">
+                <div class="slide active">
+                    <img src="./img/A.jpg" alt="image a" id="Imagem-A">
+                    <p id="manchet-A">Aguaradando noticias da API 1</p>
+                </div>
+                <div class="slide ">
+                    <img src="./img/B.jpg" alt="image b" id="Imagem-B">
+                    <p id="manchet-B">Aguaradando noticias da API 2</p>
+                </div>
+                <div class="slide " id="slide">
+                    <img src="./img/gato.jpg" alt="image c" id="Imagem-C">
+                    <p id="manchet-C">Aguaradando noticias da API 3</p>
+                </div>
+            </div>
 
+        </section>
+        <section class="info-variados">
+            <div class="cnn" id="cnn_00">
+                <a href="" id="link_1">
+                    <img src="./img/A.jpg" alt="Imgame a" id="Img_1">
+                </a>
+                <p id="TituloDesc" class="TituloDesc_">Titulo</p>
+                <p id="Descricaonoticias" class="Descricao_noticias">
+                    Aguardando a requisição......
 
-      
+                </p>
+            </div>
 
+        </section>
+        
+    </article>
+  
+    <footer>
+        <p>By Lucas Alves</p>
+    </footer>
 </body>
 
 </html>
+<!--https://science.nasa.gov/mission/insight/-->

@@ -48,7 +48,7 @@ async function NoticiasNew() {
             IMGlink1.src = data.news[4].image;
             TituloDesc_.textContent = data.news[4].title;
             string = data.news[4].text;
-            NoticeDesc_.textContent = string.slice(0, 300)+ '...';
+            NoticeDesc_.textContent = string.slice(0, 100)+ '...';
             console.log("string..", string);
 
             await delay(2000);
@@ -56,7 +56,7 @@ async function NoticiasNew() {
             IMGlink1.src = data.news[5].image;
             TituloDesc_.textContent = data.news[5].title;
             string = data.news[5].text;
-            NoticeDesc_.textContent = string.slice(0, 300) + '...' ;
+            NoticeDesc_.textContent = string.slice(0, 100) + '...' ;
         }
 
     }
