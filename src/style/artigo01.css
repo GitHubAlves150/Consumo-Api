@@ -75,7 +75,7 @@ output {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    width: 600px;
+    width: auto;
     height: 400px;
     overflow: hidden;
     position: relative;
