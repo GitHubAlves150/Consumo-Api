@@ -21,8 +21,7 @@ body {
     height: 300px;
     object-fit: cover;
     flex-flow: column wrap;
-        border: 3px red dashed;
-        margin-right: 10px;
+    margin-right: 10px;
 
 }
 
@@ -46,7 +45,6 @@ body {
 
 .dados_marciano_atual {
     margin: auto;
-    border: 2px red dashed;
     width: 300px;
     height: 120px;
     background-color: rgba(0, 0, 0, 0.2);
@@ -90,7 +88,6 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     width: 150px;
-    border: 2px dashed red;
 }
 
 .sol_0 {
@@ -137,10 +134,15 @@ body {
 }
 
 .slides-container-propaganda {
-   margin: auto;
+
+    margin-top: 20px;
+    margin: auto;
     width: 300px;
     height: 300px;
     overflow: hidden;
     position: relative;
-    border: 2px rgb(10, 146, 12) solid;
+}
+
+.dolar-container {
+    margin-bottom: 20px;
 }
