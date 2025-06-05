@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+   background-color: lightblue;
+}
+
+@media(min-width: 1612px){
+
+}

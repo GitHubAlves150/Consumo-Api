@@ -13,13 +13,14 @@ body {
 
 }
 
+
+
 main {
     /*  background-color: rgba(144, 144, 196, 0.1);*/
     box-shadow: 0px 12px 14px rgba(0, 0, 255, 0.2);
-    display: flex;
-    flex-flow: column wrap;
-    width: 50%;
-    height: 1800px;
+    
+    width: 55vw;
+    height: 100vh;
     margin: auto;
 }
 
@@ -28,13 +29,22 @@ footer {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    width: 49%;
+    width: 55vw;
     margin: auto;
     border-radius: 8px;
     position: fixed;
     bottom: 0;
     background-color: white;
-    box-shadow: 0px 8px 18px 10px rgba(123, 122, 122, 0.2);
+    box-shadow: 0
+        /* offset-x */
+        -8px
+        /* offset-y: move a sombra para cima */
+        15px
+        /* blur-radius: desfoque da sombra */
+        -5px
+        /* spread-radius: opcional, ajuda a "cortar" as laterais da sombra, concentrando-a mais no topo */
+        rgba(0, 0, 0, 0.15);
+    /* cor: preto com 15% de opacidade */
 }
 
 .Icon_title {
@@ -45,9 +55,6 @@ footer {
 
 }
 
-footer:hover {
-    box-shadow: 0px 10px 15px 3px rgba(119, 118, 118, 0.7);
-}
 
 .Icon_img_container {
     display: flex;
