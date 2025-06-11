@@ -9,18 +9,17 @@ body {
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    background-color: rgb(200, 147, 76);
-
+    /*background-color: rgb(200, 147, 76);*/
 }
 
 
 main {
     /*  background-color: rgba(144, 144, 196, 0.1);*/
-    box-shadow: 0px 12px 14px rgba(0, 0, 255, 0.2);    
+    box-shadow: 0px 12px 14px rgba(0, 0, 255, 0.2);
     max-width: 900px;
     min-width: 20vw;
     height: auto;
-    background-color: rgb(243, 8, 118);
+    /*background-color: rgb(243, 8, 118);*/
 }
 
 footer {
@@ -34,7 +33,7 @@ footer {
     border-radius: 8px;
     position: fixed;
     bottom: 0;
-    
+
     box-shadow: 0
         /* offset-x */
         -8px
@@ -58,8 +57,8 @@ footer {
 
 .Icon_img_container {
     display: flex;
-    flex-flow: column wrap;    
-    min-width: 80px;    
+    flex-flow: column wrap;
+    min-width: 80px;
 }
 
 .Icon_img_container:hover .Icon_title {

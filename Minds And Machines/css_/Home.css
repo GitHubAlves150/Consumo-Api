@@ -8,8 +8,7 @@
 .Pag1 {
     padding: 90px;
     margin: 20px;
-    background-color: rgb(97, 50, 205);
-
+/*    background-color: rgb(97, 50, 205);*/
 }
 
 .Abertura p {
@@ -28,7 +27,7 @@
 .secao_noticas_aberturas {
     padding: 10px;
     margin: 10px;
-    background-color: lightgray;
+    /*    background-color: lightgray;*/
 }
 
 .secao_noticas_aberturas h2 {
@@ -91,7 +90,7 @@
     /*coloca o titulo na parte de baixo*/
     left: 10px;
     font-size: 25px;
-    background-color: rgb(42, 42, 209);
+    /*    background-color: rgb(42, 42, 209);*/
 }
 
 /*=====Fim Container de infromacoes=====*/
@@ -106,14 +105,14 @@
     /*para manter a proporção*/
     object-fit: cover;
     /*permite sobrepor as imagens*/
-    
+
 }
 
 
 
 article.container_lista_informativo {
     display: flex;
-    border: 2px dashed rgb(255, 3, 242);
+    /*border: 2px dashed rgb(255, 3, 242);*/
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
@@ -124,14 +123,16 @@ article.container_lista_informativo {
 /*=====================Fim da secao noticias de abertura======================*/
 
 /*=================Lista de informação: text==================================*/
-.Noticias{
-    background-color: white;
+.Noticias {
+    /*    background-color: white;*/
     margin: 10px;
     padding: 10px;
     font-family: monospace;
 
 }
-.marginBottom{
+
+.marginBottom {
     margin-bottom: 150px;
 }
+
 /*=================Fim da lista de informação=================================*/
