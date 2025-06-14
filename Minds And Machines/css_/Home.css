@@ -32,7 +32,7 @@
 
 .secao_noticas_aberturas h2 {
     font-family: monospace;
-    color: #16146f;
+    
 }
 
 /*=====Container slide de informacoes===*/
@@ -44,6 +44,9 @@
     height: 400px;
     overflow: hidden;
     position: relative;
+}
+.secao_noticas_aberturas p ,.secao_noticas_aberturas ,h1{
+    color: black
 }
 
 .slide img {
@@ -110,26 +113,31 @@
 
 
 
-article.container_lista_informativo {
+.container_lista_informativo {
     display: flex;
     /*border: 2px dashed rgb(255, 3, 242);*/
     justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
+    align-items: center;    
 }
+.container_lista_informativo p, a{
+    font-family: monospace;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
 
+}
 /*==========FIm da lista de informaçaõ==*/
 
 /*=====================Fim da secao noticias de abertura======================*/
 
 /*=================Lista de informação: text==================================*/
-.Noticias {
+.Noticias{
     /*    background-color: white;*/
     margin: 10px;
     padding: 10px;
     font-family: monospace;
-
 }
+
 
 .marginBottom {
     margin-bottom: 150px;
