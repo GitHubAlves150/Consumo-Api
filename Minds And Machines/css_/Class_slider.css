@@ -1,0 +1,122 @@
+.container_slides {
+
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slider {
+    margin: 0 auto;
+    width: 900px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 980px;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 880px;
+    height: 500px;
+    object-fit: fill;
+
+}
+
+.manual_navegation {
+    position: absolute;
+    width: 900px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: white;
+}
+
+#Radio1:checked~.first {
+    object-fit: cover;
+    margin-left: 0;
+}
+
+#Radio2:checked~.slides {
+    margin-left: -110%;
+}
+
+#Radio3:checked~.slides {
+    margin-left: -210%;
+
+}
+
+#Radio4:checked~.slides {
+    margin-left: -310%;
+}
+
+#Radio5:checked~.slides {
+    margin-left: -410%;
+
+}
+
+.navegation-auto {
+    position: absolute;
+    width: 900px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.slider input[type="radio"] {
+    display: none;
+}
+/* Estilos para NAVEGAÇÃO MANUAL (BOLINHAS) - ESTE É O QUE VAI ATIVAR AS BOLINHAS */
+/* Agora, quando #Radio1:checked, ele é irmão de .manual_navegation, então ~ .manual_navegation funciona */
+#Radio1:checked ~ .manual_navegation .manual-btn:nth-child(1),
+#Radio2:checked ~ .manual_navegation .manual-btn:nth-child(2),
+#Radio3:checked ~ .manual_navegation .manual-btn:nth-child(3),
+#Radio4:checked ~ .manual_navegation .manual-btn:nth-child(4),
+#Radio5:checked ~ .manual_navegation .manual-btn:nth-child(5) {
+    background-color: #007bff; /* Preenche a bolinha com azul */
+    border-color: #007bff;
+}
+
+/* Estilos para NAVEGAÇÃO AUTOMÁTICA (BOLINHAS) - Se quiser que elas também mudem de cor */
+/* Agora, quando #Radio1:checked, ele é irmão de .navegation-auto, então ~ .navegation-auto funciona */
+#Radio1:checked ~ .navegation-auto .auto-btn1,
+#Radio2:checked ~ .navegation-auto .auto-btn2,
+#Radio3:checked ~ .navegation-auto .auto-btn3,
+#Radio4:checked ~ .navegation-auto .auto-btn4,
+#Radio5:checked ~ .navegation-auto .auto-btn5 {
+    background-color: #fff; /* Fundo branco quando a bolinha automática está ativa */
+    border-color: #fff;
+}
+
+/* ... (O restante do seu CSS para os estilos das bolinhas, hover, etc. permanece o mesmo) ... */
+
+.subtitle{
+    position: relative;
+}

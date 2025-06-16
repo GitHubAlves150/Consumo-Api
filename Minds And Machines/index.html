@@ -17,6 +17,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <!--Mobile-->
     <link rel="stylesheet" href="./css_/Mobile.css">
+    <!--Referencia na internet-->
+    <link rel="stylesheet" href="LEIAME.html">
     <!--Fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +26,10 @@
     <!--Arquivos CSS-->
     <link rel="stylesheet" href="./css_/Menu.css">
     <link rel="stylesheet" href="./css_/Home.css">
+    <link rel="stylesheet" href="./css_/Class_slider.css">
     <!--Arquivos JS-->
     <script src="./js_/Iteracao.js" defer></script>
+    <script src="./js_/Class_slider.js" defer></script>
 </head>
 
 <body>
@@ -87,21 +91,64 @@
         </section>
         <section class="secao_noticas_aberturas">
             <h2>ùltima noticias...</h2>
-            <div class="container_Informative">
-                <div class="slide active">
-                    <img src="./img_/GarotaOnibusJornal.jpg" alt="Foto informativo" id="Imagem-A">
-                    <p id="manchet-A">Aguardando</p>
+            <!--Slide-->
+
+            <div class="container_slides">
+                <div class="slider">
+                    <!--Input-->
+                    <input type="radio" name="radio-btn" id="Radio1" checked>
+                    <input type="radio" name="radio-btn" id="Radio2">
+                    <input type="radio" name="radio-btn" id="Radio3">
+                    <input type="radio" name="radio-btn" id="Radio4">
+                    <input type="radio" name="radio-btn" id="Radio5">
+                    <!--Input Fim-->
+                    <div class="slides">
+
+
+                        <!--Slid image-->
+
+                        <div class="slide first">
+                            <img src="./img_/Floresta.jpg" alt="468x60.png">
+                        </div>
+                        <div class="slide">
+                            <img src="./img_/468x60.png" alt="Floresta.png">
+                        </div>
+                        <div class="slide">
+                            <img src="./img_/GarotaOnibusJornal.jpg" alt="GarotaOnibusJornal.png">
+                        </div>
+                        <div class="slide">
+                            <img src="./img_/MaquinaEscrever.jpg" alt="MaquinaEscrever.png">
+                        </div>
+                        <div class="slide">
+                            <img src="./img_/Mountain.jpg" alt="Mountain.png">
+                        </div>
+
+                    </div>
+
+                    <!--Slid image Fim-->
+                    <!--Navegation Label-->
+                    <div class="navegation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                    </div>
+                    <!--navegation Label-->
+                    <div class="manual_navegation">
+                        <label for="Radio1" class="manual-btn"></label>
+                        <label for="Radio2" class="manual-btn"></label>
+                        <label for="Radio3" class="manual-btn"></label>
+                        <label for="Radio4" class="manual-btn"></label>
+                        <label for="Radio5" class="manual-btn"></label>
+                    </div>
+
                 </div>
-                <div class="slide">
-                    <img src="./img_/GarotaOnibusJornal.jpg" alt="Foto informativo" id="Imagem-B">
-                    <p id="manchet-B">Aguardando</p>
-                </div>
-                <div class="slide">
-                    <img src="./img_/GarotaOnibusJornal.jpg" alt="Foto informativo" id="Imagem-C">
-                    <p id="manchet-C">Aguardando</p>
-                </div>
+            </div>
+
 
             </div>
+            <!--Fim slide-->
             <a href="https://www.amazon.com.br/" target="_blank" rel="noopener noreferrer">
                 <article class="container_lista_informativo">
                     <img id="Noticia_1_img" src="./img_/MaquinaEscrever.jpg" alt="Foto de informativo">
@@ -123,22 +170,28 @@
             </a>
         </section>
         <section class="Secao_Noticias">
-            <a href="">
-                <article class="Noticias">
+
+            <article class="Noticias">
+                <a href="">
                     <h1 id="Title_Notice_1">Put in to the test: Get seriuns explanation in the word man</h1>
                     <h2 id="Author_1">Florian B. Jordan</h2>
                     <p id="Word_key_1">palavra chave| info |Date|</p>
-                </article>
-            </a>
+                </a>
+            </article>
+
             <article class="Noticias">
-                <h1 id="Title_Notice_2">Put in to the test: Get seriuns explanation in the word man</h1>
-                <h2 id="Author_2">Florian B. Jordan</h2>
-                <p id="Word_key_2">palavra chave| info |Date|</p>
+                <a href="">
+                    <h1 id="Title_Notice_2">Put in to the test: Get seriuns explanation in the word man</h1>
+                    <h2 id="Author_2">Florian B. Jordan</h2>
+                    <p id="Word_key_2">palavra chave| info |Date|</p>
+                </a>
             </article>
             <article class="Noticias">
-                <h1 id="Title_Notice_3">Put in to the test: Get seriuns explanation in the word man</h1>
-                <h2 id="Author_3">Florian B. Jordan</h2>
-                <p id="Word_key_3">palavra chave| info |Date|</p>
+                <a href="">
+                    <h1 id="Title_Notice_3">Put in to the test: Get seriuns explanation in the word man</h1>
+                    <h2 id="Author_3">Florian B. Jordan</h2>
+                    <p id="Word_key_3">palavra chave| info |Date|</p>
+                </a>
             </article>
 
             <div class="marginBottom">
