@@ -152,7 +152,7 @@ async function last_Notice() {
         Title_Notice_1_.textContent = data.articles[0].title;
         Author_1_.textContent = data.articles[0].source.name;
         Word_key_1_.textContent=data.articles[0].publishedAt + "..to be continue";
-        console.log(">>", data.articles[0]);
+        //console.log(">>", data.articles[0]);
         //------------------------------------------------------------------------------
         Title_Notice_2_.textContent = data.articles[1].title;
         Author_2_.textContent = data.articles[1].source.name;
