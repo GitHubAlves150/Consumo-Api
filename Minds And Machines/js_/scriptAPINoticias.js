@@ -27,7 +27,7 @@ async function NoticiasNew() {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        
+
 
         //---como acessar o 'title'---
         const pages_ = data.query.pages;
@@ -47,8 +47,6 @@ async function NoticiasNew() {
             alert('Error load image');
         }
 
-
-
         img_NoticeA.src = data.news[3].image;
         manchetA.textContent = data.news[3].title;
 
@@ -58,26 +56,25 @@ async function NoticiasNew() {
         img_NoticeC.src = data.news[2].image;
         manchetC.textContent = data.news[2].title;
 
-        for (let c = 0; c < 3; c++) {
-            await delay(2000);
-            link1.href = data.news[4].url;
-            IMGlink1.src = data.news[4].image;
-            TituloDesc_.textContent = data.news[4].title;
-            string = data.news[4].text;
-            NoticeDesc_.textContent = string.slice(0, 100) + '...';
-            console.log("string..", string);
 
-            await delay(2000);
-            link1.href = data.news[5].url;
-            IMGlink1.src = data.news[5].image;
-            TituloDesc_.textContent = data.news[5].title;
-            string = data.news[5].text;
-            NoticeDesc_.textContent = string.slice(0, 100) + '...';
-        }
+        link1.href = data.news[4].url;
+        IMGlink1.src = data.news[4].image;
+        TituloDesc_.textContent = data.news[4].title;
+        string = data.news[4].text;
+        NoticeDesc_.textContent = string.slice(0, 100) + '...';
+        console.log("string..", string);
+
+
+        link1.href = data.news[5].url;
+        IMGlink1.src = data.news[5].image;
+        TituloDesc_.textContent = data.news[5].title;
+        string = data.news[5].text;
+        NoticeDesc_.textContent = string.slice(0, 100) + '...';
+
 
     }
     catch (error) {
-        alert("Ecedeu as requisições da API");
+        alert("Excedeu as requisições da API_");
 
     }
 

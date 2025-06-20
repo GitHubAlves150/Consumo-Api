@@ -25,7 +25,6 @@ const Word_key_3_ = document.getElementById('Word_key_3');
 
 async function Noticias_Na_Home() {
     const Title = 'Computer';
-
     const url = `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts|pageimages&exintro=true&explaintext=true&titles=${Title}&pithumbsize=400&origin=*`;
 
 
@@ -144,7 +143,8 @@ async function Noticias_Na_Home_3() {
 //===========Ultimas noticias da Home===================================================================
 async function last_Notice() {
     const key_App = '6d6bdcface1b61181abcfbc925d9022f';
-    const url = `https://gnews.io/api/v4/search?q=inovation&apikey=${key_App}`;
+    const Title='Machines';
+    const url = `https://gnews.io/api/v4/search?q=${Title}&apikey=${key_App}`;
 
     try {
         const response = await fetch(url);

@@ -14,7 +14,7 @@ body {
 
 
 main {
-    /*  background-color: rgba(144, 144, 196, 0.1);*/
+    /*background-color: rgba(144, 144, 196, 0.1);*/
     box-shadow: 0px 12px 14px rgba(0, 0, 255, 0.2);
     max-width: 900px;
     min-width: 20vw;
@@ -33,7 +33,6 @@ footer {
     border-radius: 8px;
     position: fixed;
     bottom: 0;
-
     box-shadow: 0
         /* offset-x */
         -8px
@@ -110,45 +109,3 @@ header>nav>button {
     border-radius: 8px;
 }
 
-
-/*
-
-footer {
-    border-radius: 10px;
-    width: 30%;
-    display: flex;
-    flex-flow: row wrap;
-    margin: auto;
-    justify-content: space-evenly;
-    position: fixed;
-    bottom: 0;
-    margin: auto auto 0px 35%;
-    align-items: center;
-}
-
-footer>img {
-    justify-content: center;
-    width: 10%;
-    height: 10%;
-    margin-bottom: 10px;
-}
-
-footer>img:hover {
-    transform: scale(3.10) translateY(-18px);
-    z-index: 100px;
-    transition: ease-in-out 0.2s;
-    cursor: pointer;
-    
-}
-
-footer:hover {
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-.Register {
-    color: black;
-    font-size: 12px;
-    text-align: right;
-
-}
-*/

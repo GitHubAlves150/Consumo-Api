@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./css_/SliderContainer.css">
     <!--Arquivos JS-->
     <script src="./js_/Iteracao.js" defer></script>
-    <script src="./js_/scriptAPINoticias.js" defer></script>
+    <script src="./js_/script.js" defer></script><!--Slider-->
 </head>
 
 <body>
@@ -87,23 +87,19 @@
             </div>
 
         </section>
-        <section class="secao_noticas_aberturas">
+        <section class="sessao_noticas_aberturas">
             <h2>ùltima noticias...</h2>
-            <div class="container_Informative">
-                <div class="slide active">
-                    <img src="./img_/GarotaOnibusJornal.jpg" alt="Foto informativo" id="Imagem-A">
-                    <p id="manchet-A">Aguardando</p>
-                </div>
-                <div class="slide">
-                    <img src="./img_/GarotaOnibusJornal.jpg" alt="Foto informativo" id="Imagem-B">
-                    <p id="manchet-B">Aguardando</p>
-                </div>
-                <div class="slide">
-                    <img src="./img_/GarotaOnibusJornal.jpg" alt="Foto informativo" id="Imagem-C">
-                    <p id="manchet-C">Aguardando</p>
-                </div>
 
+            <!--Slider-->
+            <div class="container_Informative">
+                <div class="slide">
+                    <img src="./img_/GarotaOnibusJornal.jpg" alt="Foto informativo" id="img_src">
+                    <p class="subtitle" id="subtitle_id"><span class="re"></span>Aguardando</p>
+                </div>
             </div>
+            <!--Fim Slider-->
+
+
             <a href="https://www.amazon.com.br/" target="_blank" rel="noopener noreferrer">
                 <article class="container_lista_informativo">
                     <img id="Noticia_1_img" src="./img_/MaquinaEscrever.jpg" alt="Foto de informativo">
@@ -124,14 +120,13 @@
                 </article>
             </a>
         </section>
-        <section class="Secao_Noticias">
-            <a href="">
-                <article class="Noticias">
-                    <h1 id="Title_Notice_1">Put in to the test: Get seriuns explanation in the word man</h1>
-                    <h2 id="Author_1">Florian B. Jordan</h2>
-                    <p id="Word_key_1">palavra chave| info |Date|</p>
-                </article>
-            </a>
+        <section class="sessao_Noticias">
+
+            <article class="Noticias">
+                <h1 id="Title_Notice_1">Put in to the test: Get seriuns explanation in the word man</h1>
+                <h2 id="Author_1">Florian B. Jordan</h2>
+                <p id="Word_key_1">palavra chave| info |Date|</p>
+            </article>
             <article class="Noticias">
                 <h1 id="Title_Notice_2">Put in to the test: Get seriuns explanation in the word man</h1>
                 <h2 id="Author_2">Florian B. Jordan</h2>
@@ -143,9 +138,7 @@
                 <p id="Word_key_3">palavra chave| info |Date|</p>
             </article>
 
-            <div class="marginBottom">
-
-            </div>
+            <div class="marginBottom"> </div>
         </section>
     </main>
     <footer>
