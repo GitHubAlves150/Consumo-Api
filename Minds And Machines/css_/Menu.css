@@ -14,26 +14,25 @@ body {
 
 
 main {
-    /*  background-color: rgba(144, 144, 196, 0.1);*/
-    box-shadow: 0px 12px 14px rgba(145, 145, 147, 0.2);
+    /*background-color: rgba(144, 144, 196, 0.1);*/
+    box-shadow: 0px 12px 14px rgba(0, 0, 255, 0.2);
     max-width: 900px;
     min-width: 20vw;
     height: auto;
-    margin: 20px;
-    background-color: rgb(8, 243, 137);
+    /*background-color: rgb(243, 8, 118);*/
 }
 
 footer {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    padding: 0px 20px;
+    justify-content: center;
+    padding: 0 20px;
     background-color: white;
     margin: auto;
     border-radius: 8px;
     position: fixed;
     bottom: 0;
-
     box-shadow: 0
         /* offset-x */
         -8px
@@ -58,7 +57,7 @@ footer {
 .Icon_img_container {
     display: flex;
     flex-flow: column wrap;
-    min-width: 50px;
+    min-width: 80px;
 }
 
 .Icon_img_container:hover .Icon_title {
@@ -73,8 +72,7 @@ footer {
 .Icon_img_container>img {
     width: 60px;
     height: 60px;
-    margin: 10px;
-    
+    margin: auto;
 }
 
 .Register {
@@ -111,45 +109,3 @@ header>nav>button {
     border-radius: 8px;
 }
 
-
-/*
-
-footer {
-    border-radius: 10px;
-    width: 30%;
-    display: flex;
-    flex-flow: row wrap;
-    margin: auto;
-    justify-content: space-evenly;
-    position: fixed;
-    bottom: 0;
-    margin: auto auto 0px 35%;
-    align-items: center;
-}
-
-footer>img {
-    justify-content: center;
-    width: 10%;
-    height: 10%;
-    margin-bottom: 10px;
-}
-
-footer>img:hover {
-    transform: scale(3.10) translateY(-18px);
-    z-index: 100px;
-    transition: ease-in-out 0.2s;
-    cursor: pointer;
-    
-}
-
-footer:hover {
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-.Register {
-    color: black;
-    font-size: 12px;
-    text-align: right;
-
-}
-*/
