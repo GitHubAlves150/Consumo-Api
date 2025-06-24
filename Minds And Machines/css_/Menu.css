@@ -20,7 +20,7 @@ main {
     min-width: 20vw;
     height: auto;
     margin: 20px;
-    background-color: rgb(243, 8, 118);
+    background-color: rgb(8, 243, 137);
 }
 
 footer {
@@ -73,7 +73,8 @@ footer {
 .Icon_img_container>img {
     width: 60px;
     height: 60px;
-    margin: auto;
+    margin: 10px;
+    
 }
 
 .Register {
