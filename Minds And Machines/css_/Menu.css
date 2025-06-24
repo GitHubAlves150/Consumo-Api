@@ -19,7 +19,8 @@ main {
     max-width: 900px;
     min-width: 20vw;
     height: auto;
-    /*background-color: rgb(243, 8, 118);*/
+    margin: 20px;
+    background-color: rgb(243, 8, 118);
 }
 
 footer {
@@ -57,7 +58,7 @@ footer {
 .Icon_img_container {
     display: flex;
     flex-flow: column wrap;
-    min-width: 80px;
+    min-width: 50px;
 }
 
 .Icon_img_container:hover .Icon_title {
