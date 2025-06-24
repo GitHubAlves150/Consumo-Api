@@ -1,0 +1,32 @@
+/*
+Typical Devices Breakpoints
+---------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablets: 768px até 992px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (max-width:720px) {
+
+    
+
+    div.Abertura p {
+        color: rgb(0, 0, 0);
+        font-family: monospace;
+        font-size: 14px;
+        text-indent: 2em;
+        margin-top: 50px;
+        text-align: justify;
+        line-height: 1.6;
+        margin-bottom: -3em;
+    }
+
+
+    section.Pag1 {
+        padding: 10px;
+        margin: 20px;
+        margin-bottom: 40px;
+        /*    background-color: rgb(97, 50, 205);*/
+    }
+}
