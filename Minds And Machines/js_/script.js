@@ -20,7 +20,18 @@ async function Slides() {
         const data = await response.json();
         console.log("--->>>>:", data);
 
-       
+        if (data.results < 0) {
+            alert("sem dados..");
+        }
+        array_ = data.results;//Armazena arrays de noticias
+
+        //console.log("=====: ", data);
+        for (let c = 4; c < 10; c++) {
+            await delay(5000);
+            img_.src=data.results[c].image_url;
+            sub_title.textContent=data.results[c].description;
+            //img_.src=data.pages[c]
+        } 
 
         /*if (data.news && data.length < 0) {
             alert("sem dados..");
