@@ -35,8 +35,8 @@ async function Slides() {
 
     }
     catch (error) {
-        alert("Erro no arquivo js");
+        alert("Erro no arquivo js gnews");
     }
 }
 
-Slides();
+//Slides();
