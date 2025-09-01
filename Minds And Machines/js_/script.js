@@ -10,15 +10,19 @@ function delay(ms) {
 
 async function Slides() {
     try {
+        //pub_8510193642cbb2ef57a91a9b5cef6a6ecac64
         //const APIKey = '2708f2cc67b64745be4c29e748e7277d';
         //const url = `https://api.worldnewsapi.com/search-news?api-key=${APIKey}&text=tesla`;
+        const url= `https://newsdata.io/api/1/latest?apikey=pub_8510193642cbb2ef57a91a9b5cef6a6ecac64&q=motores`;
 
-        const url = `https://gnews.io/api/v4/search?q=maquinas&apikey=6d6bdcface1b61181abcfbc925d9022f`;
+        //const url = `https://gnews.io/api/v4/search?q=maquinas&apikey=6d6bdcface1b61181abcfbc925d9022f`;
         const response = await fetch(url);
         const data = await response.json();
+        console.log("--->>>>:", data);
 
+       
 
-        if (data.news && data.length < 0) {
+        /*if (data.news && data.length < 0) {
             alert("sem dados..");
         }
         array_ = data.news;//Armazena arrays de noticias
@@ -29,8 +33,7 @@ async function Slides() {
             img_.src=data.articles[c].image;
             sub_title.textContent=data.articles[c].title;
             //img_.src=data.pages[c]
-        }
-        console.log("---:", data);
+        } */
 
 
     }
