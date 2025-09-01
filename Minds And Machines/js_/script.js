@@ -27,24 +27,12 @@ async function Slides() {
 
         //console.log("=====: ", data);
         for (let c = 4; c < 10; c++) {
-            await delay(5000);
+            await delay(9000);
             img_.src=data.results[c].image_url;
             sub_title.textContent=data.results[c].description;
             //img_.src=data.pages[c]
         } 
 
-        /*if (data.news && data.length < 0) {
-            alert("sem dados..");
-        }
-        array_ = data.news;//Armazena arrays de noticias
-
-        //console.log("=====: ", data);
-        for (let c = 4; c < 10; c++) {
-            await delay(5000);
-            img_.src=data.articles[c].image;
-            sub_title.textContent=data.articles[c].title;
-            //img_.src=data.pages[c]
-        } */
 
 
     }
