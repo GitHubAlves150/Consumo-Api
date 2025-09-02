@@ -27,7 +27,7 @@ async function Slides() {
 
         //console.log("=====: ", data);
         for (let c = 4; c < 10; c++) {
-            await delay(9000);
+            await delay(3000);
             img_.src = data.results[c].image_url;
             sub_title.textContent = data.results[c].title;
             document.getElementById('ancora').href=data.results[c].link;

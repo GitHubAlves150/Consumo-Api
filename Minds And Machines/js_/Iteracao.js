@@ -51,7 +51,7 @@ async function Noticias_Na_Home() {
         }
         Noticia_1_.src = page_.thumbnail.source;
         const string = page_.extract;
-        Descricao_1_.textContent = string.slice(0, 500) + " .....continua...";
+        Descricao_1_.textContent = string.slice(0, 200) + " .....continua...";
         document.getElementById('Noticia_0').href = "https://commons.wikimedia.org/wiki/File:ENIAC-changing_a_tube_(cropped).jpg";
         
         //--Fim Noticia-1
@@ -93,7 +93,7 @@ async function Noticias_Na_Home_2() {
         }
         Noticia_2_.src = page_.thumbnail.source;
         const string_ = page_.extract;
-        Descricao_2_.textContent = string_.slice(0, 500) + " .....continua...";
+        Descricao_2_.textContent = string_.slice(0, 200) + " .....continua...";
         document.getElementById('Noticia_1').href= "https://en-m-wikipedia-org.translate.goog/wiki/PageRank?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc";
         //--Fim Noticia-1
         //------------------------------------------------------------------------------
@@ -132,7 +132,7 @@ async function Noticias_Na_Home_3() {
         }
         Noticia_3_.src = page_.thumbnail.source;
         const string_ = page_.extract;
-        Descricao_3_.textContent = string_.slice(0, 500) + " .....continua...";
+        Descricao_3_.textContent = string_.slice(0, 200) + " .....continua...";
         document.getElementById('Noticia_3').href="https://en-m-wikipedia-org.translate.goog/wiki/Charles_Babbage?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc";
         //--Fim Noticia-1
         //------------------------------------------------------------------------------
