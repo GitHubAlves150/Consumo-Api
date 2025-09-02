@@ -7,9 +7,9 @@ Tablets: 768px até 992px
 Grandes telas: acima de 1200px
 */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:720px) {
 
-    
+
 
     div.Abertura p {
         font-family: monospace;
@@ -21,6 +21,13 @@ Grandes telas: acima de 1200px
         margin-bottom: -3em;
     }
 
+    main {
+        border: 3px dashed red;
+        width: 600px;        
+        height: auto;
+        margin: 0px 0px 0px 0px;
+
+    }
 
     section.Pag1 {
         padding: 10px;
