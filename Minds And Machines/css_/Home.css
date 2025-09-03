@@ -9,7 +9,7 @@ main {
     margin: 50px;
     padding: 2px;
    /* border: 2px dashed red;*/
-    width: 80vw;
+    width: 90vw;
     height: auto;
 }
 
@@ -44,7 +44,7 @@ main {
     height: 400px;
 }
 
-.paragrafo_linha0  {
+.paragrafo_linha0 {
 
    /* border: 2px dashed black;*/
     width: 800px;
@@ -54,14 +54,19 @@ main {
     font-size: 14px;
     text-indent: 3em;
     text-align: justify;
-    line-height: 1.6;
     margin-bottom: 18px;
     padding-right: 25px ;
     padding-left: 25px;
     padding-top: 40px;
-
 }
 
+.paragrafo_linha0 >p{
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
 /*=====================================Fim da primeira linha==================================*/
 
 /*=====================================inicio da segunda  linha==================================*/
