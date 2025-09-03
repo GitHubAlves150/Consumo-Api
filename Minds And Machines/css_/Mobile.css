@@ -11,22 +11,22 @@ Grandes telas: acima de 1200px
 
 
 
-    div.Abertura p {
-        font-family: monospace;
-        font-size: 14px;
-        text-indent: 2em;
-        margin-top: 50px;
-        text-align: justify;
-        line-height: 1.6;
-        margin-bottom: -3em;
+
+
+    .paragrafo_linha0 p {
+
+        border: 2px dashed black;
+        font-size: 10px;
+
     }
 
-    
 
-    section.Pag1 {
-        padding: 10px;
-        margin: 20px;
-        margin-bottom: 40px;
-        /*    background-color: rgb(97, 50, 205);*/
+    main {
+
+        margin: 10px 10px 10px 10px;
+        /* border: 2px dashed red;*/
+        width: 200px;
+        
     }
+
 }
