@@ -8,7 +8,7 @@
 
 main {
     /* border: 2px dashed red;*/
-    width: 90vw;
+    width: 100vw;
     height: auto;
 
 }
@@ -70,20 +70,22 @@ main {
 
 /*=====================================inicio da segunda  linha==================================*/
 .article_linha1 {
-    /* border: 2px dashed green;*/
+   /* border: 2px dashed green;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-self: center;
     margin-bottom: 160px;
+    margin-top: 20px;
 
 }
 
 .Informative_vector {
-    /* border: 2px dashed gray;*/
+   /* border: 2px dashed gray;*/
     width: 620px;
     height: auto;
     overflow: hidden;
+
 }
 
 .slides_vector {
@@ -128,9 +130,9 @@ main {
 #noticias_domomento {
     /*  background-color: rgba(167, 167, 170, 0.938);*/
     padding: 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: monospace;
     margin: 4px;
-    color: white;
+    color: rgb(8, 7, 7);
 }
 
 
