@@ -7,10 +7,10 @@
 
 
 main {
-    border: 2px dashed red;
+    /* border: 2px dashed red;*/
     width: 90vw;
     height: auto;
-    
+
 }
 
 
@@ -20,9 +20,9 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     margin-top: 20px;
-    padding-bottom: 180px;
+    padding-bottom: 40px;
 }
 
 /*Ajuste da imgem da publicidade 0*/
@@ -69,4 +69,17 @@ main {
 
 /*=====================================Fim da primeira linha==================================*/
 
+/*=====================================inicio da segunda  linha==================================*/
+.article_linha1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+#noticiasdo_momento{
+    
+}
 /*=====================================inicio da segunda  linha==================================*/
