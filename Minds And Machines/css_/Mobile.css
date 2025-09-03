@@ -15,7 +15,7 @@ Grandes telas: acima de 1200px
 
     .paragrafo_linha0 p {
 
-        border: 2px dashed black;
+       /* border: 2px dashed black;*/
         font-size: 10px;
         padding-right: 5px;
         padding-left: 5px;
