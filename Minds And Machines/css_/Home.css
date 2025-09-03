@@ -1,135 +1,68 @@
-/*=====================Abertura do Minds e Machina=========================*/
+/*=====================Abertura do Minds e Machine=========================*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.Pag1 {
-    /*padding: 40px 80px 40px 80px;*/
-    margin: auto;
+main {
+    margin: 50px;
+    padding: 2px;
+   /* border: 2px dashed red;*/
+    width: 80vw;
     height: auto;
-    max-width: 100vw;
-    /*background-color: rgb(41, 209, 18);*/
-    /*====*/
+}
+
+
+
+.article_linha0 {
+  /*  border: 2px dashed rgb(200, 100, 50);*/
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 180px;
 
 }
 
-.Abertura {
-   /* border: 2px dashed green;*/
-    width: 800px;
-    margin: 25px 25px 10px 10px;
-    padding: 30px 30px 60px 30px;
+/*Ajuste da imgem da publicidade 0*/
+.publicidade0 {
+    /*border: 2px dashed blue;*/
+    align-content: center;
+    width: 300px;
     height: auto;
+    overflow: hidden;
+   
+
 }
 
-.Abertura p {
+#_Advertisement_Home_00 {
+   /* border: 2px dashed rgb(251, 255, 0);*/
+    object-fit: fill;
+    margin: 0 auto;
+    width: 350px;
+    height: 400px;
+}
+
+.paragrafo_linha0  {
+
+   /* border: 2px dashed black;*/
+    width: 800px;
+    height: auto;
+    margin: 10px;
     font-family: monospace;
     font-size: 14px;
-    text-indent: 4em;
-    margin-top: 50px;
+    text-indent: 3em;
     text-align: justify;
     line-height: 1.6;
-    margin-bottom: -3em;
-    padding-right: 5px;
-
-
-}
-
-/*=====================Fim da Abertura======================*/
-/*=====================Secao noticias de abertura=============================*/
-.sessao_noticas_aberturas {
-    padding: 10px;
-    margin: 10px;
-    margin-top: 20px;
-    /*    background-color: lightgray;*/
-}
-
-.sessao_noticas_aberturas h2 {
-    font-family: monospace;
+    margin-bottom: 18px;
+    padding-right: 25px ;
+    padding-left: 25px;
+    padding-top: 40px;
 
 }
 
+/*=====================================Fim da primeira linha==================================*/
 
+/*=====================================inicio da segunda  linha==================================*/
 
-
-/*==========Lista de informação=========*/
-
-
-.text {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 200px;
-}
-
-.media>img {
-    width: 85%;
-    margin-top: 20px;
-    /*para manter a proporção*/
-    object-fit: cover;
-    margin-right: -180px;
-
-    /*permite sobrepor as imagens*/
-}
-
-.container_lista_informativo {
-    display: flex;
-    flex-flow: row wrap-reverse;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.container_lista_informativo p,
-a {
-    font-family: monospace;
-    text-decoration: none;
-    margin: 10px;
-    font-size: 20px;
-
-}
-
-/*==========FIm da lista de informaçaõ==*/
-
-/*=====================Fim da secao noticias de abertura======================*/
-
-/*=================Lista de informação: text==================================*/
-.Noticias {
-    /*    background-color: white;*/
-    margin: 10px;
-    padding: 10px;
-    font-family: monospace;
-}
-
-
-.marginBottom {
-    margin-bottom: 150px;
-}
-
-/*=================Fim da lista de informação=================================*/
-/*=================Advertsements==============================================*/
-.Advertisement_Home_00 {
-
-    box-shadow: 0px 2px 5px rgba(7, 7,1, 0.2);
-    margin: auto;
-    height: 400px;
-    width: 350px;
-    /*border: dashed rgb(194, 247, 4);*/
-    overflow: hidden;
-
-}
-
-#_Advertisement_Home_00  {
-    height: auto;
-    width: 300px;
-    object-fit: fill;
-    display: block;
-    margin: 0 auto;
-}
-
-/*=================Fim Advertsements==============================================*/
