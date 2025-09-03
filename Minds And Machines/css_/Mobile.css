@@ -15,12 +15,25 @@ Grandes telas: acima de 1200px
 
     .paragrafo_linha0 p {
 
-       /* border: 2px dashed black;*/
+        /* border: 2px dashed black;*/
         font-size: 10px;
         padding-right: 5px;
         padding-left: 5px;
-        margin: -20px;       
+        margin: -20px;
 
+    }
+
+    .slides_vector img {
+        padding: 15px;
+        margin: 15px;
+        /*  width: 100%;
+    height: 90%;
+    /*elminar os espaços*/
+        display: block;
+        /*para manter a proporção*/
+        object-fit: fill;
+        /*permite sobrepor as imagens*/
+        /*Deixa todas a simagens invisiveis*/
     }
 
 
@@ -29,7 +42,14 @@ Grandes telas: acima de 1200px
         margin: 10px 10px 10px 10px;
         /* border: 2px dashed red;*/
         width: 200px;
-
     }
+
+    .space {
+        border: 2px dashed rgb(19, 202, 19);
+        width: -1px;
+        height: auto;
+    }
+
+
 
 }
