@@ -16,10 +16,14 @@ body {
 main {
     /*background-color: rgba(144, 144, 196, 0.1);*/
     box-shadow: 0px 12px 14px rgba(7, 7, 7, 0.2);
-    max-width: 1200px;
+    max-width: 1300px;
     height: auto;
-    
+
     /*background-color: rgb(243, 8, 118);*/
+}
+
+a {
+    text-decoration: none;
 }
 
 footer {
