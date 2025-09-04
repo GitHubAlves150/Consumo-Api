@@ -92,6 +92,7 @@ main {
 
     overflow: hidden;
     display: block;
+    margin-right: 10px;
 
 }
 
@@ -105,11 +106,7 @@ main {
 
 }
 
-.space {
-    /*  border: 2px dashed yellow;*/
-    width: 100px;
-    height: auto;
-}
+
 
 .publicidade1 {
     /*  border: 2px dashed black;*/

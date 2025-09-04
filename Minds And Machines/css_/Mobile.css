@@ -39,17 +39,12 @@ Grandes telas: acima de 1200px
 
     main {
 
-        margin: 10px 10px 10px 10px;
+        margin: auto;
         /* border: 2px dashed red;*/
         width: 200px;
     }
 
-    .space {
-        border: 2px dashed rgb(19, 202, 19);
-        width: -1px;
-        height: auto;
-    }
-
+   
 
 
 }
