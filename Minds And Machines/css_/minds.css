@@ -1,0 +1,13 @@
+
+
+main{
+    
+}
+.artigo0 , h2, h3, p{
+    margin-top: 10px;
+}
+
+.artigo0 > p{
+    text-indent: 2em;
+    margin:10px
+}

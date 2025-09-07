@@ -22,6 +22,7 @@ Grandes telas: acima de 1200px
 
     .slides_vector img {
         padding: 15px;
+        margin: 15px;        
         margin: 15px;
         
         display: block;
@@ -32,13 +33,11 @@ Grandes telas: acima de 1200px
 
     main {
 
+        margin: auto;
         margin-right:20px ;
         /* border: 2px dashed red;*/
-        width: 900px;
-
-    }
-
-   
+        width: 900px;   
+    } 
 
 
 
