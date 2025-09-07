@@ -25,15 +25,10 @@ Grandes telas: acima de 1200px
 
     .slides_vector img {
         padding: 15px;
-        margin: 15px;
-        /*  width: 100%;
-    height: 90%;
-    /*elminar os espaços*/
+        margin: 15px;        
         display: block;
-        /*para manter a proporção*/
         object-fit: fill;
-        /*permite sobrepor as imagens*/
-        /*Deixa todas a simagens invisiveis*/
+        
     }
 
 
