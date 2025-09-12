@@ -1,13 +1,48 @@
+main {}
 
-
-main{
-    
-}
-.artigo0 , h2, h3, p{
+.artigo0,
+h2,
+h3,
+p {
     margin-top: 10px;
 }
 
-.artigo0 > p{
+.artigo0>p {
     text-indent: 2em;
-    margin:10px
+    margin: 10px
 }
+
+/*container*/
+.cabecalho_do_artigo {
+    border: red dashed 2px;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/*
+<section class="cabecalho_do_artigo">
+            <div>
+                <h2 class="title_allan_turing">
+                    Uma abreviatura da vida de Allan Turing
+                </h2>
+                <h3>
+                    "O pai da computação e do surgimento do conceito de Inteligência Artificial"
+                </h3>
+                <h2 class="title_allan_turing">
+                    Resumo da vida de Allan Turing
+                </h2>
+                <h3>
+                    "O pai da computação moderna e do surgimento do conceito de Inteligência Sintética (I.A)"
+                </h3>
+            </div>
+            <div class="publicidade0_minds"><!--Area de publicidade-->
+                <h6>Advertisement</h6>
+                <a href="" id="a_href0_minds" target="_blank">
+                    <img src="" alt="publicidade" id="_Advertisement_minds_00">
+                </a>
+            </div>
+        </section>
+*/
