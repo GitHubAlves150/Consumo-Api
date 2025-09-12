@@ -9,11 +9,7 @@ async function API_ML() {
     const data = await response.json();
     console.log("::;", data[0].link_url);
 
-    document.getElementById('_Advertisement_Home_00').src = data[0].image_url;
-    document.getElementById('a_href0').href = data[0].link_url;
-
-    document.getElementById('_Advertisement_Home_01').src = data[1].image_url;
-    document.getElementById('a_href1').href= data[0].link_url;
+    
 
         console.log("::;3333333", data[3].link_url);
 
