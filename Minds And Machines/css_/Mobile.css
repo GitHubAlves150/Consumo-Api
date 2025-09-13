@@ -42,7 +42,7 @@ Grandes telas: acima de 1200px
     .publicidade0 {
         height: auto;
         width: 300px;
-        border: dashed rgb(0, 255, 0) 2px;
+        border: dashed rgb(82, 92, 82) 2px;
         margin: auto;
     }
 
@@ -50,9 +50,10 @@ Grandes telas: acima de 1200px
         width: 300px;
     }
 
-    .maquinaTurring img {
-        width: 400px;
-        
+    #foto_Allanturring img{
+        width: 100px;
+        object-fit: fill;
+        border: dashed red 2px;
     }
 
 }
