@@ -44,6 +44,11 @@ Grandes telas: acima de 1200px
         margin: auto;
     }
 
+    .cabecalho_do_artigo {
+        padding: 10px;
+
+    }
+
     .cabecalho_do_artigo h1 {
         font-size: 30px;
         font-family: var(--titulosH1);
