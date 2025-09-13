@@ -12,12 +12,7 @@ main {
     margin: 10px;
 }
 
-.pictureAllan {
-    width: 800px;
-    height: auto;
-    border: rgb(32, 10, 10) solid 2px;
 
-}
 
 
 
@@ -30,6 +25,22 @@ main {
     justify-content: space-evenly;
     flex-wrap: wrap;
 
+}
+
+.classe {
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.pictureAllan {
+    overflow: hidden;
+
+}
+
+#foto_Allanturring {
+    width: 600px;
+    object-fit: fill;
 }
 
 .cabecalho_do_artigo,
@@ -46,11 +57,7 @@ h2 {
     font-size: 25px;
     color: gray;
 }
-.cabecalho_do_artigo img{
-    border: rgb(72, 216, 5) dashed 2px;
-    width: auto;
 
-}
 
 .publicidade0_minds {
     height: auto;
