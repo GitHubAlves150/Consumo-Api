@@ -25,7 +25,6 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: solid red 2px;
 }
 
 .classe {
@@ -49,7 +48,6 @@ h1 {
     font-size: 40px;
     font-family: var(--titulosH1);
     color: rgba(101, 105, 136, 0.801);
-    border: solid blue 1px;
 }
 
 .cabecalho_do_artigo,
@@ -63,13 +61,11 @@ h2 {
 .publicidade0_minds {
     height: auto;
     width: 300px;
-    /* /*border: dashed rgb(68, 126, 54) 2px;*/
     overflow: hidden;
 }
 
 #_Advertisement_minds_00 {
     width: 300px;
-    /* /*border: dashed rgb(6, 231, 74) 2px;*/
 }
 
 /*===================Artigo*/

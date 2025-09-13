@@ -35,14 +35,12 @@ Grandes telas: acima de 1200px
 
         margin: auto;
         margin-right: 20px;
-        border: 2px dashed red;
         width: 900px;
     }
 
     .publicidade0 {
         height: auto;
         width: 300px;
-        border: dashed rgb(82, 92, 82) 2px;
         margin: auto;
     }
 
@@ -50,7 +48,6 @@ Grandes telas: acima de 1200px
         font-size: 30px;
         font-family: var(--titulosH1);
         color: rgba(101, 105, 136, 0.801);
-        border: solid blue 1px;
     }
 
     .cabecalho_do_artigo h2 {
