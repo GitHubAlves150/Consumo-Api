@@ -39,7 +39,7 @@ main {
 }
 
 #foto_Allanturring {
-    width: 600px;
+    width: 100%;
     object-fit: fill;
 }
 
@@ -122,7 +122,9 @@ h2 {
 }
 
 #ancora {
-    color: gray;
+    color: rgb(134, 134, 134);
+    width: 50px;
+    height: auto;
 }
 
 .maquinaTurring {
@@ -131,7 +133,7 @@ h2 {
 }
 
 .maquinaTurring img {
-    width: 900px;
+    width: 100%;
     height: auto;
     /*border: dashed rgb(22, 27, 21) 2px;*/
     overflow: hidden;
