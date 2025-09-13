@@ -35,7 +35,7 @@ Grandes telas: acima de 1200px
 
         margin: auto;
         margin-right: 20px;
-        /* border: 2px dashed red;*/
+        border: 2px dashed red;
         width: 900px;
     }
 
@@ -46,14 +46,15 @@ Grandes telas: acima de 1200px
         margin: auto;
     }
 
-    .publicidade0 img {
-        width: 300px;
+    .cabecalho_do_artigo h1 {
+        font-size: 30px;
+        font-family: var(--titulosH1);
+        color: rgba(101, 105, 136, 0.801);
+        border: solid blue 1px;
     }
 
-    #foto_Allanturring img{
-        width: 100px;
-        object-fit: fill;
-        border: dashed red 2px;
+    .cabecalho_do_artigo h2 {
+        font-size: 15px;
+        color: gray;
     }
-
 }

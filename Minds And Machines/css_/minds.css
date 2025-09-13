@@ -1,6 +1,6 @@
 main {
-    margin: 20px;
-    ;
+    margin: 10px;
+    
 }
 
 .artigo0 {
@@ -21,10 +21,11 @@ main {
     /*/**/
     margin-top: 120px;
     display: flex;
-    height: auto;
-    justify-content: space-evenly;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-
+    border: solid red 2px;
 }
 
 .classe {
@@ -39,16 +40,16 @@ main {
 }
 
 #foto_Allanturring {
-    width: 100%;
+    width: 50%;
     object-fit: fill;
 }
 
 .cabecalho_do_artigo,
 h1 {
-    margin-left: 40px;
     font-size: 40px;
     font-family: var(--titulosH1);
     color: rgba(101, 105, 136, 0.801);
+    border: solid blue 1px;
 }
 
 .cabecalho_do_artigo,
