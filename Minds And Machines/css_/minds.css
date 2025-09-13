@@ -83,8 +83,6 @@ h2 {
     align-content: center;
     flex-wrap: wrap;
     /*/*border: solid rgb(241, 33, 5) 2px;*/
-    width: 900px;
-
 
 }
 
@@ -108,12 +106,20 @@ h2 {
     color: gray;
 }
 
+.maquinaTurring {
+    overflow: hidden;
 
-.maquinaTurring img {
-    width: 550px;
 }
 
-h6{
+.maquinaTurring img {
+    width: 900px;
+    height: auto;
+    /*border: dashed rgb(22, 27, 21) 2px;*/
+    overflow: hidden;
+    margin: 20px;
+}
+
+h6 {
     text-align: center;
     margin: auto;
 }

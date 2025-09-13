@@ -39,16 +39,20 @@ Grandes telas: acima de 1200px
         width: 900px;
     }
 
-    .publicidade0
-    {
+    .publicidade0 {
         height: auto;
         width: 300px;
         border: dashed rgb(0, 255, 0) 2px;
         margin: auto;
     }
-    .publicidade0 img{
+
+    .publicidade0 img {
         width: 300px;
     }
 
-   
+    .maquinaTurring img {
+        width: 400px;
+        
+    }
+
 }
