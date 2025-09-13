@@ -1,48 +1,121 @@
-main {}
+main {
+    margin: 20px;
+    ;
+}
 
-.artigo0,
-h2,
-h3,
-p {
-    margin-top: 10px;
+.artigo0 {
+    margin-bottom: 150px;
 }
 
 .artigo0>p {
     text-indent: 2em;
-    margin: 10px
+    margin: 10px;
 }
 
 /*container*/
 .cabecalho_do_artigo {
-    border: red dashed 2px;
+    /*/*border: red dashed 2px;*/
+    margin-top: 120px;
     display: flex;
     height: auto;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    justify-content: space-between;
+    text-align: center;
+
+}
+
+.cabecalho_do_artigo,
+h1 {
+    margin-left: 40px;
+    font-size: 40px;
+    font-family: var(--titulosH1);
+    color: rgba(101, 105, 136, 0.801);
+}
+
+.cabecalho_do_artigo,
+h2 {
+    font-family: var(--titulosH1);
+    font-size: 25px;
+    color: gray;
 }
 
 
-/*
-<section class="cabecalho_do_artigo">
-            <div>
-                <h2 class="title_allan_turing">
-                    Uma abreviatura da vida de Allan Turing
-                </h2>
-                <h3>
-                    "O pai da computação e do surgimento do conceito de Inteligência Artificial"
-                </h3>
-                <h2 class="title_allan_turing">
-                    Resumo da vida de Allan Turing
-                </h2>
-                <h3>
-                    "O pai da computação moderna e do surgimento do conceito de Inteligência Sintética (I.A)"
-                </h3>
-            </div>
-            <div class="publicidade0_minds"><!--Area de publicidade-->
-                <h6>Advertisement</h6>
-                <a href="" id="a_href0_minds" target="_blank">
-                    <img src="" alt="publicidade" id="_Advertisement_minds_00">
-                </a>
-            </div>
-        </section>
-*/
+.publicidade0_minds {
+    height: auto;
+    width: 300px;
+    /* /*border: dashed rgb(68, 126, 54) 2px;*/
+    overflow: hidden;
+}
+
+#_Advertisement_minds_00 {
+    width: 300px;
+    /* /*border: dashed rgb(6, 231, 74) 2px;*/
+}
+
+/*===================Artigo*/
+.paragrafo0_minds {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    /*border: dashed rgb(22, 27, 21) 2px;*/
+
+}
+
+.conjuntoParagrafo0 {
+    /*border: dashed rgb(79, 3, 255) 2px;*/
+    width: 900px;
+}
+
+.h1 {
+    color: rgb(109, 109, 136);
+    font-family: var(--titulosH1);
+}
+
+.conjuntoParagrafo1 {
+    display: flex;
+    height: auto;
+    margin: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    /*/*border: solid rgb(241, 33, 5) 2px;*/
+    width: 900px;
+
+
+}
+
+.publicidade1_minds {
+    width: 300px;
+    height: auto;
+    /*border: dashed rgb(22, 27, 21) 2px;*/
+    overflow: hidden;
+    margin: 20px;
+
+}
+
+.p0 {
+    width: auto;
+    margin: 10px;
+    line-height: 1.6;
+    /*border: dashed rgb(185, 9, 185) 2px;*/
+}
+
+#ancora {
+    color: gray;
+}
+
+
+.maquinaTurring img {
+    width: 550px;
+}
+
+h6{
+    text-align: center;
+    margin: auto;
+}
+
+/*===================Fim do Artigo===============*/

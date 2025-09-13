@@ -9,13 +9,60 @@ async function API_ML() {
     const data = await response.json();
     console.log("::;", data[0].link_url);
 
-    
-
-        console.log("::;3333333", data[3].link_url);
-
+    console.log("::;3333333", data[3].link_url);
     document.getElementById('_Advertisement_minds_00').src = data[3].image_url;
     document.getElementById('a_href0_minds').href = data[3].link_url;
 
+    document.getElementById('_Advertisement_minds_01').src = data[4].image_url;
+    document.getElementById('a_href0_minds').href = data[4].link_url;
+
 }
 
+async function foto_Allan() {
+    const Title = 'Alan_Turing';
+    const url = `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts|pageimages&exintro=true&explaintext=true&titles=${Title}&pithumbsize=400&origin=*`;
+
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        //---como acessar o 'title'---
+        const pages_ = data.query.pages;
+        //2-Pegue o ID da pagina (a chave do objeto 'pages')
+        //Object.keys(pages) retorna um array com as chaves (ID das paginas).
+        //Como só estamos buscando uma pagina por vez. Pegamos a primeira chave [0]
+        const pageID = Object.keys(pages_);
+        //3-Acesse o objeto da pagina especifica usando o ID
+        const page_ = pages_[pageID];
+        //https://www.youtube.com/watch?v=083T8Ej5K0o&list=PLZwDAiwajSlGZH0F-Bsp4L1DRWtJ-YPGx
+        //4-Agora voce pode acessar o 'title'
+        //console.log(">>>", data.query.pages);
+        console.log("Título da pagina: ", page_.thumbnail);
+        //---------DOM-------
+        //------------------------------------------------------------------------------
+        //--Noticia-1
+        if (!page_.thumbnail) {
+            alert('Error load image');
+        }
+        document.getElementById('foto_Allanturring').src = page_.thumbnail.source;
+        //--Fim Noticia-1
+        //------------------------------------------------------------------------------
+
+
+    }
+    catch (error) {
+        console.log("Erro ao carregar a API: Noticias_Na_Home");
+    }
+}
+
+
+async function maquinaTurring() {
+    // URL da imagem que você quer buscar via API
+    const imageUrl = 'https://p2.trrsf.com/image/fget/cf/2000/0/images.terra.com/2019/06/07/turing-07144837841409.jpg'; // A imagem é a foto do artigo
+    document.getElementById('imagemDaApi').src = imageUrl;
+}
+
+maquinaTurring();
 API_ML();
+foto_Allan();

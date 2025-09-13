@@ -4,6 +4,14 @@
     padding: 0px;
 }
 
+:root {
+    --titulosH1: 'Helvetica';
+    --subtituloH2: 'Calibri';
+    --paragrafo: 'Helvetica';
+
+
+}
+
 body {
     display: flex;
     flex-flow: column wrap;
