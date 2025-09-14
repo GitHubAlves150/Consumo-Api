@@ -1,6 +1,6 @@
 main {
-    margin: 10px;
-
+    margin: 20px;
+    ;
 }
 
 .artigo0 {
@@ -18,35 +18,29 @@ main {
 
 /*container*/
 .cabecalho_do_artigo {
-    /*/**/
-    margin-top: 120px;
     display: flex;
-    height: auto;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.cabecalho_do_artigo h6{
-    text-align:center;
-    width: 700px;
+    flex-direction: row;
 }
 
 .classe {
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    overflow: hidden;
+    width: 900px;
 
 }
 
 .pictureAllan {
-    overflow: hidden;
+    margin: 10px;
+    max-width: 100%;
 
 }
 
-#foto_Allanturring {
-    width: 50%;
-    object-fit: fill;
-}
 
 .cabecalho_do_artigo,
 h1 {
@@ -66,11 +60,13 @@ h2 {
 .publicidade0_minds {
     height: auto;
     width: 300px;
+    /* /*border: dashed rgb(68, 126, 54) 2px;*/
     overflow: hidden;
 }
 
 #_Advertisement_minds_00 {
     width: 300px;
+    /* /*border: dashed rgb(6, 231, 74) 2px;*/
 }
 
 /*===================Artigo*/
@@ -90,20 +86,22 @@ h2 {
     width: 900px;
 }
 
-
+.h1 {
+    color: rgb(109, 109, 136);
+    font-family: var(--titulosH1);
+}
 
 .conjuntoParagrafo1 {
     display: flex;
     height: auto;
     margin: 20px;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
     /*/*border: solid rgb(241, 33, 5) 2px;*/
 
 }
-
 
 .publicidade1_minds {
     width: 300px;
@@ -117,6 +115,7 @@ h2 {
 .p0 {
     width: auto;
     margin: 10px;
+    text-indent: 2em;
     line-height: 1.6;
     /*border: dashed rgb(185, 9, 185) 2px;*/
 }
@@ -143,7 +142,6 @@ h2 {
 h6 {
     text-align: center;
     margin: auto;
-    color: gray
 }
 
 /*===================Fim do Artigo===============*/
