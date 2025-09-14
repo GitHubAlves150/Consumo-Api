@@ -59,4 +59,10 @@ Grandes telas: acima de 1200px
         font-size: 15px;
         color: gray;
     }
+
+    .pictureAllan {
+        margin: 10px;
+        width: 350px;
+    }
+
 }
