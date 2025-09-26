@@ -1,144 +1,130 @@
-
-
-.artigo0 {
-    margin-bottom: 150px;
+/*titulo*/
+.Title_H1 {
+    color: var(--titulosH1Cor);
+    font-family: var(--titulosH1);
+    margin-top: 90px;
+    font-size: 35px;
+    text-align: left;
+    margin-left: 10px;
+    width: 900px;
 }
 
-.artigo0>p {
-    text-indent: 2em;
-    margin: 10px;
-}
+.header_ {
 
-
-
-
-
-/*container*/
-.cabecalho_do_artigo {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.classe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-    width: 900px;
-
-}
-
-.pictureAllan {
-    margin: 10px;
-    max-width: 100%;
 
 }
 
 
-.cabecalho_do_artigo,
-h1 {
-    font-size: 40px;
-    font-family: var(--titulosH1);
-    color: rgba(101, 105, 136, 0.801);
-}
-
-.cabecalho_do_artigo,
-h2 {
-    font-family: var(--titulosH1);
-    font-size: 25px;
-    color: gray;
-}
-
-
-.publicidade0_minds {
+.introduction {
+    text-align: justify;
     height: auto;
+    width: 70%;
+
+}
+
+.foto_Allanturring_picture {
+    overflow: hidden;
+    width: 400px;
+    height: 300px;
+
+}
+
+.publicidade {
     width: 300px;
-    /* /*border: dashed rgb(68, 126, 54) 2px;*/
-    overflow: hidden;
-}
-
-#_Advertisement_minds_00 {
-    width: 300px;
-    /* /*border: dashed rgb(6, 231, 74) 2px;*/
-}
-
-/*===================Artigo*/
-.paragrafo0_minds {
-    display: flex;
+    margin: auto;
     height: auto;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
-    flex-wrap: wrap;
-    /*border: dashed rgb(22, 27, 21) 2px;*/
-
-}
-
-.conjuntoParagrafo0 {
-    /*border: dashed rgb(79, 3, 255) 2px;*/
-    width: 900px;
-}
-
-.h1 {
-    color: rgb(109, 109, 136);
-    font-family: var(--titulosH1);
-}
-
-.conjuntoParagrafo1 {
-    display: flex;
-    height: auto;
-    margin: 20px;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
-    flex-wrap: wrap;
-    /*/*border: solid rgb(241, 33, 5) 2px;*/
-
-}
-
-.publicidade1_minds {
-    width: 300px;
-    height: auto;
-    /*border: dashed rgb(22, 27, 21) 2px;*/
-    overflow: hidden;
-    margin: 20px;
-
-}
-
-.p0 {
-    width: auto;
-    margin: 10px;
-    text-indent: 2em;
-    line-height: 1.6;
-    /*border: dashed rgb(185, 9, 185) 2px;*/
-}
-
-#ancora {
-    color: rgb(134, 134, 134);
-    width: 50px;
-    height: auto;
-}
-
-.maquinaTurring {
     overflow: hidden;
 
 }
 
-.maquinaTurring img {
-    width: 100%;
-    height: auto;
-    /*border: dashed rgb(22, 27, 21) 2px;*/
-    overflow: hidden;
-    margin: 20px;
+
+
+.publicidade img {
+    width: 70%;
+    height: 70%;
+    /*quando elelmento de bloco centraliza desta forma*/
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
+.foto_Allanturring_picture img {
+    /*faz ajustar na largura do box*/
+    width: 50%;
+    height: auto;
+    /*centraliza no box*/
+    display: block;
+    /*garante que mantenha a proporção*/
+    margin: 10px auto 20px auto;
+
+}
+
+.header_ h2,
 h6 {
     text-align: center;
-    margin: auto;
+    text-align: justify;
+    padding: 0px 20px 0px 20px;
+    font-family: var(--titulosH1);
+    color: gray;
+    margin-top: 20px;
+
 }
 
-/*===================Fim do Artigo===============*/
+.header_ h6 {
+    font-size: 25px;
+    margin-top: 20px;
+
+}
+
+.titulo_ {
+    color: var(--titulosH1Cor);
+}
+
+/*=====fim do .header_====*/
+/*======Paragrafos*/
+.paragrafos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragrafos_p {
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.6;
+    text-indent: 2em;
+    font-size: 18px;
+    width: 800px;
+    height: auto;
+}
+
+.paragrafos_pII {
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.6;
+    text-indent: 2em;
+    font-size: 18px;
+    width: 70%;
+    height: auto;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+p {
+    margin-top: 20px;
+}
+
+
+
+/*======Fim paragrafos==*/
+
+.space-end{
+    margin-bottom: 90px;
+}

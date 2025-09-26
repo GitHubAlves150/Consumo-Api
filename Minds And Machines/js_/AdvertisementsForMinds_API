@@ -3,20 +3,7 @@
 
 
 
-async function API_ML() {
-    const url = `https://fathomless-hollows-78979-ecc98fbb7725.herokuapp.com`;
-    const response = await fetch(url);
-    const data = await response.json();
-    console.log("::;", data[0].link_url);
 
-    console.log("::;3333333", data[3].link_url);
-    document.getElementById('_Advertisement_minds_00').src = data[3].image_url;
-    document.getElementById('a_href0_minds').href = data[3].link_url;
-
-    document.getElementById('_Advertisement_minds_01').src = data[4].image_url;
-    document.getElementById('a_href0_minds').href = data[4].link_url;
-
-}
 
 async function foto_Allan() {
     const Title = 'Alan_Turing';
@@ -64,5 +51,4 @@ async function maquinaTurring() {
 }
 
 maquinaTurring();
-API_ML();
 foto_Allan();

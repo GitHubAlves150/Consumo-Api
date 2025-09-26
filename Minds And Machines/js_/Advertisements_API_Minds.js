@@ -1,8 +1,7 @@
 'use stritct'
 
-
-const ids= ["adv0", "adv1", "adv2", "adv3", "adv4", "adv5", "adv6", "adv7",  "adv8",  "adv9",  "adv10",  "adv11"];
-const ancoras = ["ancora0", "ancora1", "ancora2", "ancora3", "ancora4", "ancora5", "ancora6", "ancora7", "ancora8", "ancora9", "ancora10", "ancora11"];
+const ids= ["adv0", "adv1", "adv2", "adv3", "adv4", "adv5", "adv6", "adv7"];
+const ancoras = ["ancora0", "ancora1", "ancora2", "ancora3", "ancora4", "ancora5", "ancora6", "ancora7"];
 
 
 async function API_ML() {
@@ -27,7 +26,6 @@ async function API_ML() {
 }
 
 /*
-
 async function API_ML_minds() {
     const url = `https://fathomless-hollows-78979-ecc98fbb7725.herokuapp.com`;
     const response = await fetch(url);
@@ -36,20 +34,19 @@ async function API_ML_minds() {
     document.getElementById('_Advertisement_minds_02').src = data[2].image_url;
     document.getElementById('a_href1_minds').src = data[2].link_url;
 }
-
-async function API_ML() {
+async function API_ML_mind() {
     const url = `https://fathomless-hollows-78979-ecc98fbb7725.herokuapp.com`;
     const response = await fetch(url);
     const data = await response.json();
     console.log("::;", data[0].link_url);
+    document.getElementById('_Advertisement_minds_03').src = data[3].image_url;
+    document.getElementById('a_href2_minds').src = data[3].link_url;
 
-    document.getElementById('_Advertisement_Home_00').src = data[0].image_url;
-    document.getElementById('a_href0').href = data[0].link_url;
-
-    document.getElementById('_Advertisement_Home_01').src = data[1].image_url;
-    document.getElementById('a_href1').href = data[1].link_url;
+    document.getElementById('_Advertisement_minds_04').src = data[4].image_url;
+    document.getElementById('a_href1_minds').src = data[3].link_url;
+}
 
 
-}*/
-
+API_ML_minds();
+API_ML_mind();*/
 API_ML();

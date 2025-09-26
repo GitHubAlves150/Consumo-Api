@@ -25,14 +25,22 @@ main {
     padding-bottom: 40px;
 }
 
-/*Ajuste da imgem da publicidade 0*/
-.publicidade0 {
-    /*border: 2px dashed blue;*/
-    align-content: center;
-    width: 350px;
+/*Ajuste da imgem da publicidade */
+.publicidade {
+    /*border: solid rgb(9, 40, 238) 3px;*/
+    width: 380px;
     height: auto;
     overflow: hidden;
+}
 
+.publicidade img {
+    width: 500px;
+    height: auto;
+    /*border: solid rgb(3, 39, 3) 3px;*/
+    margin: auto;
+    /*quando elelmento de bloco centraliza desta forma*/
+    object-fit: contain;
+    margin: 0 auto;
 }
 
 #_Advertisement_Home_00 {
@@ -108,15 +116,7 @@ main {
 
 
 
-.publicidade1 {
-    /*  border: 2px dashed black;*/
-    align-content: center;
-    width: 350px;
-    height: 0 auto;
-    overflow: hidden;
 
-
-}
 
 #_Advertisement_Home_01 {
     width: 300px;
