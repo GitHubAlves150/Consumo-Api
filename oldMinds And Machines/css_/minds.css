@@ -1,0 +1,130 @@
+/*titulo*/
+.Title_H1 {
+    color: var(--titulosH1Cor);
+    font-family: var(--titulosH1);
+    margin-top: 90px;
+    font-size: 35px;
+    text-align: left;
+    margin-left: 10px;
+    width: 900px;
+}
+
+.header_ {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.introduction {
+    text-align: justify;
+    height: auto;
+    width: 70%;
+
+}
+
+.foto_Allanturring_picture {
+    overflow: hidden;
+    width: 400px;
+    height: 300px;
+
+}
+
+.publicidade {
+    width: 300px;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+
+}
+
+
+
+.publicidade img {
+    width: 70%;
+    height: 70%;
+    /*quando elelmento de bloco centraliza desta forma*/
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.foto_Allanturring_picture img {
+    /*faz ajustar na largura do box*/
+    width: 50%;
+    height: auto;
+    /*centraliza no box*/
+    display: block;
+    /*garante que mantenha a proporção*/
+    margin: 10px auto 20px auto;
+
+}
+
+.header_ h2,
+h6 {
+    text-align: center;
+    text-align: justify;
+    padding: 0px 20px 0px 20px;
+    font-family: var(--titulosH1);
+    color: gray;
+    margin-top: 20px;
+
+}
+
+.header_ h6 {
+    font-size: 25px;
+    margin-top: 20px;
+
+}
+
+.titulo_ {
+    color: var(--titulosH1Cor);
+}
+
+/*=====fim do .header_====*/
+/*======Paragrafos*/
+.paragrafos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragrafos_p {
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.6;
+    text-indent: 2em;
+    font-size: 18px;
+    width: 800px;
+    height: auto;
+}
+
+.paragrafos_pII {
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.6;
+    text-indent: 2em;
+    font-size: 18px;
+    width: 70%;
+    height: auto;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+p {
+    margin-top: 20px;
+}
+
+
+
+/*======Fim paragrafos==*/
+
+.space-end{
+    margin-bottom: 90px;
+}
