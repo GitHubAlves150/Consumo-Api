@@ -97,6 +97,11 @@ header h6 {
     color: gray;
 }
 
+.img-book dl {
+    margin: auto;
+
+}
+
 .img-book img {
 
     width: 30%;
@@ -114,7 +119,7 @@ header h6 {
 
 .section-intro p {
     margin-top: 30px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: justify;
     line-height: 1.5;
     text-indent: 2em;
@@ -140,7 +145,7 @@ header h6 {
 .section-detail p,
 ul {
     margin-top: 30px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: justify;
     line-height: 1.5;
     text-indent: 2em;
@@ -171,7 +176,7 @@ ul {
 
 .section-detail ol {
     margin-top: 30px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: justify;
     line-height: 1.5;
     text-indent: 2em;
@@ -184,7 +189,8 @@ ul {
     margin-left: 1.5rem;
     list-style-position: inside;
 }
-.section-detail li{
+
+.section-detail li {
     margin-bottom: 1rem;
     text-align: justify;
 }
@@ -195,7 +201,12 @@ ul {
 .ad-sidebar {
     display: flex;
     flex-direction: column;
+    border: red solid 2px;
 
+}
+.ad-sidebar p{
+    color: var(--cor-background);
+    margin-top: 20px;
 }
 
 
@@ -220,6 +231,20 @@ ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+
     }
 
+    .img-book dt {
+        font-family: monospace;
+        font-size: 12px;
+        color: gray;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .img-book img {
+
+        width: 40%;
+        height: 40%;
+    }
 }
