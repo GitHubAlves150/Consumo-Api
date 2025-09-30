@@ -201,14 +201,29 @@ ul {
 .ad-sidebar {
     display: flex;
     flex-direction: column;
-    border: red solid 2px;
-
 }
-.ad-sidebar p{
+.prod-destaque {
+    text-align: center;
+    font-family: monospace;
+    color: gray;
+}
+.ad-sidebar p {
     color: var(--cor-background);
     margin-top: 20px;
 }
 
+.img-advert {
+    width: 310px;
+    height: 380px;
+    overflow: hidden;
+}
+
+.img-advert img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 10px;
+}
 
 /* ================================================= */
 /* 6. MEDIA QUERY (DE DESKTOP / MAIOR QUE 768px) */
@@ -231,6 +246,9 @@ ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
 
     }
 
@@ -247,4 +265,21 @@ ul {
         width: 40%;
         height: 40%;
     }
+
+    .img-advert {
+        width: 160px;
+        height: 250px;
+        overflow: hidden;
+
+
+    }
+
+    .img-advert img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin-top: 10px;
+
+    }
+
 }
