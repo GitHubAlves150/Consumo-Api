@@ -40,7 +40,7 @@ main {
                  2:LAYOUT PRINCIPAL TOPOGRAFIA E CABEÇALHO
 ========================================================================*/
 header {
-    background-color: var(--cor-destaque);
+    background-color: var(--cor-fundo-secundario-opII);
     max-width: 100%;
     width: 180rem;
     text-align: center;
@@ -90,7 +90,8 @@ header h6 {
     gap: 10px;
 
 }
-.site-quote img{
+
+.site-quote img {
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -120,6 +121,16 @@ header h6 {
 
     width: 40%;
     height: 40%;
+}
+.img-transistor img{
+    width: 80%;
+    height: 80%;
+}
+.img-transistor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /*------------------iintrodução ao legado do autor---*/
@@ -216,11 +227,13 @@ ul {
     display: flex;
     flex-direction: column;
 }
+
 .prod-destaque {
     text-align: center;
     font-family: monospace;
     color: gray;
 }
+
 .ad-sidebar p {
     color: var(--cor-background);
     margin-top: 20px;
@@ -280,6 +293,7 @@ ul {
         width: 60%;
         height: 60%;
     }
+    
 
     .img-advert {
         width: 160px;
@@ -296,5 +310,41 @@ ul {
         margin-top: 10px;
 
     }
+    .img-transistor img{
+        width: 90%;
+        height: 90%;
+    }
 
 }
+
+
+/*
+<p>Mentes brilhantes & Máquinas incríveis configura-se como uma revista digital primariamente voltada à
+                    análise da interrelação _intrínseca entre o ser humano e as tecnologias que transformaram e ainda
+                    transformam o mundo que vivemos.
+                </p>
+                <p>
+                    Este periódico filosófico tem por desígnio precípuo estabelecer uma plataforma virtual dedicada à
+                    difusão de artigos que se distinguem por sua inovação, rigorosa fundamentação e solidez científica.
+                    Tais contribuições fornecem análises conceituais aprofundadas acerca de tópicos situados na
+                    intersecção entre a filosofia cognitiva, a lógica, a epistemologia (com ênfase no campo das ciências
+                    exatas), a ética e as disciplinas da ciência da computação e de dados.
+                </p>
+                <p>
+                    Adicionalmente, esta revista digital emprega diversas Interfaces de Programação de Aplicativos
+                    (APIs) para compilar e apresentar notícias atualizadas, além de referenciar artigos e podcasts
+                    pertinentes ao vasto domínio da tecnologia.
+                </p>
+                <p>
+                    Mentes brilhantes & Máquinas incríveis aprofunda-se em investigações filosóficas que abrangem, mas
+                    não se limitam a: o papel das tecnologias digitais na elucidação dos processos cognitivos; o
+                    estatuto epistêmico de áreas como a ciência da computação e a ciência de dados; a condição moral de
+                    entidades de inteligência artificial; e as implicações éticas e sociais decorrentes da concepção, do
+                    desenvolvimento e da aplicação de recursos digitais (incluindo robótica, agentes de IA, bots e
+                    cobots) em nossas sociedades, em uma multiplicidade de domínios que se estendem da saúde à defesa.
+                </p>
+
+
+
+
+*/
