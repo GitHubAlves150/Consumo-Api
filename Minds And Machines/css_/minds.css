@@ -40,9 +40,9 @@ main {
                  2:LAYOUT PRINCIPAL TOPOGRAFIA E CABEÇALHO
 ========================================================================*/
 header {
-    background-color: var(--cor-background);
+    background-color: var(--cor-destaque);
     max-width: 100%;
-    width: 150rem;
+    width: 180rem;
     text-align: center;
     padding: 5rem;
     margin-top: 5rem;
@@ -67,7 +67,7 @@ header h6 {
     flex-wrap: wrap;
     max-width: 1200px;
     justify-content: space-between;
-    margin-bottom: 5rempx;
+    margin-bottom: 5rem;
 }
 
 .main-article {
@@ -249,10 +249,11 @@ ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        width: 100%;
     }
 
     .main-article {
-        width: 95%;
+        width: 100%;
         padding-right: 2rem;
     }
 
@@ -276,8 +277,8 @@ ul {
 
     .img-turring img {
 
-        width: 40%;
-        height: 40%;
+        width: 60%;
+        height: 60%;
     }
 
     .img-advert {
