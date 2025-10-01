@@ -167,21 +167,21 @@
         <aside class="ad-sidebar">
 
             <div class="img-advert">
-                <a href="" id="ancora0" target="_blank">
-                    <img src="" alt="curso online" id="adv0">
+                <a href="" id="link0" target="_blank">
+                    <img src="" alt="curso online" id="publi0">
 
                 </a>
             </div>
 
             <div class="img-advert">
-                <a href="" id="ancora2" target="_blank">
-                    <img src="" alt="curso online" id="adv2">
+                <a href="" id="link1" target="_blank">
+                    <img src="" alt="curso online" id="publi1">
                 </a>
             </div>
 
             <div class="img-advert">
-                <a href="" id="ancora1" target="_blank">
-                    <img src="" alt="curso online" id="adv1">
+                <a href="" id="link2" target="_blank">
+                    <img src="" alt="curso online" id="publi2">
                 </a>
             </div>
 
@@ -229,5 +229,26 @@
         <p>&copy; Desenvolvido por-Lucas Lorenço ALves</p>
     </div>
 </body>
+<script>
+    'use stritct'
 
+async function API_ML_minds() {
+    const url = `https://fathomless-hollows-78979-ecc98fbb7725.herokuapp.com`;
+    const response = await fetch(url);
+    const data = await response.json();
+
+    
+
+        document.getElementById('publi0').src = data[0].image_url;
+        document.getElementById('link0').href = data[0].link_url;
+
+        document.getElementById('publi1').src = data[1].image_url;
+        document.getElementById('link1').href = data[1].link_url;
+
+        document.getElementById('publi2').src = data[2].image_url;
+        document.getElementById('link2').href = data[2].link_url;
+
+}
+API_ML_minds();
+</script>
 </html>

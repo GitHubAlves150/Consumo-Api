@@ -1,130 +1,299 @@
-/*titulo*/
-.Title_H1 {
-    color: var(--titulosH1Cor);
-    font-family: var(--titulosH1);
-    margin-top: 90px;
-    font-size: 35px;
-    text-align: left;
-    margin-left: 10px;
-    width: 900px;
+/*RESET BÁSICO*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header_ {
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-.introduction {
-    text-align: justify;
-    height: auto;
-    width: 70%;
-
-}
-
-.foto_Allanturring_picture {
-    overflow: hidden;
-    width: 400px;
-    height: 300px;
-
-}
-
-.publicidade {
-    width: 300px;
+body {
     margin: auto;
     height: auto;
-    overflow: hidden;
-
 }
 
-
-
-.publicidade img {
-    width: 70%;
-    height: 70%;
-    /*quando elelmento de bloco centraliza desta forma*/
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
+main {
+    margin-bottom: 90px;
 }
 
-.foto_Allanturring_picture img {
-    /*faz ajustar na largura do box*/
-    width: 50%;
-    height: auto;
-    /*centraliza no box*/
-    display: block;
-    /*garante que mantenha a proporção*/
-    margin: 10px auto 20px auto;
+/*========================================================================
+               1:VARIAVEIS GLOBAIS
+========================================================================*/
+:root {
+    --cor-primaria: #81d0fa;
+    /* Azul Escuro */
+    --cor-fundo: #e9ecef;
+    --cor-texto-principal: #333333;
+    --cor-destaque: gray;
+    /* Laranja/Amarelo */
+    --cor-fundo-secundario: #f4f4f9;
+    --cor-fundo-secundario-opII: #0707cf;
+    --cor-background: #000072;
 
+    /*Fontes sugeridas pelo HTML*/
+    --fonte-titulo: 'Merriweather', serif;
+    --fonte-corpo: 'Roboto', sans-serif;
+
+    --espacamento-padding: 1rem
+        /*16px*/
 }
 
-.header_ h2,
-h6 {
+/*========================================================================
+                 2:LAYOUT PRINCIPAL TOPOGRAFIA E CABEÇALHO
+========================================================================*/
+header {
+    background-color: var(--cor-background);
+    max-width: 100%;
+    width: 150rem;
     text-align: center;
-    text-align: justify;
-    padding: 0px 20px 0px 20px;
-    font-family: var(--titulosH1);
-    color: gray;
-    margin-top: 20px;
-
+    padding: 5rem;
+    margin-top: 5rem;
 }
 
-.header_ h6 {
-    font-size: 25px;
-    margin-top: 20px;
-
+header h1 {
+    color: white;
+    font-family: monospace;
+    margin-bottom: 20px;
 }
 
-.titulo_ {
-    color: var(--titulosH1Cor);
+header h6 {
+    color: rgb(202, 199, 199);
+    font-size: large;
+    font-family: monospace;
+    margin-bottom: -10px;
 }
 
-/*=====fim do .header_====*/
-/*======Paragrafos*/
-.paragrafos {
+.main-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin-bottom: 5rempx;
+}
+
+.main-article {
+    width: 70%;
+    margin: 0 10px auto 30px;
+
+}
+
+/*------------------CITAÇÃO--------------------------*/
+.site-quote {
+    background-color: var(--cor-fundo);
+    padding: 2em;
+    border-left: 5px solid var(--cor-destaque);
+    font-family: monospace;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+
+}
+.site-quote img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
-.paragrafos_p {
-    text-align: justify;
-    padding: 20px;
-    line-height: 1.6;
-    text-indent: 2em;
+/*------------------Capa do Livro--------------------*/
+.img-turring {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img-turring dt {
+    margin-top: 25px;
+    font-family: monospace;
     font-size: 18px;
-    width: 800px;
-    height: auto;
+    color: gray;
 }
 
-.paragrafos_pII {
+.img-turring dl {
+    margin: auto;
+
+}
+
+.img-turring img {
+
+    width: 40%;
+    height: 40%;
+}
+
+/*------------------iintrodução ao legado do autor---*/
+.section-intro h1 {
+    font-family: monospace;
+    color: var(--cor-fundo-secundario-opII);
+    margin-top: 30px;
+    font-size: 25px;
+
+}
+
+.section-intro p {
+    margin-top: 30px;
+    font-size: 1.1rem;
     text-align: justify;
-    padding: 20px;
-    line-height: 1.6;
+    line-height: 1.5;
     text-indent: 2em;
-    font-size: 18px;
-    width: 70%;
-    height: auto;
-    flex-shrink: 1;
-    flex-grow: 0;
+    /*Google Fonts-Open Sans*/
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 12px;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
 }
 
-p {
+/*========================================================================
+        3. DETALHES DO PRIMEIRO CAPITULO
+========================================================================*/
+.section-detail h1 {
+    font-family: monospace;
+    color: var(--cor-fundo-secundario-opII);
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.section-detail p,
+ul {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 2em;
+    /*Google Fonts-Open Sans*/
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 12px;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.equacao-pitagoras {
+    padding-left: 20%;
+
+}
+
+.section-detail ul {
+    padding-left: 0;
+
+    /* 2. Usa margin-left para definir a distância total da borda da tela. 
+       A bolinha ficará dentro dessa margem, perto do texto. */
+    margin-left: 1.5rem;
+    /* Você pode experimentar com valores menores, como 1rem */
+
+    /* 3. Garante que o texto comece após a bolinha */
+    list-style-position: inside;
+}
+
+.section-detail ol {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 2em;
+    /*Google Fonts-Open Sans*/
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 12px;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    margin-left: 1.5rem;
+    list-style-position: inside;
+}
+
+.section-detail li {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* ================================================= */
+/* 4. PUBLICIDADE LATERAL (SIDEBAR) */
+/* ================================================= */
+.ad-sidebar {
+    display: flex;
+    flex-direction: column;
+}
+.prod-destaque {
+    text-align: center;
+    font-family: monospace;
+    color: gray;
+}
+.ad-sidebar p {
+    color: var(--cor-background);
     margin-top: 20px;
 }
 
+.img-advert {
+    width: 310px;
+    height: 380px;
+    overflow: hidden;
+}
+
+.img-advert img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+/* ================================================= */
+/* 6. MEDIA QUERY (DE DESKTOP / MAIOR QUE 768px) */
+/* ================================================= */
 
 
-/*======Fim paragrafos==*/
+@media (max-width:870px) {
+    .main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
-.space-end{
-    margin-bottom: 90px;
+    .main-article {
+        width: 95%;
+        padding-right: 2rem;
+    }
+
+    .ad-sidebar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .img-turring dt {
+        font-family: monospace;
+        font-size: 12px;
+        color: gray;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .img-turring img {
+
+        width: 40%;
+        height: 40%;
+    }
+
+    .img-advert {
+        width: 160px;
+        height: 250px;
+        overflow: hidden;
+
+
+    }
+
+    .img-advert img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin-top: 10px;
+
+    }
+
 }
