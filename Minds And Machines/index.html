@@ -15,7 +15,6 @@
     <meta property="og:image" content="https://www.mindsemachine.site/images/social-share-image.jpg">
     <meta property="og:url" content="https://www.mindsemachine.site/caminho-da-pagina-atual">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="../css_/Mobile.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,9 +23,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css_/Menu.css">
-    <link rel="stylesheet" href="./css_/minds.css">
-    <script src="../js_/Advertisements_API" defer></script>
+    
+    <link rel="stylesheet" href="css_/minds.css">
+    <link rel="stylesheet" href="css_/Menu.css">
 
 
 </head>
@@ -186,8 +185,8 @@
 
                     // Garante que o índice exista na API (cuidado com o limite)
                     if (data[6 + i] && imgElement && linkElement) {
-                        imgElement.src = data[6 + i].image_url;
-                        linkElement.href = data[6 + i].link_url;
+                        imgElement.src = data[i].image_url;
+                        linkElement.href = data[i].link_url;
                     }
                 }
 

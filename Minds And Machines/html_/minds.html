@@ -303,14 +303,14 @@
         const response = await fetch(url);
         const data = await response.json();
 
-        document.getElementById('publi3').src = data[3].image_url;
-        document.getElementById('link3').href = data[3].link_url;
+        document.getElementById('publi3').src = data[6].image_url;
+        document.getElementById('link3').href = data[6].link_url;
 
-        document.getElementById('publi4').src = data[4].image_url;
-        document.getElementById('link4').href = data[4].link_url;
+        document.getElementById('publi4').src = data[7].image_url;
+        document.getElementById('link4').href = data[7].link_url;
 
-        document.getElementById('publi5').src = data[5].image_url;
-        document.getElementById('link5').href = data[5].link_url;
+        document.getElementById('publi5').src = data[8].image_url;
+        document.getElementById('link5').href = data[8].link_url;
 
     }
     API_ML_minds();
