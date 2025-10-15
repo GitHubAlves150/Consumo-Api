@@ -41,46 +41,109 @@
         </nav>
     </div>
     <header class="page-header">
-        <h1>Sony Cyber-shot: A Máquina que Digitalizou Memórias</h1>
-        <h6>Como a linha Cyber-shot definiu o padrão das câmeras compactas e acelerou a morte do filme fotográfico nos anos 2000.</h6>
+        <h1>Capacitor: Um componente varios tipos e varias aplicações</h1>
+        <h6>A Bateria de Alta Velocidade: "Em CC, ele é uma barreira; em CA, é uma ponte. O capacitor é a bateria
+            instantânea que mantém os bits do seu circuito vivos</h6>
 
     </header>
     <main class="main-content">
 
         <div class="main-article">
             <div class="img-transistor">
-                <img src="https://img.odcdn.com.br/wp-content/uploads/2023/04/sony-cyber-shot-camera-768x576.jpeg"
-                    alt="Câmera Sony Cyber-shot dos anos 2000, um marco da fotografia digital compacta.">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Verschiedene_Kondensatoren_2.JPG/967px-Verschiedene_Kondensatoren_2.JPG"
+                    alt="Capacitores">
 
             </div>
             <blockquote class="site-quote">
-                <p>“Esta máquina não foi apenas uma câmera; foi o primeiro passo para o mundo onde cada clique é instantâneo e eternamente digital.”<br><br>
+                <p>O Guardião do Tempo: "Na eletrônica, se você precisa de tempo ou silêncio, ponha um capacitor. Ele
+                    armazena energia e doma a frequência."<br><br>
                     -Lucas Alves, Criador do Minds e Machine
                 </p>
             </blockquote>
-            <blockquote class="section-intro">
-                <p>O surgimento das câmeras digitais compactas no início dos anos 2000 foi um dos momentos mais transformadores da tecnologia de consumo, e a linha Sony Cyber-shot, mais do que qualquer outra, esteve no centro dessa revolução. Ela representou o casamento perfeito entre a conveniência tecnológica e a paixão por registrar momentos.
-                </p>
-            </blockquote>
-            <section class="section-intro">
-                <h1>A Ascensão da Fotografia Compacta e o CCD</h1>
-                <p>
-                    A força motriz por trás da Cyber-shot, e de grande parte da fotografia digital da época, era o sensor **CCD (Charge-Coupled Device)**, uma tecnologia que, diferentemente do filme, capturava a luz e a convertia em dados digitais. A Sony foi pioneira na miniaturização desses sensores, permitindo câmeras menores e mais leves. Essa portabilidade imediata, combinada com os megapixel em constante crescimento, convenceu o público de que o futuro das fotos não estava mais nos rolos de filme, mas sim na memória flash.
-                </p>
+            <!--Inicio -->
+            1. Fundamentos e Teoria
+
+            Definição: O que é um capacitor (um componente que armazena energia em um campo elétrico).
+
+            Estrutura Básica: Placas condutoras separadas por um material dielétrico.
+
+            Parâmetros Chave:
+
+            Capacitância (C): Unidade (Farad - F) e o que ela representa.
+
+            Tensão de Trabalho: A tensão máxima que ele suporta.
+
+            Tolerância: Variação percentual do valor nominal.
+
+            Comportamento em CC (Corrente Contínua): Como o capacitor carrega e descarrega (curva exponencial).
+
+            Comportamento em CA (Corrente Alternada): O conceito de Reatância Capacitiva (XC​) e como ela varia com a
+            frequência (XC​=2πfC1​).
+
+            2. Tipos de Capacitores
+
+            Eletrolíticos: Alta capacitância, polarizados (importante para o circuito).
+
+            Cerâmicos: Pequena capacitância, não polarizados, bons para alta frequência.
+
+            Filme (Poliéster, Polipropileno): Boa estabilidade e precisão.
+
+            Variáveis/Trimmers: Usados para ajuste fino em circuitos de RF (Radiofrequência).
+
+            3. Aplicações em Circuitos Eletrônicos
+
+            Aplicação Descrição
+            Filtro de Fonte (Decoupling) Usados em paralelo com a alimentação para "filtrar" ruídos e variações rápidas
+            de tensão (transientes), garantindo uma tensão mais estável para CIs (Circuitos Integrados).
+            Acoplamento/Desacoplamento Acoplamento: Bloqueiam a componente CC, permitindo a passagem da componente CA de
+            um estágio para o outro (ex: em amplificadores de áudio). Desacoplamento: Removem a componente CC de um
+            sinal (ex: antes de uma entrada de medição).
+            Filtros (Passivos) Usados em conjunto com resistores para criar filtros passa-baixa (LPF) ou passa-alta
+            (HPF), permitindo ou atenuando certas frequências.
+            Temporização O circuito Resistor-Capacitor (RC) é a base para o tempo em osciladores, temporizadores (ex:
+            Circuito 555), e chaves eletrônicas. O tempo de carga/descarga define o tempo de atraso.
+            Armazenamento de Energia Em flashes de câmera, fontes de alimentação (para manter a carga durante curtos
+            picos de consumo) e circuitos de sample-and-hold.
+
+            4. Cálculos Essenciais de Engenharia
+
+            Cálculo da Reatância Capacitiva: XC​=2πfC1​
+
+            Constante de Tempo (Circuito RC): τ=R×C (O tempo em segundos para o capacitor carregar a ≈63.2% da tensão
+            final).
+
+            Frequência de Corte (fc​) em Filtros RC: fc​=2πRC1​
+
+            5. Experimentos Práticos em Bancada (Circuitos Básicos)
+
+            O foco aqui é mostrar o comportamento dinâmico do capacitor. Você precisará de uma fonte de alimentação CC,
+            um multímetro, alguns resistores, um capacitor eletrolítico e, idealmente, um osciloscópio (caso não tenha,
+            o multímetro ainda permite ver a mudança de tensão).
+
+            Experimento 1: Demonstração da Constante de Tempo RC (Carga e Descarga)
+
+            Circuito: Um resistor (R) em série com um capacitor (C), conectados a uma fonte (através de uma
+            chave/botão).
+
+            Objetivo: Medir com o multímetro (ou osciloscópio) a tensão no capacitor ao longo do tempo.
+
+            Demonstração: Calcule τ=R×C. Meça o tempo que o capacitor leva para atingir ≈63% da tensão da fonte. Varie o
+            valor de R ou C e mostre como o tempo de carga muda.
+
+            Experimento 2: O Capacitor como Filtro de Fonte (Decoupling)
+
+            Circuito: Uma fonte de tensão (CC) com um ruído (pode ser simulado adicionando uma pequena carga que oscila
+            ou usando um gerador de funções com uma onda senoidal de baixa amplitude sobreposta na CC).
+
+            Objetivo: Medir a qualidade da tensão de alimentação com e sem um capacitor de decoupling de valor pequeno
+            (ex: 100nF) e um de valor grande (ex: 470uF) em paralelo com a carga.
+
+            Demonstração: Usando o osciloscópio, mostre a redução do ripple (ondulação) ou do ruído quando o capacitor é
+            adicionado.
 
 
-            </section>
-            <section class="section-detail">
-                <h1>A Experiência do Usuário e o Memory Stick</h1>
-                <p>
-                    A Cyber-shot não vendeu apenas tecnologia; vendeu uma experiência de usuário simples. Com telas LCD que permitiam ver a foto instantaneamente e designs elegantes, as câmeras compactas da Sony se tornaram um símbolo de status e praticidade. Contudo, a marca também implementou seu próprio padrão de cartão de memória, o **Memory Stick**. Embora controverso por forçar os usuários a comprar um acessório proprietário, o Memory Stick solidificou o ecossistema Sony, ligando a câmera a outros dispositivos da marca, como o PlayStation.
-                </p>
-                <h1>O Legado na Era dos Smartphones</h1>
-                <p>
-                   A ironia da Cyber-shot é que sua própria ambição de compactar a fotografia acabou preparando o terreno para sua obsolescência. Ao provar que era possível ter uma câmera de qualidade no bolso, ela validou o conceito que seria, anos depois, dominado pelos smartphones. O legado, no entanto, permanece: a Cyber-shot popularizou recursos como o zoom óptico em formato compacto e estabeleceu a fotografia digital como um recurso essencial do dia a dia, pavimentando o caminho para a câmera do seu telefone.
-                </p>
-                
-            </section>
+            <!--Fim-->
+
             <p class="prod-destaque">Produtos em destaque</p>
 
         </div>
@@ -154,7 +217,7 @@
 
         async function API_ML_minds() {
             const url = `https://fathomless-hollows-78979-ecc98fbb7725.herokuapp.com`;
-            
+
             try {
                 const response = await fetch(url);
                 if (!response.ok) {
@@ -169,7 +232,7 @@
                     { img: 'publi10', link: 'link10' },
                     { img: 'publi11', link: 'link11' }
                 ];
-                
+
                 // Preenche os 3 blocos de publicidade
                 for (let i = 0; i < ads.length; i++) {
                     const imgElement = document.getElementById(ads[i].img);
