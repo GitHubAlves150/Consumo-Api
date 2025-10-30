@@ -1,0 +1,132 @@
+ 
+
+       
+
+        /* Esconde o checkbox */
+        #trigger {
+            display: none;
+        }
+
+        /* Estilo do quadrado */
+        .botao-quadrado::after {
+            content: '';
+            position: absolute;            
+            left: 50%;            
+            border: 1px solid #989899;
+            border-radius: 1px;
+            transform: translateX(-5%);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* Animação quando o checkbox está marcado */
+        #trigger:checked + .botao-quadrado::after {
+            animation: crescerParaCima 0.5s ease-out forwards;
+        }
+
+        /* Definição da animação para cima */
+        @keyframes crescerParaCima {
+            5% {
+                transform: translateX(-50%) scale(1);
+                bottom: 0;
+                opacity: 1;
+                width: 1px;
+                height: 200px;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            80% {
+                transform: translateX(-50%) scale(15);
+                bottom: 350px;
+                opacity: 0;
+                width: 100px;
+                height: 200px;
+            }
+        }
+
+        /* Versão com :active - mais simples */
+        .botao-ativo {
+            position: relative;
+            overflow: visible;
+        }
+
+        .botao-ativo::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 0, 123, 0.3);
+            border: 2px solid #ff007b;
+            border-radius: 3px;
+            transform: translateX(-50%);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .botao-ativo:active::after {
+            animation: crescerParaCimaAtivo 1s ease-out;
+        }
+
+        @keyframes crescerParaCimaAtivo {
+            0% {
+                transform: translateX(-50%) scale(1);
+                bottom: 0;
+                opacity: 1;
+                width: 10px;
+                height: 10px;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateX(-50%) scale(10);
+                bottom: 150px;
+                opacity: 0;
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        /* Versão que cresce para cima a partir do centro */
+        .botao-centro-cima {
+            position: relative;
+            overflow: visible;
+        }
+
+        .botao-centro-cima::after {
+            content: '';
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(0, 200, 83, 0.3);
+            border: 2px solid #00c853;
+            border-radius: 3px;
+            transform: translate(-50%, 50%);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .botao-centro-cima:active::after {
+            animation: centroParaCima 1s ease-out;
+        }
+
+        @keyframes centroParaCima {
+            0% {
+                transform: translate(-50%, 50%) scale(1);
+                opacity: 1;
+                width: 10px;
+                height: 10px;
+            }
+            100% {
+                transform: translate(-50%, -200%) scale(15);
+                opacity: 0;
+                width: 10px;
+                height: 10px;
+            }
+        }
+   

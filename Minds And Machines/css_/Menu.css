@@ -10,7 +10,10 @@
     --paragrafo: 'Helvetica';
     --titulosH1Cor: blue;
 
+
 }
+
+
 
 body {
     display: flex;
@@ -57,6 +60,11 @@ footer {
         /* spread-radius: opcional, ajuda a "cortar" as laterais da sombra, concentrando-a mais no topo */
         rgba(0, 0, 0, 0.15);
     /* cor: preto com 15% de opacidade */
+}
+
+.membrosApoiadores {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .Icon_title {
