@@ -74,6 +74,10 @@ footer {
     opacity: 0;
 
 }
+h3{
+    font-family:monospace;
+    color: gray;
+}
 
 
 .Icon_img_container {
