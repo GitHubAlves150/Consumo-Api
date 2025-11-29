@@ -10,7 +10,10 @@
     --paragrafo: 'Helvetica';
     --titulosH1Cor: blue;
 
+
 }
+
+
 
 body {
     display: flex;
@@ -59,12 +62,24 @@ footer {
     /* cor: preto com 15% de opacidade */
 }
 
+.membrosApoiadores {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .Icon_title {
     margin: auto;
     width: auto;
     overflow: hidden;
     opacity: 0;
 
+}
+h3{
+    margin-top: 10px;
+    font-family:monospace;
+    color: gray;
+    font-size: small;
+    
 }
 
 

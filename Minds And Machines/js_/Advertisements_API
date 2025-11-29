@@ -20,6 +20,6 @@ async function API_ML() {
 
 }
 
-
+document.getElementById('Autor').innerHTML="Lucas Lorenço Alves";
 
 API_ML();
