@@ -41,8 +41,8 @@ main {
 ========================================================================*/
 header {
     background-color: var(--cor-fundo-secundario-opII);
-    max-width: 100%;
-    width: 180rem;
+    max-width: 95%;
+    width: 75rem;
     text-align: center;
     padding: 5rem;
     margin-top: 5rem;
