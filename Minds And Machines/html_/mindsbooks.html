@@ -30,6 +30,8 @@
     <!--Arquivos CSS-->
     <link rel="stylesheet" href="../css_/Menu.css">
     <link rel="stylesheet" href="../css_/mindsBook.css">
+    <link rel="stylesheet" href="../css_/minds.css">
+
     <!--Arquivos JS-->
     <script src="../js_/Advertisements_API" defer></script>
 
@@ -45,12 +47,14 @@
             </button>
         </nav>
     </div>
+
     <header class="page-header">
         <h1>As 17 Equações que mudaram o mundo</h1>
         <h6>Uma jornada pela mente do autor e seus convidados</h6>
 
     </header>
     <main class="main-content">
+        <h3>mindsBook | As dezessete equação que mudaram o mundo</h3>
 
         <div class="main-article">
             <div class="img-book">
@@ -227,27 +231,28 @@
     <div class="Register">
         <p>&copy; Desenvolvido por-Lucas Lorenço ALves</p>
     </div>
+
+
 </body>
 <script>
     'use stritct'
 
-async function API_ML_minds() {
-    const url = `https://afiliadosfavoritos.onrender.com/`;
-    const response = await fetch(url);
-    const data = await response.json();
+    async function API_ML_minds() {
+        const url = `https://afiliadosfavoritos.onrender.com/`;
+        const response = await fetch(url);
+        const data = await response.json();
 
-    
+        document.getElementById('publi3').src = data[6].image_url;
+        document.getElementById('link3').href = data[6].link_url;
 
-        document.getElementById('publi0').src = data[3].image_url;
-        document.getElementById('link0').href = data[3].link_url;
+        document.getElementById('publi4').src = data[7].image_url;
+        document.getElementById('link4').href = data[7].link_url;
 
-        document.getElementById('publi1').src = data[4].image_url;
-        document.getElementById('link1').href = data[4].link_url;
+        document.getElementById('publi5').src = data[8].image_url;
+        document.getElementById('link5').href = data[8].link_url;
 
-        document.getElementById('publi2').src = data[5].image_url;
-        document.getElementById('link2').href = data[5].link_url;
-
-}
-API_ML_minds();
+    }
+    API_ML_minds();
 </script>
+
 </html>

@@ -15,18 +15,24 @@
     <meta property="og:image" content="https://www.mindsemachine.site/images/social-share-image.jpg">
     <meta property="og:url" content="https://www.mindsemachine.site/caminho-da-pagina-atual">
     <meta name="twitter:card" content="summary_large_image">
+    <!--Mobile-->
     <link rel="stylesheet" href="../css_/Mobile.css">
 
+    <!--Fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
+    <!--Open San Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <!--Arquivos CSS-->
     <link rel="stylesheet" href="../css_/Menu.css">
-    <script src="https://kit.fontawesome.com/65f22fe718.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css_/mindsBook.css">
     <link rel="stylesheet" href="../css_/minds.css">
+
+    <!--Arquivos JS-->
     <script src="../js_/Advertisements_API" defer></script>
 
 
@@ -41,10 +47,10 @@
             </button>
         </nav>
     </div>
+
     <header class="page-header">
-        <h1>Sony Cyber-shot: A Máquina que Digitalizou Memórias</h1>
-        <h6>Como a linha Cyber-shot definiu o padrão das câmeras compactas e acelerou a morte do filme fotográfico nos
-            anos 2000.</h6>
+        <h1>Allan Turring: O Gênio Injustiçado</h1>
+        <h6>O pai da computação moderna e do surgimento do conceito de Inteligência Sintética (I.A)</h6>
 
     </header>
     <main class="main-content">
@@ -135,7 +141,7 @@
             </div>
         </aside>
     </main>
-<!--Menu no Rodapé-->
+
     <footer>
         <div>
             <a href="../index.html" class="Icon_img_container">
@@ -172,50 +178,32 @@
         </div>
 
     </footer>
-<!--Fim do Menu no Rodapé-->
 
     <div class="Register">
         <p>&copy; Desenvolvido por-Lucas Lorenço ALves</p>
     </div>
-    <script>
-        'use strict' /* Corrigido o erro de sintaxe 'use stritct' */
 
-        async function API_ML_minds() {
-            const url = `https://afiliadosfavoritos.onrender.com/`;
 
-            try {
-                const response = await fetch(url);
-                if (!response.ok) {
-                    console.error("Erro na API:", response.status);
-                    return;
-                }
-                const data = await response.json();
-
-                // IDs de publicidade
-                const ads = [
-                    { img: 'publi9', link: 'link9' },
-                    { img: 'publi10', link: 'link10' },
-                    { img: 'publi11', link: 'link11' }
-                ];
-
-                // Preenche os 3 blocos de publicidade
-                for (let i = 0; i < ads.length; i++) {
-                    const imgElement = document.getElementById(ads[i].img);
-                    const linkElement = document.getElementById(ads[i].link);
-
-                    // Garante que o índice exista na API (cuidado com o limite)
-                    if (data[6 + i] && imgElement && linkElement) {
-                        imgElement.src = data[6 + i].image_url;
-                        linkElement.href = data[6 + i].link_url;
-                    }
-                }
-
-            } catch (error) {
-                console.error("Erro ao carregar publicidade:", error);
-            }
-        }
-        API_ML_minds();
-    </script>
 </body>
+<script>
+    'use stritct'
+
+    async function API_ML_minds() {
+        const url = `https://afiliadosfavoritos.onrender.com/`;
+        const response = await fetch(url);
+        const data = await response.json();
+
+        document.getElementById('publi3').src = data[6].image_url;
+        document.getElementById('link3').href = data[6].link_url;
+
+        document.getElementById('publi4').src = data[7].image_url;
+        document.getElementById('link4').href = data[7].link_url;
+
+        document.getElementById('publi5').src = data[8].image_url;
+        document.getElementById('link5').href = data[8].link_url;
+
+    }
+    API_ML_minds();
+</script>
 
 </html>
