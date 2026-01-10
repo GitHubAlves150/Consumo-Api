@@ -9,11 +9,9 @@
     --subtituloH2: 'Calibri';
     --paragrafo: 'Helvetica';
     --titulosH1Cor: blue;
-
+    --cortitulosSugeridos: rgb(10, 10, 10);
 
 }
-
-
 
 body {
     display: flex;
@@ -74,12 +72,13 @@ footer {
     opacity: 0;
 
 }
-h3{
+
+h3 {
     margin-top: 10px;
-    font-family:monospace;
+    font-family: monospace;
     color: gray;
     font-size: small;
-    
+
 }
 
 
@@ -137,3 +136,46 @@ div>nav>button {
     border: none;
     border-radius: 8px;
 }
+
+/*==========================*/
+/*=====artigos sugeridos====*/
+.container {
+    display: flex;
+    gap: 19px;
+    margin-top: 20px;
+
+}
+
+.item_filho_img {
+    width: 15vw;
+    height: auto;
+    border-radius: 5px;
+    object-fit: contain;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.item_filho_div {
+    color: var(--cortitulosSugeridos);
+    font-family: var(--titulosH1);
+    width: 30vw;
+    
+}
+
+/*=====artigos sugeridos====*/
+/*==========================*/
+
+/*==========================*/
+/*======Estilo_referencia===*/
+.estilo_referencia,
+h3 {   
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing:auto;
+        font-weight: 700;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        color: rgb(5, 5, 5);   
+}
+
+/*======Estilo_referencia===*/
+/*==========================*/

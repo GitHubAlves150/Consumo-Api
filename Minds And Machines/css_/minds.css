@@ -65,11 +65,18 @@ header h6 {
     justify-content: space-between;
     margin-bottom: 5rem;
 }
+.main-content > h3{
+    color: rgb(187, 186, 192);
+}
 
 .main-article {
     width: 70%;
     margin: 0 10px auto 30px;
 
+}
+
+.main-article > h3{
+    color: rgb(187, 186, 192);
 }
 
 /*------------------CITAÇÃO--------------------------*/
@@ -267,7 +274,7 @@ ul {
         width: 100%;
         padding-right: 2rem;
     }
-
+ 
     .ad-sidebar {
         display: flex;
         flex-direction: row;
@@ -383,6 +390,21 @@ hr {
     justify-content: center;
     align-items: center;
 }
+/*=========================================================*/
+/*===========imagem Frederick Wiinslow Tailor==============*/
+.img-frederick{
+   display: flex;
+   direction: row;
+   justify-content: center;
+   align-items: center;
+
+}
+.img-frederick>img{
+    width: 30%;
+    height: auto;
+
+}
+
 
 
 /*

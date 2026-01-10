@@ -15,8 +15,7 @@
     <meta property="og:image" content="https://www.mindsemachine.site/images/social-share-image.jpg">
     <meta property="og:url" content="https://www.mindsemachine.site/caminho-da-pagina-atual">
     <meta name="twitter:card" content="summary_large_image">
-    <!--Mobile-->
-    <link rel="stylesheet" href="../css_/Mobile.css">
+
 
     <!--Fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,10 +27,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <!--Arquivos CSS-->
-    <link rel="stylesheet" href="../css_/Menu.css">
-    <link rel="stylesheet" href="../css_/mindsBook.css">
-    <link rel="stylesheet" href="../css_/minds.css">
-
+    <link rel="stylesheet" href="../css_/Menu.css?v=1.1">
+    <link rel="stylesheet" href="../css_/mindsBook.css?v=1.1">
+    <link rel="stylesheet" href="../css_/minds.css?v=1.1">
+    <!--Mobile-->
+    <link rel="stylesheet" href="../css_/Mobile.css?v=1.1">
     <!--Arquivos JS-->
     <script src="../js_/Advertisements_API" defer></script>
 
@@ -49,8 +49,9 @@
     </div>
 
     <header class="page-header">
-        <h1>Allan Turring: O Gênio Injustiçado</h1>
-        <h6>O pai da computação moderna e do surgimento do conceito de Inteligência Sintética (I.A)</h6>
+        <h1>Sony Cyber-shot: A Máquina que Digitalizou Memórias</h1>
+        <h6>Como a linha Cyber-shot definiu o padrão das câmeras compactas e acelerou a morte do filme fotográfico nos
+            anos 2000.</h6>
 
     </header>
     <main class="main-content">
@@ -107,24 +108,26 @@
                     fotografia digital como um recurso essencial do dia a dia, pavimentando o caminho para a câmera do
                     seu telefone.
                 </p>
-
+                <h3 class="estilo_referencia">Esta página foi desenvolvida com base em pesquisas na internet, como
+                    documentários
+                    , vídeos e noticias.
+                </h3>
             </section>
-            <!-- <p class="prod-destaque">Produtos em destaque</p> -->
 
-            <!--Seleção de artigos-->
-            <hr>
-            
+
+
 
 
             <!---->
         </div>
-
+        <!--================================================================================================-->
+        <!--======================PRODUTOS EM DESTAQUE======================================================-->
         <aside class="ad-sidebar">
-            <h6 class="membrosApoiadores">Membros Apoiadores</h6>
+
             <div class="img-advert">
+                <h6 class="membrosApoiadores">Membros Apoiadores</h6>
                 <a href="" id="link9" target="_blank">
                     <img src="" alt="curso online" id="publi9">
-
                 </a>
             </div>
 
@@ -140,6 +143,38 @@
                 </a>
             </div>
         </aside>
+        <!--======================PRODUTOS EM DESTAQUE======================================================-->
+        <!--================================================================================================-->
+        <!--================================================================================================-->
+        <!--======================TALVEZ VOCE GOSTE DE LER==================================================-->
+        <a href="../html_/article_Bico_Bomba_Gasoline.html">
+            <section class="container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Yellow_Gas_Pump_-_E86_and_86_Eco_Unleaded_%2854558253711%29.jpg/640px-Yellow_Gas_Pump_-_E86_and_86_Eco_Unleaded_%2854558253711%29.jpg"
+                    alt="Bico da bomba de gasolina" class="item_filho_img">
+                <div class="item_filho_div">
+                    <h1>
+
+                        O bico da bomba de gasolina
+                        uma peça simples que mudou o mundo dos automóveis
+
+
+                    </h1>
+                    <h3>A simplicidade é a sofisticação máxima.<br>
+                        <img src="../Icon_/relogio.png" alt="relogio-tempo de leitura" style="width: 5%; height: 10%;">
+                        <h6>
+                            2min de leitura <br>
+                            Ano:Dez/2025
+                        </h6>
+
+                    </h3><br>
+                </div>
+
+            </section>
+
+        </a>
+
+        <!--======================TALVEZ VOCE GOSTE DE LER==================================================-->
+        <!--================================================================================================-->
     </main>
 
     <footer>
@@ -193,14 +228,14 @@
         const response = await fetch(url);
         const data = await response.json();
 
-        document.getElementById('publi3').src = data[6].image_url;
-        document.getElementById('link3').href = data[6].link_url;
+        document.getElementById('publi9').src = data[9].image_url;
+        document.getElementById('link9').href = data[9].link_url;
 
-        document.getElementById('publi4').src = data[7].image_url;
-        document.getElementById('link4').href = data[7].link_url;
+        document.getElementById('publi10').src = data[10].image_url;
+        document.getElementById('link10').href = data[10].link_url;
 
-        document.getElementById('publi5').src = data[8].image_url;
-        document.getElementById('link5').href = data[8].link_url;
+        document.getElementById('publi11').src = data[11].image_url;
+        document.getElementById('link11').href = data[11].link_url;
 
     }
     API_ML_minds();

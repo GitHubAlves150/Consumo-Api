@@ -9,46 +9,47 @@ Grandes telas: acima de 1200px
 
 
 
-@media screen and (max-width: 768px) {
-
-    /* Seletor e propriedades CSS */
+@media only screen and (max-width: 768px) {
     .paragrafos_pII {
-        width: 100%;
+        width: 100% !important;
     }
 
-    /*========================================*/
-    .artigo_indice1 {
-        width: 90vw;
-        height: auto;
+    .container {
         display: flex;
-        flex-flow: row wrap-reverse;
-        margin: 2px 5px 1px 5px;
-        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;        
+        height: auto;
+
     }
 
-
-    .img_Capa {
-        height: 400px;
-        width: 900px;    
-        overflow: hidden;
+    .item_filho_img {
+        width: 93vw;
+        height: auto;
+        border-radius: 5px;
         object-fit: contain;
-        width: 600px;
-        height: auto;
-        flex-grow: 0;
-    }
-
-    .manchete {
-        height: auto;
-        width: auto;
-        margin: auto;
         overflow: hidden;
-        color: black;
-        font-family: var(--fonte-corpo);
+        margin:auto;
     }
 
-    /*========================================*/
+    .item_filho_div {
+        color: var(--cortitulosSugeridos);
+        font-family: var(--titulosH1);
+        width: 93vw;
+        margin: auto;
+    }
+
+    /*==========================================*/
+    /*========PUBLICIDADE=======================*/
+
+
+
+    /*========PUBLICIDADE=======================*/
+    /*==========================================*/
+
 }
+
 
 
 /*
