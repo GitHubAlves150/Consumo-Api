@@ -5,10 +5,7 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: auto;
-    height: auto;
-}
+
 
 main {
     margin-bottom: 90px;
@@ -23,7 +20,6 @@ main {
     --cor-fundo: #e9ecef;
     --cor-texto-principal: #333333;
     --cor-destaque: gray;
-    /* Laranja/Amarelo */
     --cor-fundo-secundario: #f4f4f9;
     --cor-fundo-secundario-opII: #0707cf;
     --cor-background: #000072;
@@ -69,11 +65,18 @@ header h6 {
     justify-content: space-between;
     margin-bottom: 5rem;
 }
+.main-content > h3{
+    color: rgb(187, 186, 192);
+}
 
 .main-article {
     width: 70%;
     margin: 0 10px auto 30px;
 
+}
+
+.main-article > h3{
+    color: rgb(187, 186, 192);
 }
 
 /*------------------CITAÇÃO--------------------------*/
@@ -271,7 +274,7 @@ ul {
         width: 100%;
         padding-right: 2rem;
     }
-
+ 
     .ad-sidebar {
         display: flex;
         flex-direction: row;
@@ -313,10 +316,11 @@ ul {
 
     }
 
-    .img-transistor img {
+   /* .img-transistor img {
         width: 90%;
         height: 90%;
     }
+        */
 
 }
 
@@ -328,44 +332,35 @@ ul {
 }
 
 /*========================================*/
-
 .artigo_indice1 {
+        width: 90vw;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        margin: 2px 5px 1px 5px;
+        align-items: center;
+        justify-content: center;
+    }
 
-    width: 80vw;
-    height: auto;
-    display: flex;
-    flex-flow: row wrap;
-    margin: 5px;
 
-}
+    .img_Capa {
+        height: 400px;
+        width: 900px;    
+        overflow: hidden;
+        object-fit: contain;
+        width: 400px;
+        height: auto;
+        flex-grow: 0;
+    }
 
-.manchete {
-
-    height: 300px;
-    width: 500px;
-    margin: 5px;
-
-    flex-grow: 0;
-}
-
-.manchete h2 {
-    color: rgb(2, 2, 2);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.manchete h3 {
-    color: rgb(7, 7, 7);
-    font-family: monospace;
-    align-items: center;
-}
-
-.artigo_indice1 img {
-    height: 300px;
-    width: 400px;
-    margin: 5px;
-    overflow: hidden;
-    object-fit: contain;
-}
+    .manchete {
+        height: auto;
+        width: 400px;
+        margin: auto;
+        overflow: hidden;
+        color: black;
+        font-family: var(--fonte-corpo);
+    }
 
 /*========================================*/
 
@@ -379,6 +374,35 @@ hr {
 #Outros_conteudos {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
+}
+/*=======================================*/
+/*=========imagem do carro autonomo =====*/
+.img-carroAutonomo img{
+    width: 100%;
+    height: 400px;
+    margin-left: 0px;
+}
+
+
+.img-carroAutonomo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/*=========================================================*/
+/*===========imagem Frederick Wiinslow Tailor==============*/
+.img-frederick{
+   display: flex;
+   direction: row;
+   justify-content: center;
+   align-items: center;
+
+}
+.img-frederick>img{
+    width: 30%;
+    height: auto;
+
 }
 
 

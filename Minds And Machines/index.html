@@ -20,11 +20,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"rel="stylesheet">
+
+    <link rel="stylesheet" href="css_/Register.css">
     <link rel="stylesheet" href="css_/minds.css">
     <link rel="stylesheet" href="css_/Menu.css">
+    <!--js-->
+    <script src="js_/Resgister.js" defer></script>
 
 
 </head>
@@ -33,9 +35,17 @@
     <div>
         <img src="./Icon_/LogoMM.png" alt="Loga do site Minds e Machine">
         <nav class="nav_">
-            <button>
-                Register +
-            </button>
+            <div class="botao_registro">
+                <button id="capturar-btn">
+                    <p id="reg">Register+</p>
+                    <img id="icone-btn" src="../Icon_/pngwing.com(6).png"></i>
+                </button>
+            </div>
+            <div id="form-container">
+                <input type="email" id="email-input" placeholder="Digite seu email" required>
+                <button id="enviar-btn">Enviar</button>
+            </div>
+            <p id="menssagem" class="sucesso">cadastrado com sucesso!</p>
         </nav>
     </div>
     <header class="page-header">
@@ -56,9 +66,10 @@
                     -Lucas Alves, Criador do Minds e Machine
                 </p>
             </blockquote>
-            
+
             <section class="section-intro">
-                <p><strong style="color: blue;">Mentes brilhantes & Máquinas incríveis</strong> configura-se como uma revista digital primariamente voltada à
+                <p><strong style="color: blue;">Mentes brilhantes & Máquinas incríveis</strong> configura-se como uma
+                    revista digital primariamente voltada à
                     análise da interrelação _intrínseca entre o ser humano e as tecnologias que transformaram e ainda
                     transformam o mundo que vivemos.
                 </p>
@@ -94,21 +105,22 @@
         <aside class="ad-sidebar">
 
             <div class="img-advert">
-                <a href="" id="link9" target="_blank">
-                    <img src="" alt="curso online" id="publi9">
+                <h3 style="text-align: center;">Membros apoiadores</h3>
+                <a href="" id="link0" target="_blank">
+                    <img src="" alt="curso online" id="publi0">
 
                 </a>
             </div>
 
             <div class="img-advert">
-                <a href="" id="link10" target="_blank">
-                    <img src="" alt="curso online" id="publi10">
+                <a href="" id="link1" target="_blank">
+                    <img src="" alt="curso online" id="publi1">
                 </a>
             </div>
 
             <div class="img-advert">
-                <a href="" id="link11" target="_blank">
-                    <img src="" alt="curso online" id="publi11">
+                <a href="" id="link2" target="_blank">
+                    <img src="" alt="curso online" id="publi2">
                 </a>
             </div>
 
@@ -159,7 +171,7 @@
         'use strict' /* Corrigido o erro de sintaxe 'use stritct' */
 
         async function API_ML_minds() {
-            const url = `https://fathomless-hollows-78979-ecc98fbb7725.herokuapp.com`;
+            const url = `https://afiliadosfavoritos.onrender.com/`;
 
             try {
                 const response = await fetch(url);
@@ -171,9 +183,9 @@
 
                 // IDs de publicidade
                 const ads = [
-                    { img: 'publi9', link: 'link9' },
-                    { img: 'publi10', link: 'link10' },
-                    { img: 'publi11', link: 'link11' }
+                    { img: 'publi0', link: 'link0' },
+                    { img: 'publi1', link: 'link1' },
+                    { img: 'publi2', link: 'link2' }
                 ];
 
                 // Preenche os 3 blocos de publicidade

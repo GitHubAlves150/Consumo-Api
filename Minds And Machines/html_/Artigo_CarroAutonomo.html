@@ -15,8 +15,7 @@
     <meta property="og:image" content="https://www.mindsemachine.site/images/social-share-image.jpg">
     <meta property="og:url" content="https://www.mindsemachine.site/caminho-da-pagina-atual">
     <meta name="twitter:card" content="summary_large_image">
-    <!--Mobile-->
-    <link rel="stylesheet" href="../css_/Mobile.css">
+
 
     <!--Fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,10 +27,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <!--Arquivos CSS-->
-    <link rel="stylesheet" href="../css_/Menu.css">
-    <link rel="stylesheet" href="../css_/minds.css">
+    <link rel="stylesheet" href="../css_/Menu.css?v=1.1">
+    <link rel="stylesheet" href="../css_/mindsBook.css?v=1.1">
+    <link rel="stylesheet" href="../css_/minds.css?v=1.1">
+    <link rel="stylesheet" href="../css_/Register.css">
+
+    <!--Mobile-->
+    <link rel="stylesheet" href="../css_/Mobile.css?v=1.1">
     <!--Arquivos JS-->
     <script src="../js_/Advertisements_API" defer></script>
+    <script src="../js_/Register.js" defer></script>
+
 
 
 </head>
@@ -40,11 +46,20 @@
     <div>
         <img src="../Icon_/LogoMM.png" alt="Loga do site Minds e Machine">
         <nav class="nav_">
-            <button>
-                Register +
-            </button>
+            <div class="botao_registro">
+                <button id="capturar-btn">
+                    <p id="reg">Register+</p>
+                    <img id="icone-btn" src="../Icon_/pngwing.com(6).png"></i>
+                </button>
+            </div>
+            <div id="form-container">
+                <input type="email" id="email-input" placeholder="Digite seu email" required>
+                <button id="enviar-btn">Enviar</button>
+            </div>
+            <p id="menssagem" class="sucesso">cadastrado com sucesso!</p>
         </nav>
     </div>
+
     <header class="page-header">
         <h1>O Dilema do carro autonomo: Quem ele escolhe salvar?</h1>
         <h6>"Do código à consciência: mapeando as variáveis que ditam a escolha do carro autônomo em um acidente
@@ -55,12 +70,17 @@
         <div class="main-article">
             <h3>machine | O dilema do carro autonomo</h3>
 
-            <div class="img-transistor">
-                <img src="../img_/Gemini_Generated_Image_uvtfhzuvtfhzuvtf.png"
-                    alt="Câmera Sony Cyber-shot dos anos 2000, um marco da fotografia digital compacta.">
-            </div>
+            <div class="img-carroAutonomo">
+                <img src="../img_/9377254.jpg" alt="carro autonomo.">
 
-            <section class="section-intro">
+            </div>
+            <blockquote class="site-quote">
+                <p>“A resposta para o futuro da IA não está em códigos complexos, mas sim na simplicidade elegante que
+                    Alan Turing nos ensinou: se um algoritmo pode ser escrito, ele pode ser executado. O resto é apenas
+                    velocidade.”<br><br>
+                </p>
+            </blockquote>
+            <blockquote class="section-intro">
                 <h1>O carro autônomo...</h1>
                 <p>
                     O carro autônomo assim como todo o condutor humano, também terá que fazer escolhas, afinal a
@@ -68,11 +88,6 @@
                     Mas nem todos.
 
                 </p>
-
-
-
-            </section>
-            <section class="section-detail">
                 <p>
                     Em um acidente inevitável o que você faria???
                     Este assunto é pra lá de décadas já discutido, principalmente quando se trata do experimento de
@@ -89,9 +104,8 @@
                     experimento mental em ética que apresenta este desafio com o objetivo de explorar dilemas éticos e
                     como as pessoas tomam decisões em situações em que os danos são inevitáveis.
                 </p>
-
-                <h1>Mas será que ética humana cabe num suftware?
-                </h1>
+            </blockquote>
+            <section class="section-intro">
                 <p>
                     Em diversas leituras em sites com <a href="https://super.abril.com.br/sociedade/a-maquina-moral/"
                         target="_blank">superinteressante</a>, <a
@@ -157,87 +171,46 @@
                     É indicado para estudantes e profissionais da área automotiva e para proprietários de veículos
                     elétricos.Com ilustrações, fotos e diagramas, este livro explora em profundidade a tecnologia de
                 </p>
+                <br><br>
+                <h3 class="estilo_referencia">Esta página foi desenvolvida com base nas referências abaixo, devidamente
+                    verificadas com diversas
+                    fontes para garantir a precisão e veracidade das informações.</h3>
+                <a
+                    href="https://embarcados.com.br/a-historia-do-primeiro-transistor/">https://embarcados.com.br/a-historia-do-primeiro-transistor/</a>
+                <a
+                    href="https://super.abril.com.br/tecnologia/o-transistor/">https://super.abril.com.br/tecnologia/o-transistor/</a>
 
             </section>
-            <!-- <p class="prod-destaque">Produtos em destaque</p> -->
+            <br><br>
+            <section class="section-detail">
 
-            <!--Seleção de artigos-->
-            <hr>
-            <h1 id="Outros_conteudos">Talvez você goste:</h1>
-            <aside class="artigos_segeridos">
-                <a href="https://amzn.to/4ok5TXF" target="_blank" class="ancora">
-                    <div class="artigo_indice1">
-                        <img src="../img_/LivroFerrari.png" alt="foto do livro Ferrari">
-                        <div class="manchete">
-                            <h2>Ferrari: O homem por trás da máquina</h2>
-                            <h3>Enzo Ferrari. Gênio? Tirano? Déspota? Em 1991, foi lançada a...</h3>
-                            <h3><img src="../Icon_/relogio.png" alt="icone de relogio" id="relogio"> 6 min
-                            </h3>
-
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://amzn.to/4nBPs87" target="_blank" class="ancora">
-                    <div class="artigo_indice1">
-                        <img src="../img_/veiculoeletricosDelton.png" alt="foto de capacitores">
-                        <div class="manchete">
-                            <h2>Veículos Elétricos e Híbridos</h2>
-                            <h3>Com ilustrações, fotos e diagramas, este livro aborda vários...</h3>
-                            <h3><img src="../Icon_/relogio.png" alt="icone de relogio" id="relogio">6 min
-                            </h3>
-
-                        </div>
-                    </div>
-                </a>
-                <a href="Artigo_Carro_Autonomo_Conseitos_Filosoficos.html" target="_blank" class="ancora">
-                    <div class="artigo_indice1">
-                        <img src="../img_/metricas.png" alt="foto de capacitores">
-                        <div class="manchete">
-                            <h2>Conceitos de programação aplicadas em ...</h2>
-                            <h3>O avanço da tecnologia tem aproximado a filosofia de campos antes considerados puramente
-                                técnicos,
-                                como a programação. Um dos exemplos mais emblemáticos dessa intersecção é o
-                                desenvolvimento dos
-                                carros autônomos.</h3>
-                            <h3><img src="../Icon_/relogio.png" alt="icone de relogio" id="relogio">6 min
-                            </h3>
-
-                        </div>
-                    </div>
-                </a>
-
-            </aside>
-
-
-            <!---->
         </div>
 
+        </div>
+        <!--        <p class="prod-destaque">Produtos em destaque</p>-->
+
         <aside class="ad-sidebar">
-            <h6 class="membrosApoiadores">Membros Apoiadores</h6>
-            <div class="img-advert">
-                <a href="" id="link12" target="_blank">
-                    <img src="" alt="curso online" id="publi12">
+            <h3 style="text-align: center;">Membros apoiadores</h3>
 
+            <div class="img-advert">
+                <a href="" id="link3" target="_blank">
+                    <img src="" alt="publicidade" id="publi3">
+                </a>
+            </div>
+            <div class="img-advert">
+                <a href="" id="link4" target="_blank">
+                    <img src="" alt="publicidade" id="publi4">
+                </a>
+            </div>
+            <div class="img-advert">
+                <a href="" id="link5" target="_blank">
+                    <img src="" alt="publicidade" id="publi5">
                 </a>
             </div>
 
-            <div class="img-advert">
-                <a href="" id="link13" target="_blank">
-                    <img src="" alt="curso online" id="publi13">
-                </a>
-            </div>
 
-            <div class="img-advert">
-                <a href="" id="link14" target="_blank">
-                    <img src="" alt="curso online" id="publi14">
-                </a>
-            </div>
+
         </aside>
-
-
-
-
     </main>
 
     <footer>
@@ -280,28 +253,28 @@
     <div class="Register">
         <p>&copy; Desenvolvido por-Lucas Lorenço ALves</p>
     </div>
-    <script>
-        'use stritct'
-
-        async function API_ML_article() {
-            const url = `https://afiliadosfavoritos.onrender.com/`;
-            const response = await fetch(url);
-            const data = await response.json();
 
 
-
-            document.getElementById('publi12').src = data[12].image_url;
-            document.getElementById('link12').href = data[12].link_url;
-
-            document.getElementById('publi13').src = data[13].image_url;
-            document.getElementById('link13').href = data[13].link_url;
-
-            document.getElementById('publi14').src = data[14].image_url;
-            document.getElementById('link14').href = data[14].link_url;
-
-        }
-        API_ML_article();
-    </script>
 </body>
+<script>
+    'use stritct'
+
+    async function API_ML_minds() {
+        const url = `https://afiliadosfavoritos.onrender.com/`;
+        const response = await fetch(url);
+        const data = await response.json();
+
+        document.getElementById('publi3').src = data[6].image_url;
+        document.getElementById('link3').href = data[6].link_url;
+
+        document.getElementById('publi4').src = data[7].image_url;
+        document.getElementById('link4').href = data[7].link_url;
+
+        document.getElementById('publi5').src = data[8].image_url;
+        document.getElementById('link5').href = data[8].link_url;
+
+    }
+    API_ML_minds();
+</script>
 
 </html>

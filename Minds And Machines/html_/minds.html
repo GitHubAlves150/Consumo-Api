@@ -15,8 +15,9 @@
     <meta property="og:image" content="https://www.mindsemachine.site/images/social-share-image.jpg">
     <meta property="og:url" content="https://www.mindsemachine.site/caminho-da-pagina-atual">
     <meta name="twitter:card" content="summary_large_image">
-    <!--Mobile-->
-    <link rel="stylesheet" href="../css_/Mobile.css">
+
+
+
 
     <!--Fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,13 +29,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <!--Arquivos CSS-->
-    <link rel="stylesheet" href="../css_/Menu.css">
-    <link rel="stylesheet" href="../css_/mindsBook.css">
-    <link rel="stylesheet" href="../css_/minds.css">
+    <link rel="stylesheet" href="../css_/Menu.css?v=1.1">
+    <link rel="stylesheet" href="../css_/mindsBook.css?v=1.1">
+    <link rel="stylesheet" href="../css_/minds.css?v=1.1">
+    <link rel="stylesheet" href="../css_/Register.css">
+
+    <!--Mobile-->
+    <link rel="stylesheet" href="../css_/Mobile.css?v=1.1">
 
     <!--Arquivos JS-->
     <script src="../js_/Advertisements_API" defer></script>
-
+    <script src="../js_/Register.js" defer></script>
 
 </head>
 
@@ -42,9 +47,17 @@
     <div>
         <img src="../Icon_/LogoMM.png" alt="Loga do site Minds e Machine">
         <nav class="nav_">
-            <button>
-                Register +
-            </button>
+            <div class="botao_registro">
+                <button id="capturar-btn">
+                    <p id="reg">Register+</p>
+                    <img id="icone-btn" src="../Icon_/pngwing.com(6).png"></i>
+                </button>
+            </div>
+            <div id="form-container">
+                <input type="email" id="email-input" placeholder="Digite seu email" required>
+                <button id="enviar-btn">Enviar</button>
+            </div>
+            <p id="menssagem" class="sucesso">cadastrado com sucesso!</p>
         </nav>
     </div>
 
@@ -55,6 +68,7 @@
     </header>
     <main class="main-content">
         <div class="main-article">
+            <h3>minds | Allan Turring</h3>
 
             <div class="img-turring">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Alan_Turing_%281951%29.jpg"
@@ -216,38 +230,89 @@
                     usado em diversos sites e dispositivos para identificar acessos de robôs, dando ao usuário mais
                     segurança.
                 </p>
-                <h1>Referências</h1>
+                <br> <br>
+                <h3 class="estilo_referencia">Esta página foi desenvolvida com base nas referências abaixo, devidamente
+                    verificadas com diversas
+                    fontes para garantir a precisão e veracidade das informações.</h3>
                 <a
                     href="https://www.fai-mg.br/portal/download/Revista%20Inicia_Artigo_04.pdf">https://www.fai-mg.br/portal/download/Revista%20Inicia_Artigo_04.pdf</a>
             </section>
+            <br> <br>
             <p class="prod-destaque">Produtos em destaque</p>
 
+
         </div>
 
         </div>
-        <!--        <p class="prod-destaque">Produtos em destaque</p>-->
-
+        <!--================================================================================================-->
+        <!--======================PRODUTOS EM DESTAQUE======================================================-->
         <aside class="ad-sidebar">
 
             <div class="img-advert">
-                <a href="" id="link3" target="_blank">
-                    <img src="" alt="publicidade" id="publi3">
+                <h3 style="text-align: center;">Membros apoiadores</h3>
+                <a href="" id="link12" target="_blank">
+                    <img src="" alt="publicidade" id="publi12">
                 </a>
             </div>
             <div class="img-advert">
-                <a href="" id="link4" target="_blank">
-                    <img src="" alt="publicidade" id="publi4">
+                <a href="" id="link13" target="_blank">
+                    <img src="" alt="publicidade" id="publi13">
                 </a>
             </div>
             <div class="img-advert">
-                <a href="" id="link5" target="_blank">
-                    <img src="" alt="publicidade" id="publi5">
+                <a href="" id="link14" target="_blank">
+                    <img src="" alt="publicidade" id="publi14">
                 </a>
             </div>
-
-
-
         </aside>
+
+        <!--======================PRODUTOS EM DESTAQUE======================================================-->
+        <!--================================================================================================-->
+
+        <!--================================================================================================-->
+        <!--======================TALVEZ VOCE GOSTE DE LER==================================================-->
+        <a href="../html_/minds_jeff_bezos.html">
+            <section class="container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped2%29.jpg/640px-Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped2%29.jpg"
+                    alt="imagem Jeff Bezos" class="item_filho_img">
+                <div class="item_filho_div">
+                    <h1>Jeff Bezos: A Visão que Revolucionou o Mundo Digital</h1>
+                    <h3>Fundador da Amazon em 1994, em uma modesta garagem em Seattle, Bezos transformou uma simples
+                        livraria online em um império global de e-commerce, apostando no crescimento exponencial da
+                        internet. <br>
+                        <img src="../Icon_/relogio.png" alt="relogio-tempo de leitura" style="width: 5%; height: 10%;">
+                        <h6>
+                            2min de leitura <br>
+                            Ano:Dez/2025
+                        </h6>
+
+                    </h3><br>
+                </div>
+
+            </section>
+
+        </a>
+        <a href="../html_/Minds_Adminstracao_cientifica_Frederick_W.html">
+            <section class="container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Frederick_Winslow_Taylor_crop.jpg/483px-Frederick_Winslow_Taylor_crop.jpg?20080812222802"
+                    alt="imagem Jeff Bezos" class="item_filho_img">
+                <div class="item_filho_div">
+                    <h1>Frederick Winslow Taylor: Father of Scientific Management</h1>
+                    <h3>Revolutionizing Industrial Efficiency with Timeless Productivity Principles<br>
+                        <img src="../Icon_/relogio.png" alt="relogio-tempo de leitura" style="width: 5%; height: 10%;">
+                        <h6>
+                            2min reading <br>
+                            Date:Dez/2025
+                        </h6>
+
+                    </h3><br>
+                </div>
+
+            </section>
+
+        </a>
+        <!--======================TALVEZ VOCE GOSTE DE LER==================================================-->
+        <!--================================================================================================-->
     </main>
 
     <footer>
@@ -301,15 +366,14 @@
         const response = await fetch(url);
         const data = await response.json();
 
-        document.getElementById('publi3').src = data[6].image_url;
-        document.getElementById('link3').href = data[6].link_url;
+        document.getElementById('publi12').src = data[12].image_url;
+        document.getElementById('link12').href = data[12].link_url;
 
-        document.getElementById('publi4').src = data[7].image_url;
-        document.getElementById('link4').href = data[7].link_url;
+        document.getElementById('publi13').src = data[13].image_url;
+        document.getElementById('link13').href = data[13].link_url;
 
-        document.getElementById('publi5').src = data[8].image_url;
-        document.getElementById('link5').href = data[8].link_url;
-
+        document.getElementById('publi14').src = data[14].image_url;
+        document.getElementById('link14').href = data[14].link_url;
     }
     API_ML_minds();
 </script>

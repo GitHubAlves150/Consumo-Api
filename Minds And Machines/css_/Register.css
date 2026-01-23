@@ -1,0 +1,80 @@
+button {
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    border: none;
+    border-radius: 8px;
+}
+
+#form-container{
+    display: none;   
+    margin-top: 10px; 
+}
+
+#email-input{
+    width: 100px;        /* Largura fixa pequena */
+    padding: 1px;   /* Espaçamento interno reduzido */
+    font-size: 12px;     /* Fonte menor = caixa menor */
+    height: 20px;
+    border: white;
+    outline: none;  /*Remove a borda no foco*/
+}
+
+input[type='email']{
+    padding: 1px;
+    width: 250px;
+    margin: auto;
+    border: none;
+    
+}
+
+button{
+    padding: 10px 20px;
+    background: rgb(3, 119, 236);
+    border: none;
+    cursor: pointer;
+    color: white;
+        border: none;
+
+}
+
+#capturar-btn:hover{
+    background: rgb(173, 172, 175);
+
+}
+#capturar-btn>img{
+    width: 20px; 
+    height: 20px;
+}
+
+
+
+#capturar-btn{
+    display: inline-flex;/*Alinha horizontalmente*/
+    align-items: center;/*centraliza verticalmente*/
+    gap: 8px;/*espaço entre reg e icon*/
+    justify-content: center;   
+
+}
+
+
+
+
+
+#enviar-btn:hover{
+    background: rgb(185, 122, 3);
+}
+#enviar-btn{
+    width: 50px;
+    padding: 0px 0px 0px 0px;
+}
+
+.sucesso{
+    color: green;
+    display: none;
+}
+
+.botao_registro>img{
+    width: 3%;
+}

@@ -15,8 +15,7 @@
     <meta property="og:image" content="https://www.mindsemachine.site/images/social-share-image.jpg">
     <meta property="og:url" content="https://www.mindsemachine.site/caminho-da-pagina-atual">
     <meta name="twitter:card" content="summary_large_image">
-    <!--Mobile-->
-    <link rel="stylesheet" href="../css_/Mobile.css">
+
 
     <!--Fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,10 +27,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <!--Arquivos CSS-->
-    <link rel="stylesheet" href="../css_/Menu.css">
-    <link rel="stylesheet" href="../css_/mindsBook.css">
+    <link rel="stylesheet" href="../css_/Menu.css?v=1.1">
+    <link rel="stylesheet" href="../css_/mindsBook.css?v=1.1">
+    <link rel="stylesheet" href="../css_/minds.css?v=1.1">
+    <link rel="stylesheet" href="../css_/Register.css">
+    <!--Mobile-->
+    <link rel="stylesheet" href="../css_/Mobile.css" ?v=1.1>
     <!--Arquivos JS-->
     <script src="../js_/Advertisements_API" defer></script>
+    <script src="../js_/Register.js" defer></script>
+
 
 
 </head>
@@ -40,17 +45,27 @@
     <div>
         <img src="../Icon_/LogoMM.png" alt="Loga do site Minds e Machine">
         <nav class="nav_">
-            <button>
-                Register +
-            </button>
+            <div class="botao_registro">
+                <button id="capturar-btn">
+                    <p id="reg">Register+</p>
+                    <img id="icone-btn" src="../Icon_/pngwing.com(6).png"></i>
+                </button>
+            </div>
+            <div id="form-container">
+                <input type="email" id="email-input" placeholder="Digite seu email" required>
+                <button id="enviar-btn">Enviar</button>
+            </div>
+            <p id="menssagem" class="sucesso">cadastrado com sucesso!</p>
         </nav>
     </div>
+
     <header class="page-header">
         <h1>As 17 Equações que mudaram o mundo</h1>
         <h6>Uma jornada pela mente do autor e seus convidados</h6>
 
     </header>
     <main class="main-content">
+        <h3>mindsBook | As dezessete equação que mudaram o mundo</h3>
 
         <div class="main-article">
             <div class="img-book">
@@ -159,28 +174,32 @@
                     sua ubiquidade: ele prova que o entendimento das formas mais básicas da matemática é, em essência, a
                     estrutura oculta que sustenta toda a nossa tecnologia e o avanço civilizatório.</p>
             </section>
-            <p class="prod-destaque">Produtos em destaque</p>
+            <h3 class="estilo_referencia">Esta página foi desenvolvida com base nas referências abaixo, devidamente
+                verificadas com diversas
+                fontes para garantir a precisão e veracidade das informações.</h3>
+            <a href="https://mercadolivre.com/sec/1dt4KAy">As 17 Equações que mudaram o mundo</a>
 
         </div>
 
         <aside class="ad-sidebar">
+            <h3 style="text-align: center;">Membros apoiadores</h3>
 
             <div class="img-advert">
-                <a href="" id="link0" target="_blank">
-                    <img src="" alt="curso online" id="publi0">
+                <a href="" id="link3" target="_blank">
+                    <img src="" alt="curso online" id="publi3">
 
                 </a>
             </div>
 
             <div class="img-advert">
-                <a href="" id="link1" target="_blank">
-                    <img src="" alt="curso online" id="publi1">
+                <a href="" id="link4" target="_blank">
+                    <img src="" alt="curso online" id="publi4">
                 </a>
             </div>
 
             <div class="img-advert">
-                <a href="" id="link2" target="_blank">
-                    <img src="" alt="curso online" id="publi2">
+                <a href="" id="link5" target="_blank">
+                    <img src="" alt="curso online" id="publi5">
                 </a>
             </div>
 
@@ -227,27 +246,28 @@
     <div class="Register">
         <p>&copy; Desenvolvido por-Lucas Lorenço ALves</p>
     </div>
+
+
 </body>
 <script>
     'use stritct'
 
-async function API_ML_minds() {
-    const url = `https://afiliadosfavoritos.onrender.com/`;
-    const response = await fetch(url);
-    const data = await response.json();
+    async function API_ML_minds() {
+        const url = `https://afiliadosfavoritos.onrender.com/`;
+        const response = await fetch(url);
+        const data = await response.json();
 
-    
+        document.getElementById('publi3').src = data[3].image_url;
+        document.getElementById('link3').href = data[3].link_url;
 
-        document.getElementById('publi0').src = data[3].image_url;
-        document.getElementById('link0').href = data[3].link_url;
+        document.getElementById('publi4').src = data[4].image_url;
+        document.getElementById('link4').href = data[4].link_url;
 
-        document.getElementById('publi1').src = data[4].image_url;
-        document.getElementById('link1').href = data[4].link_url;
+        document.getElementById('publi5').src = data[5].image_url;
+        document.getElementById('link5').href = data[5].link_url;
 
-        document.getElementById('publi2').src = data[5].image_url;
-        document.getElementById('link2').href = data[5].link_url;
-
-}
-API_ML_minds();
+    }
+    API_ML_minds();
 </script>
+
 </html>
