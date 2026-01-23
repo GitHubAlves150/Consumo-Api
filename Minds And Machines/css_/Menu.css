@@ -18,7 +18,7 @@ body {
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    /*background-color: rgb(200, 147, 76);*/
+    background-color:#f4f4f7;
 }
 
 /*A main está aqui por que faz parte de layout
@@ -179,3 +179,13 @@ h3 {
 
 /*======Estilo_referencia===*/
 /*==========================*/
+
+/*=====links de navagacao acida da foto======*/
+.ancoratitle {
+    text-decoration: none;
+    color: rgb(143, 140, 140);
+    font-family: monospace;
+    font-size: small;
+    
+}
+/*===========================================*/

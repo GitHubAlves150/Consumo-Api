@@ -9,7 +9,7 @@ Grandes telas: acima de 1200px
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 668px) {
     .paragrafos_pII {
         width: 100% !important;
     }
@@ -19,7 +19,7 @@ Grandes telas: acima de 1200px
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
-        align-items: center;        
+        align-items: center;
         height: auto;
 
     }
@@ -30,7 +30,8 @@ Grandes telas: acima de 1200px
         border-radius: 5px;
         object-fit: contain;
         overflow: hidden;
-        margin:auto;
+        margin: auto;
+
     }
 
     .item_filho_div {
@@ -38,6 +39,7 @@ Grandes telas: acima de 1200px
         font-family: var(--titulosH1);
         width: 93vw;
         margin: auto;
+
     }
 
     /*==========================================*/
