@@ -32,12 +32,14 @@
     <link rel="stylesheet" href="../css_/Menu.css?v=1.1">
     <link rel="stylesheet" href="../css_/mindsBook.css?v=1.1">
     <link rel="stylesheet" href="../css_/minds.css?v=1.1">
+    <link rel="stylesheet" href="../css_/Register.css">
+
     <!--Mobile-->
     <link rel="stylesheet" href="../css_/Mobile.css?v=1.1">
 
     <!--Arquivos JS-->
     <script src="../js_/Advertisements_API" defer></script>
-
+    <script src="../js_/Register.js" defer></script>
 
 </head>
 
@@ -45,9 +47,17 @@
     <div>
         <img src="../Icon_/LogoMM.png" alt="Loga do site Minds e Machine">
         <nav class="nav_">
-            <button>
-                Register +
-            </button>
+            <div class="botao_registro">
+                <button id="capturar-btn">
+                    <p id="reg">Register+</p>
+                    <img id="icone-btn" src="../Icon_/pngwing.com(6).png"></i>
+                </button>
+            </div>
+            <div id="form-container">
+                <input type="email" id="email-input" placeholder="Digite seu email" required>
+                <button id="enviar-btn">Enviar</button>
+            </div>
+            <p id="menssagem" class="sucesso">cadastrado com sucesso!</p>
         </nav>
     </div>
 

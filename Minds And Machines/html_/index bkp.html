@@ -25,19 +25,31 @@
     <link rel="stylesheet" href="./css_/Menu.css">
     <link rel="stylesheet" href="./css_/Home.css">
     <link rel="stylesheet" href="./css_/SliderContainer.css">
+    <link rel="stylesheet" href="../css_/Register.css">
+
     <!--Arquivos JS-->
     <script src="./js_/Iteracao.js" defer></script>
     <script src="./js_/script.js" defer></script><!--Slider-->
     <script src="./js_/Advertisements_API"></script>
+    <script src="../js_/Register.js" defer></script>
+
 </head>
 
 <body>
     <header>
         <img src="./Icon_/LogoMM.png" alt="Loga do site Minds e Machine">
         <nav class="nav_">
-            <button>
-                Register +
-            </button>
+            <div class="botao_registro">
+                <button id="capturar-btn">
+                    <p id="reg">Register+</p>
+                    <img id="icone-btn" src="../Icon_/pngwing.com(6).png"></i>
+                </button>
+            </div>
+            <div id="form-container">
+                <input type="email" id="email-input" placeholder="Digite seu email" required>
+                <button id="enviar-btn">Enviar</button>
+            </div>
+            <p id="menssagem" class="sucesso">cadastrado com sucesso!</p>
         </nav>
     </header>
 
@@ -147,7 +159,7 @@
 
     </main>
     <footer>
-        <div >
+        <div>
             <a href="./index.html" class="Icon_img_container">
                 <img src="./Icon_/Home.png" alt="Icone de Home-Retorna para a pagina principal">
                 <span class="Icon_title">Base</span>
@@ -159,7 +171,7 @@
                 <span class="Icon_title">MindsBook</span>
             </a>
         </div>
-        <div >
+        <div>
             <a href="./machine.html" class="Icon_img_container">
                 <img src="./Icon_/WriteMachine.png" alt="Icone de Home-Retorna para a pagina principal">
                 <span class="Icon_title">Machines</span>
@@ -177,7 +189,7 @@
             <span class="Icon_title">PodCast</span>
         </div>
         -->
-        <div >
+        <div>
             <a href="./minds.html" class="Icon_img_container">
                 <img src="./Icon_/Minds1.png" alt="Icone de Home-Retorna para a pagina principal">
                 <span class="Icon_title">Minds</span>
