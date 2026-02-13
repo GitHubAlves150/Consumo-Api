@@ -1,0 +1,63 @@
+/* Moldura do Carrossel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    overflow: hidden; /* Esconde o que está fora da moldura */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* O Trilho que desliza */
+.carousel-slide {
+    display: flex;
+    width: 500%; /* 5 imagens (4 originais + 1 clone) = 500% */
+    animation: slide-animation 16s infinite ease-in-out;
+}
+
+/* Configuração das Imagens */
+.carousel-slide img {
+    width: 20%; /* Cada imagem ocupa 1/5 do trilho total */
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Lógica da Animação */
+/* 100% / 4 imagens = intervalos de 25% */
+@keyframes slide-animation {
+    0% { transform: translateX(0); }             /* Imagem 1 */
+    20% { transform: translateX(0); }            /* Pausa na 1 */
+    25% { transform: translateX(-20%); }         /* Transição para 2 */
+    45% { transform: translateX(-20%); }         /* Pausa na 2 */
+    50% { transform: translateX(-40%); }         /* Transição para 3 */
+    70% { transform: translateX(-40%); }         /* Pausa na 3 */
+    75% { transform: translateX(-60%); }         /* Transição para 4 */
+    95% { transform: translateX(-60%); }         /* Pausa na 4 */
+    100% { transform: translateX(-80%); }        /* Volta para o clone (início) */
+}
+
+/* Estilo dos Botões (os que você já tinha) */
+/*.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(220, 215, 215, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+*/
+.prev { left: 15px; }
+.next { right: 15px; }
+
+.carousel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}

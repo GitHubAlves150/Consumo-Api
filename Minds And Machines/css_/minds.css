@@ -17,7 +17,7 @@ main {
 :root {
     --cor-primaria: #81d0fa;
     /* Azul Escuro */
-    --cor-fundo: #e9ecef;
+    --cor-fundo: #fcfeff;
     --cor-texto-principal: #333333;
     --cor-destaque: gray;
     --cor-fundo-secundario: #f4f4f9;
@@ -257,7 +257,7 @@ ul {
     width: 210px;
     height: 380px;
     overflow: hidden;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);*/
     margin-top: 25px;
 }
 
