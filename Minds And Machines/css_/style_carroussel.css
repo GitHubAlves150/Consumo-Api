@@ -1,0 +1,51 @@
+/* 1. A Janela do Carrossel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Tamanho controlado */
+    height: 350px;    /* Altura controlada */
+    margin: 20px auto;
+    overflow: hidden; /* Esconde as imagens 2 e 3 */
+    border-radius: 12px;
+    background-color: #eee;
+}
+
+/* 2. O Trilho (Slide) - Onde o erro costuma estar */
+.carousel-slide {
+    display: flex;
+    width: 300%; /* IMPORTANTE: 300% para 3 imagens */
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    animation: slide-auto 12s infinite ease-in-out;
+}
+
+/* 3. Ajuste dos Links (Cada link é um slide) */
+.carousel-slide a {
+    width: 33.3333%; /* 100% dividido por 3 imagens */
+    height: 100%;
+    flex-shrink: 0;   /* Impede que o navegador esmague os links */
+    display: block;
+}
+
+/* 4. A Imagem dentro do link */
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Garante que a imagem apareça inteira */
+    display: block;
+}
+
+/* 5. Animação Corrigida para 3 partes */
+@keyframes slide-auto {
+    /* Mostra a 1ª imagem (0% a 30% do tempo) */
+    0%, 30% { transform: translateX(0); }
+    
+    /* Move para a 2ª imagem (33% a 63% do tempo) */
+    33%, 63% { transform: translateX(-33.3333%); }
+    
+    /* Move para a 3ª imagem (66% a 96% do tempo) */
+    66%, 96% { transform: translateX(-66.6666%); }
+    
+    /* Volta para a 1ª imagem rapidamente no final */
+    100% { transform: translateX(0); }
+}

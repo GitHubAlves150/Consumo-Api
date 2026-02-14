@@ -15,24 +15,43 @@
     <meta property="og:url" content="https://www.mindsemachine.site/caminho-da-pagina-atual">
     <meta name="twitter:card" content="summary_large_image">
 
+    <!--Flavicon-->
+    <link rel="icon" href="../Icon_/LogoMM.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="css_/Register.css">
+    <link rel="stylesheet" href="css_/Register.css"> ">
     <link rel="stylesheet" href="css_/minds.css">
     <link rel="stylesheet" href="css_/Menu.css">
     <link rel="stylesheet" href="css_/Mobile.css">
     <!--js-->
     <script src="js_/Resgister.js" defer></script>
+    <!--Carrousel-->
+    <link rel="stylesheet" href="css_/style_carroussel.css">
+    <script src="js_/iteracao.js" defer></script>
+    <!--Modal-POUPUP-->
+    <script src="js_/Modal.js" defer></script>
 
 
 </head>
 
 <body>
+    <!--MODAL-Poupup-->
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-content">
+            <span id="close-popup" class="close-btn">&times;</span>
+            <h2>💡</h2>
+            <p>Wellcome to Minds&Machine, and delve deep into technologies and the minds that changed our world</p> <br>
+            <p>if you want to help our site. Support our work by browsing our store</p>
+            <button id="entendido-btn" class="popup-btn">I got it</button>
+        </div>
+    </div>
+
     <div>
         <img src="./Icon_/LogoMM.png" alt="Loga do site Minds e Machine">
         <nav class="nav_">
@@ -50,7 +69,7 @@
         </nav>
     </div>
     <header class="page-header">
-        <h1>Minds e Machine</h1>
+        <h1>Minds & Machine</h1>
         <h6></h6>
 
     </header>
@@ -68,38 +87,103 @@
             </blockquote>
 
             <section class="section-intro">
-                <p><strong style="color: blue;">Mentes brilhantes & Máquinas incríveis</strong> configura-se como uma
-                    revista digital primariamente voltada à
-                    análise da interrelação _intrínseca entre o ser humano e as tecnologias que transformaram e ainda
-                    transformam o mundo que vivemos.
-                </p>
-                <p>
-                    Este periódico filosófico tem por desígnio precípuo estabelecer uma plataforma virtual dedicada à
-                    difusão de artigos que se distinguem por sua inovação, rigorosa fundamentação e solidez científica.
-                    Tais contribuições fornecem análises conceituais aprofundadas acerca de tópicos situados na
-                    intersecção entre a filosofia cognitiva, a lógica, a epistemologia (com ênfase no campo das ciências
-                    exatas), a ética e as disciplinas da ciência da computação e de dados.
-                </p>
-                <p>
-                    Adicionalmente, esta revista digital emprega diversas Interfaces de Programação de Aplicativos
-                    (APIs) para compilar e apresentar notícias atualizadas, além de referenciar artigos e podcasts
-                    pertinentes ao vasto domínio da tecnologia.
-                </p>
-                <p>
-                    Mentes brilhantes & Máquinas incríveis aprofunda-se em investigações filosóficas que abrangem, mas
-                    não se limitam a: o papel das tecnologias digitais na elucidação dos processos cognitivos; o
-                    estatuto epistêmico de áreas como a ciência da computação e a ciência de dados; a condição moral de
-                    entidades de inteligência artificial; e as implicações éticas e sociais decorrentes da concepção, do
-                    desenvolvimento e da aplicação de recursos digitais (incluindo robótica, agentes de IA, bots e
-                    cobots) em nossas sociedades, em uma multiplicidade de domínios que se estendem da saúde à defesa.
-                </p>
+                <p strong style="color: blue;">
+                    Mentes Brilhantes & Máquinas Incríveis</p>
 
+                <p> Bem-vindo a um portal dedicado à interseção fascinante entre mentes humanas geniais e as máquinas
+                    que
+                    redefiniram nosso mundo. Aqui, exploramos as tecnologias que moldaram a história — de Alan Turing
+                    pai da computação às
+                    mulheres pioneiras como a astrofísica Cecilia Payne-Gaposchkin entre outras esquecidas pela
+                    narrativa oficial —, revivemos livros e obras seminais, e
+                    trazemos
+                    notícias frescas sobre inovações atuais.</p>
 
+                <p>Não somos uma revista passageira, mas uma plataforma perene de reflexão profunda. Mergulhamos na
+                    filosofia cognitiva, lógica, epistemologia das ciências exatas, ética e ciência da computação para
+                    analisar: o impacto das tecnologias digitais nos processos mentais; o valor epistêmico da IA e
+                    dados; a
+                    moralidade de máquinas autônomas; e as implicações éticas de robótica, bots e cobots na saúde,
+                    defesa e
+                    sociedade.</p>
+
+                <p>Integramos APIs para notícias em tempo real, referências a artigos e podcasts, e um espaço dedicado a
+                    divulgar projetos originais em programação e eletrônica. Descubra, reflita e crie conosco.
+                </p>
             </section>
 
             </section>
-            <p class="prod-destaque">Produtos em destaque</p>
+          <!--  <p class="prod-destaque">Produtos em destaque</p>-->
+            <a href="../html_/article_Bico_Bomba_Gasoline.html">
+                <section class="container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Yellow_Gas_Pump_-_E86_and_86_Eco_Unleaded_%2854558253711%29.jpg/640px-Yellow_Gas_Pump_-_E86_and_86_Eco_Unleaded_%2854558253711%29.jpg"
+                        alt="Bico da bomba de gasolina" class="item_filho_img">
+                    <div class="item_filho_div">
+                        <h1>
 
+                            O bico da bomba de gasolina
+                            uma peça simples que mudou o mundo dos automóveis
+
+
+                        </h1>
+                        <h3>A simplicidade é a sofisticação máxima.<br>
+                            <img src="../Icon_/relogio.png" alt="relogio-tempo de leitura"
+                                style="width: 5%; height: 10%;">
+                            <h6>
+                                2min de leitura <br>
+                                Ano:Dez/2025
+                            </h6>
+
+                        </h3><br>
+                    </div>
+
+                </section>
+
+            </a>
+            <a href="../html_/Minds_Adminstracao_cientifica_Frederick_W.html">
+                <section class="container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Frederick_Winslow_Taylor_crop.jpg/483px-Frederick_Winslow_Taylor_crop.jpg?20080812222802"
+                        alt="imagem Jeff Bezos" class="item_filho_img">
+                    <div class="item_filho_div">
+                        <h1>Frederick Winslow Taylor: Father of Scientific Management</h1>
+                        <h3>Revolutionizing Industrial Efficiency with Timeless Productivity Principles<br>
+                            <img src="../Icon_/relogio.png" alt="relogio-tempo de leitura"
+                                style="width: 5%; height: 10%;">
+                            <h6>
+                                2min reading <br>
+                                Date:Dez/2025
+                            </h6>
+
+                        </h3><br>
+                    </div>
+
+                </section>
+
+            </a>
+            <br>
+
+            <h6 style="text-align: center; color: gray; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Browsing our store</h6>
+            <!--==============CARROUSEL========================-->
+            <div class="corpo">
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <a href="https://mercadolivre.com/sec/2XQ8wBV">
+                            <img src="img_/Estante.png" alt="Monitor 1">
+                        </a>
+                        <a href="https://mercadolivre.com/sec/29VKjzo">
+                            <img src="img_/monitorArzopa.png" alt="Monitor 1">
+                        </a>
+                        <a href="https://mercadolivre.com/sec/1ELKkt1">
+                            <img src="img_/NutrientesHidroponico.png" alt="Monitor 2">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--======================================-->
         </div>
 
         <aside class="ad-sidebar">
@@ -158,6 +242,13 @@
             <a href="./html_/minds.html" class="Icon_img_container">
                 <img src="./Icon_/Minds1.png" alt="Icone de Home-Retorna para a pagina principal">
                 <span class="Icon_title">Minds</span>
+            </a>
+
+        </div>
+         <div>
+            <a href="./html_/minds.html" class="Icon_img_container">
+                <img src="./img_/raio2.png" alt="Icone de Home-Retorna para a pagina principal">
+                <span class="Icon_title">Hands-on</span>
             </a>
 
         </div>

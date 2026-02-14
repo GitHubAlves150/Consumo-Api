@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering: Building Applications with Foundation Models | mindsemachine.site</title>
+    <meta name="description"
+        content="Master AI engineering with Chip Huyen's guide. Learn to build scalable, production-ready AI applications using foundation models, from development frameworks to deployment strategies.">
+    <link rel="canonical" href="https://www.mindsemachine.site/caminho-da-pagina-atual">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="AI Engineering: The Definitive Guide to Building with Foundation Models">
+    <meta property="og:description"
+        content="Explore the new AI stack, model evaluation, and a complete framework for developing and deploying robust AI applications from concept to production.">
+    <meta property="og:image" content="https://www.mindsemachine.site/images/social-share-image.jpg">
+    <meta property="og:url" content="https://www.mindsemachine.site/caminho-da-pagina-atual">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!--Flavicon-->
+    <link rel="icon" href="../Icon_/LogoMM.png" type="image/png">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
+    <!--Open Sans Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!--CSS Files-->
+    <link rel="stylesheet" href="../css_/Menu.css?v=1.1">
+    <link rel="stylesheet" href="../css_/mindsBook.css?v=1.1">
+    <link rel="stylesheet" href="../css_/minds.css?v=1.1">
+    <link rel="stylesheet" href="../css_/Register.css">
+    <!--Mobile-->
+    <link rel="stylesheet" href="../css_/Mobile.css?v=1.1">
+    <!--JS Files-->
+    <script src="../js_/Advertisements_API" defer></script>
+    <script src="../js_/Register.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <img src="../Icon_/LogoMM.png" alt="Minds & Machines Logo - Frontier of Technology and Engineering">
+        <nav class="nav_">
+            <div class="botao_registro">
+                <button id="capturar-btn">
+                    <p id="reg">Register+</p>
+                    <img id="icone-btn" src="../Icon_/pngwing.com(6).png" alt="Icon to open the registration form">
+                </button>
+            </div>
+            <div id="form-container">
+                <input type="email" id="email-input" placeholder="Enter your email" required>
+                <button id="enviar-btn">Submit</button>
+            </div>
+            <p id="menssagem" class="sucesso">Successfully registered!</p>
+        </nav>
+    </div>
+
+    <header class="page-header">
+        <h1>AI Engineering: Building the Next Generation of Intelligent Applications</h1>
+        <h6>The New Development Paradigm: "The model-as-a-service revolution has transformed AI from a research
+            discipline into the most powerful development toolkit in history. The challenge is no longer access to
+            intelligence, but engineering its reliable application."</h6>
+    </header>
+    <main class="main-content">
+        <div class="main-article">
+            <h3>
+                <a href="../html_/minds.html" class="ancoratitle">minds</a> | <a href="../html_/Artigo_Capacitores.html"
+                    class="ancoratitle">AI Engineering</a>
+            </h3>
+
+            <div class="img-carroAutonomo">
+                <img src="../img_/IABOOK.png"
+                    alt="Cover of the book 'AI Engineering: Building Applications with Foundation Models' by Chip Huyen" style="width: 400px; height: auto;">
+            </div>
+            <blockquote class="site-quote">
+                <p>"AI Engineering is the bridge between the raw potential of foundation models and the creation of
+                    robust, scalable, and trustworthy applications. It's the discipline that turns AI hype into tangible
+                    business value."<br><br></p>
+            </blockquote>
+            <section class="section-intro">
+                <h1>Introduction: The Rise of AI as a Development Tool</h1>
+                <p>
+                    According to Chip Huyen's pivotal 2025 book, "AI Engineering: Building Applications with Foundation
+                    Models," a fundamental shift is underway. Recent breakthroughs have dramatically lowered the
+                    barriers to building AI products, transforming artificial intelligence from an esoteric research
+                    field into a powerful, accessible development tool. The emergence of the model-as-a-service
+                    paradigm means that individuals with minimal or no prior AI experience can now leverage
+                    state-of-the-art foundation models to build sophisticated applications. This technical deep dive
+                    explores the principles, frameworks, and practical methodologies that define this new discipline of
+                    AI Engineering.
+                </p>
+                <p>
+                    AI Engineering is distinct from traditional Machine Learning Engineering. While MLE focuses on the
+                    end-to-end lifecycle of custom, trained models—data collection, feature engineering, model
+                    training, and deployment—AI Engineering centers on the strategic integration, prompt engineering,
+                    evaluation, and responsible deployment of pre-trained, general-purpose foundation models. This new
+                    stack represents a move from "building intelligence" to "orchestrating and applying intelligence,"
+                    demanding a different set of skills and architectural patterns focused on reliability, evaluation,
+                    and system design around unpredictable, open-ended models.
+                </p>
+                <p>
+                    The core challenge of this new paradigm is managing uncertainty and catastrophic failure modes. As
+                    AI applications proliferate, their potential impact—and therefore the risk of failure—grows
+                    exponentially. A model that confidently generates incorrect information, exhibits harmful bias, or
+                    behaves unpredictably in edge cases presents a profound engineering challenge. This makes
+                    evaluation, particularly for open-ended generative tasks, the single most critical and evolving
+                    component of the AI Engineering workflow, surpassing even deployment in complexity.
+                </p>
+                <p>
+                    This article synthesizes the key frameworks from Huyen's work to provide a roadmap for navigating
+                    the modern AI landscape. We will explore the new AI stack, systematic approaches to application
+                    development, advanced evaluation techniques like AI-as-a-judge, and the principles of deploying
+                    these dynamic systems at scale. For developers and technical leaders, understanding AI Engineering
+                    is no longer optional; it's the essential skill set for building the next decade of software.
+                </p>
+            </section>
+
+            <section class="section-detail">
+                <h1>Defining the New AI Stack: Beyond the Model</h1>
+                <p>
+                    The modern AI application stack is a layered architecture built around the foundation model at its
+                    core. Directly interacting with the model are the <strong>orchestration and prompt engineering
+                        layers</strong>, responsible for structuring inputs (prompts, few-shot examples, chains of
+                    thought) and managing complex, multi-step interactions (agent workflows, tool use). Above this sits
+                    the critical <strong>evaluation and observability layer</strong>, a system for continuously
+                    assessing output quality, safety, and cost. This includes automated evaluation pipelines,
+                    human-in-the-loop review systems, and comprehensive logging of model inputs, outputs, and
+                    performance metrics.
+                </p>
+                <p>
+                    Surrounding these core layers are enabling components: <strong>vector databases and retrieval
+                        systems</strong> for providing models with relevant, external context (Retrieval-Augmented
+                    Generation), <strong>caching and rate-limiting services</strong> to manage cost and latency, and
+                    <strong>deployment and serving infrastructure</strong> tailored for low-latency, high-throughput
+                    model inference. Unlike traditional monolithic applications, the AI stack is inherently dynamic;
+                    changes in the underlying model, prompt strategies, or retrieved data can radically alter
+                    application behavior, necessitating a system design focused on versioning, experimentation, and
+                    rollback capabilities for every component, not just the code.
+                </p>
+
+                <h1>A Framework for AI Application Development</h1>
+                <p>
+                    Huyen outlines a progressive framework for developing AI applications, advocating for starting
+                    simple and incrementally adding sophistication. The first phase is <strong>prompting and
+                        prototyping</strong>, where developers use direct prompt engineering to explore a model's
+                    capabilities for a given use case. This rapid iteration establishes a performance baseline. The next
+                    phase introduces <strong>context engineering</strong>, enhancing prompts with dynamic, relevant
+                    information retrieved from external data sources (RAG) or incorporating few-shot examples to steer
+                    model behavior more precisely.
+                </p>
+                <p>
+                    As application requirements mature, development moves into <strong>agentic and programmatic
+                        control</strong>. Here, the model is embedded within a larger programmatic loop—an
+                    agent—that can break down complex tasks, call tools (APIs, calculators, code executors), and
+                    iteratively refine its own outputs based on predefined logic or self-critique. The final and most
+                    complex phase involves <strong>fine-tuning and distillation</strong>, where a base foundation model
+                    is specifically adapted for a task or domain using targeted datasets to improve performance,
+                    reduce latency, or lower operational costs, effectively creating a specialized derivative model.
+                </p>
+                <h1>The Critical Discipline of Model Evaluation</h1>
+                <p>
+                    In AI Engineering, evaluation is a continuous, multi-faceted process, not a final gate. For
+                    open-ended generative tasks, traditional metrics like accuracy are insufficient. The book emphasizes
+                    a hybrid approach: combining <strong>task-specific automated metrics</strong> (e.g., code
+                    correctness, BLEU score for translation) with <strong>model-graded evaluation (AI-as-a-judge)</strong>. In this
+                    paradigm, a separate, often more powerful LLM is prompted to assess the quality, relevance, safety,
+                    or alignment of another model's output against a rubric, enabling scalable evaluation of subjective
+                    or complex criteria.
+                </p>
+                <p>
+                    A robust evaluation suite must also include <strong>safety and bias audits</strong>, testing for
+                    harmful outputs, demographic fairness, and prompt injection vulnerabilities. <strong>Infrastructure
+                        and cost metrics</strong>—latency, throughput, and token consumption—are equally vital for
+                    production readiness. Crucially, evaluation is integrated directly into the CI/CD pipeline through
+                    <strong>canary deployments and A/B testing</strong>, allowing teams to compare new models or prompts
+                    against a live baseline with real user traffic before full rollout, dramatically reducing deployment
+                    risk.
+                </p>
+                <h1>Deployment and MLOps for the Foundation Model Era</h1>
+                <p>
+                    Deploying AI applications requires extending traditional MLOps principles to handle the unique
+                    characteristics of foundation models. Key considerations include <strong>model versioning and
+                        provenance</strong>—tracking not just the application code, but the exact version of the
+                    foundation model, prompts, and retrieval datasets used. <strong>Cost optimization and
+                        load management</strong> become central, involving strategies like caching frequent queries,
+                    implementing tiered fallback models (using a smaller, cheaper model where possible), and
+                    sophisticated rate limiting.
+                </p>
+                <p>
+                    The serving infrastructure must support <strong>low-latency inference</strong>, often requiring GPU
+                    acceleration and efficient batching of requests. Furthermore, deployment must be designed for
+                    <strong>continuous monitoring and feedback</strong>. This involves logging all model interactions
+                    for later analysis, setting up alerting for degradation in evaluation scores or spikes in error
+                    rates, and creating closed-loop systems where problematic outputs are flagged and used to
+                    automatically improve prompts or fine-tuning datasets. The goal is a resilient system that can
+                    adapt and improve post-deployment.
+                </p>
+                <h1>Conclusion: Engineering the Intelligent Future</h1>
+                <p>
+                    "AI Engineering: Building Applications with Foundation Models" provides the essential blueprint for
+                    a new era of software development. The discipline marks the professionalization of building with
+                    AI, moving from experimental jupyter notebooks to engineered, reliable systems. It demands a
+                    synthesis of software engineering rigor, a deep understanding of model capabilities and
+                    limitations, and a steadfast commitment to evaluation and responsible implementation.
+                </p>
+                <p>
+                    The transition to this model-centric world is not merely technical but strategic. Organizations that
+                    master AI Engineering will unlock the ability to rapidly innovate, creating intelligent
+                    applications that were previously impossible or prohibitively expensive. They will build with a
+                    focus on robustness, safety, and scalability from the outset. For the individual developer,
+                    embracing AI Engineering is the path to becoming an architect of the intelligent future, equipped
+                    with the frameworks and principles needed to turn the vast potential of foundation models into
+                    transformative, real-world value.
+                </p>
+                <h1>References</h1>
+                <p>
+                    Huyen, Chip. <em>AI Engineering: Building Applications with Foundation Models</em>. O'Reilly Media,
+                    2025.
+                </p>
+            </section>
+            <p class="prod-destaque">Featured Books & Tools for AI Engineers</p>
+        </div>
+
+        <aside class="ad-sidebar">
+            <h3 style="text-align: center;">Supporting Members</h3>
+            <div class="img-advert">
+                <a href="" id="link3" target="_blank">
+                    <img src="" alt="Advertisement for cloud platforms with managed AI and ML services" id="publi3">
+                </a>
+            </div>
+            <div class="img-advert">
+                <a href="" id="link4" target="_blank">
+                    <img src="" alt="Sponsor message for AI observability and evaluation platform" id="publi4">
+                </a>
+            </div>
+            <div class="img-advert">
+                <a href="" id="link5" target="_blank">
+                    <img src="" alt="Promotion for vector database and retrieval-augmented generation tools"
+                        id="publi5">
+                </a>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div>
+            <a href="../index.html" class="Icon_img_container">
+                <img src="../Icon_/Home.png" alt="Home icon - Return to the main page">
+                <span class="Icon_title">Base</span>
+            </a>
+        </div>
+        <div>
+            <a href="mindsbooks.html" class="Icon_img_container">
+                <img src="../Icon_/AudioBook.png" alt="Audiobook icon - Access the MindsBook library">
+                <span class="Icon_title">MindsBook</span>
+            </a>
+        </div>
+        <div>
+            <a href="machine.html" class="Icon_img_container">
+                <img src="../Icon_/WriteMachine.png" alt="Machine icon - Explore the Machines section">
+                <span class="Icon_title">Machines</span>
+            </a>
+        </div>
+        <div>
+            <a href="articles.html" class="Icon_img_container">
+                <img src="../Icon_/Article.png" alt="Article icon - Browse all technical articles">
+                <span class="Icon_title">Articles</span>
+            </a>
+        </div>
+        <div>
+            <a href="minds.html" class="Icon_img_container">
+                <img src="../Icon_/Minds1.png" alt="Minds icon - Learn about innovators in AI and technology">
+                <span class="Icon_title">Minds</span>
+            </a>
+        </div>
+    </footer>
+
+    <div class="Register">
+        <p>&copy; Developed by - Lucas Lorenço Alves</p>
+    </div>
+</body>
+<script>
+    'use strict'
+
+    async function API_ML_minds() {
+        const url = `https://afiliadosfavoritos.onrender.com/`;
+        const response = await fetch(url);
+        const data = await response.json();
+
+        document.getElementById('publi3').src = data[6].image_url;
+        document.getElementById('link3').href = data[6].link_url;
+
+        document.getElementById('publi4').src = data[7].image_url;
+        document.getElementById('link4').href = data[7].link_url;
+
+        document.getElementById('publi5').src = data[8].image_url;
+        document.getElementById('link5').href = data[8].link_url;
+
+    }
+    API_ML_minds();
+</script>
+
+</html>
