@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css_/Register.css">
+    <link rel="stylesheet" href="css_/Register.css"> ">
     <link rel="stylesheet" href="css_/minds.css">
     <link rel="stylesheet" href="css_/Menu.css">
     <link rel="stylesheet" href="css_/Mobile.css">
@@ -34,11 +34,24 @@
     <!--Carrousel-->
     <link rel="stylesheet" href="css_/style_carroussel.css">
     <script src="js_/iteracao.js" defer></script>
+    <!--Modal-POUPUP-->
+    <script src="js_/Modal.js" defer></script>
 
 
 </head>
 
 <body>
+    <!--MODAL-Poupup-->
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-content">
+            <span id="close-popup" class="close-btn">&times;</span>
+            <h2>💡</h2>
+            <p>Wellcome to Minds&Machine, and delve deep into technologies and the minds that changed our world</p> <br>
+            <p>if you want to help our site. Support our work by browsing our store</p>
+            <button id="entendido-btn" class="popup-btn">I got it</button>
+        </div>
+    </div>
+
     <div>
         <img src="./Icon_/LogoMM.png" alt="Loga do site Minds e Machine">
         <nav class="nav_">
@@ -100,7 +113,7 @@
             </section>
 
             </section>
-            <p class="prod-destaque">Produtos em destaque</p>
+          <!--  <p class="prod-destaque">Produtos em destaque</p>-->
             <a href="../html_/article_Bico_Bomba_Gasoline.html">
                 <section class="container">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Yellow_Gas_Pump_-_E86_and_86_Eco_Unleaded_%2854558253711%29.jpg/640px-Yellow_Gas_Pump_-_E86_and_86_Eco_Unleaded_%2854558253711%29.jpg"
@@ -147,17 +160,23 @@
                 </section>
 
             </a>
-            
+            <br>
+
+            <h6 style="text-align: center; color: gray; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Browsing our store</h6>
             <!--==============CARROUSEL========================-->
             <div class="corpo">
                 <div class="carousel-container">
                     <div class="carousel-slide">
-                        <img src="img_/moniPortable.png" alt="Monitor 1">
-                        <img src="img_/monitorPortatil.png" alt="Monitor 2">
-                        <img src="img_/monitorPortble2.png" alt="Elon">
-                        <img src="img_/estatistica.png" alt="Estatística">
+                        <a href="https://mercadolivre.com/sec/2XQ8wBV">
+                            <img src="img_/Estante.png" alt="Monitor 1">
+                        </a>
+                        <a href="https://mercadolivre.com/sec/29VKjzo">
+                            <img src="img_/monitorArzopa.png" alt="Monitor 1">
+                        </a>
+                        <a href="https://mercadolivre.com/sec/1ELKkt1">
+                            <img src="img_/NutrientesHidroponico.png" alt="Monitor 2">
+                        </a>
 
-                        <img src="img_/moniPortable.png" alt="Monitor 1">
                     </div>
 
                 </div>
@@ -223,6 +242,13 @@
             <a href="./html_/minds.html" class="Icon_img_container">
                 <img src="./Icon_/Minds1.png" alt="Icone de Home-Retorna para a pagina principal">
                 <span class="Icon_title">Minds</span>
+            </a>
+
+        </div>
+         <div>
+            <a href="./html_/minds.html" class="Icon_img_container">
+                <img src="./img_/raio2.png" alt="Icone de Home-Retorna para a pagina principal">
+                <span class="Icon_title">Hands-on</span>
             </a>
 
         </div>

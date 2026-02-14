@@ -32,8 +32,8 @@
         rel="stylesheet">
     <!--Arquivos CSS-->
     <link rel="stylesheet" href="../css_/Menu.css?v=1.1">
-    <link rel="stylesheet" href="../css_/mindsBook.css?v=1.1">
-    <link rel="stylesheet" href="../css_/minds.css?v=1.1">
+    <link rel="stylesheet" href="../css_/mindsBook.css">
+    <link rel="stylesheet" href="../css_/minds.css">
     <link rel="stylesheet" href="../css_/Register.css">
 
     <!--Mobile-->
@@ -42,10 +42,23 @@
     <!--Arquivos JS-->
     <script src="../js_/Advertisements_API" defer></script>
     <script src="../js_/Register.js" defer></script>
+    <!--Modal-POUPUP-->
+    <script src="../js_/Modal.js" defer></script>
+
 
 </head>
 
 <body>
+    <!--MODAL-Poupup-->
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-content">
+            <span id="close-popup" class="close-btn">&times;</span>
+            <h2>💡</h2>
+            <p>Bem-vindo ao Minds & Machine! Explore o futuro da tecnologia e as mentes que mudaram o mundo.</p>
+            <button id="entendido-btn" class="popup-btn">Entendido</button>
+        </div>
+    </div>
+
     <div>
         <img src="../Icon_/LogoMM.png" alt="Loga do site Minds e Machine">
         <nav class="nav_">

@@ -1,63 +1,51 @@
-/* Moldura do Carrossel */
+/* 1. A Janela do Carrossel */
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 600px;
-    margin: 50px auto;
-    overflow: hidden; /* Esconde o que está fora da moldura */
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    max-width: 600px; /* Tamanho controlado */
+    height: 350px;    /* Altura controlada */
+    margin: 20px auto;
+    overflow: hidden; /* Esconde as imagens 2 e 3 */
+    border-radius: 12px;
+    background-color: #eee;
 }
 
-/* O Trilho que desliza */
+/* 2. O Trilho (Slide) - Onde o erro costuma estar */
 .carousel-slide {
     display: flex;
-    width: 500%; /* 5 imagens (4 originais + 1 clone) = 500% */
-    animation: slide-animation 16s infinite ease-in-out;
+    width: 300%; /* IMPORTANTE: 300% para 3 imagens */
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    animation: slide-auto 12s infinite ease-in-out;
 }
 
-/* Configuração das Imagens */
-.carousel-slide img {
-    width: 20%; /* Cada imagem ocupa 1/5 do trilho total */
-    height: 400px;
-    object-fit: cover;
+/* 3. Ajuste dos Links (Cada link é um slide) */
+.carousel-slide a {
+    width: 33.3333%; /* 100% dividido por 3 imagens */
+    height: 100%;
+    flex-shrink: 0;   /* Impede que o navegador esmague os links */
     display: block;
 }
 
-/* Lógica da Animação */
-/* 100% / 4 imagens = intervalos de 25% */
-@keyframes slide-animation {
-    0% { transform: translateX(0); }             /* Imagem 1 */
-    20% { transform: translateX(0); }            /* Pausa na 1 */
-    25% { transform: translateX(-20%); }         /* Transição para 2 */
-    45% { transform: translateX(-20%); }         /* Pausa na 2 */
-    50% { transform: translateX(-40%); }         /* Transição para 3 */
-    70% { transform: translateX(-40%); }         /* Pausa na 3 */
-    75% { transform: translateX(-60%); }         /* Transição para 4 */
-    95% { transform: translateX(-60%); }         /* Pausa na 4 */
-    100% { transform: translateX(-80%); }        /* Volta para o clone (início) */
+/* 4. A Imagem dentro do link */
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Garante que a imagem apareça inteira */
+    display: block;
 }
 
-/* Estilo dos Botões (os que você já tinha) */
-/*.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(220, 215, 215, 0.5);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 1.5em;
-    border-radius: 50%;
-    z-index: 10;
-    transition: background-color 0.3s;
-}
-*/
-.prev { left: 15px; }
-.next { right: 15px; }
-
-.carousel-btn:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #333;
+/* 5. Animação Corrigida para 3 partes */
+@keyframes slide-auto {
+    /* Mostra a 1ª imagem (0% a 30% do tempo) */
+    0%, 30% { transform: translateX(0); }
+    
+    /* Move para a 2ª imagem (33% a 63% do tempo) */
+    33%, 63% { transform: translateX(-33.3333%); }
+    
+    /* Move para a 3ª imagem (66% a 96% do tempo) */
+    66%, 96% { transform: translateX(-66.6666%); }
+    
+    /* Volta para a 1ª imagem rapidamente no final */
+    100% { transform: translateX(0); }
 }

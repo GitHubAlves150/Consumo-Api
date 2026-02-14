@@ -64,7 +64,7 @@
 
     // Iniciar o slide automático
     function startAutoSlide() {
-        autoSlideInterval = setInterval(nextSlide, 4000); // Muda a cada 2 segundos (2000ms)
+        autoSlideInterval = setInterval(nextSlide, 4000); // Muda a cada 4 segundos (2000ms)
     }
 
     // Reiniciar o slide automático (usado após navegação manual)
@@ -93,7 +93,7 @@
         carouselSlide.style.transform = `translateX(${-newSlideWidth * counter}px)`;
         // Volta a transição suave após um pequeno delay
         setTimeout(() => {
-            carouselSlide.style.transition = 'transform 0.5s ease-in-out';
+            carouselSlide.style.transition = 'transform 0.3s ease-in-out';
         }, 50);
     });
 
