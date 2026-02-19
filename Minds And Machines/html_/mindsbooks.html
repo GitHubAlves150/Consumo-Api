@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <meta property="og:title" content="AI Engineering: Building Applications with Foundation Models">
-    <meta property="og:description" content="A summary of how Foundation Models are transforming software development from esoteric research to accessible tools.">
+    <meta property="og:description"
+        content="A summary of how Foundation Models are transforming software development from esoteric research to accessible tools.">
     <meta property="og:image" content="https://www.mindsemachine.site/images/ai-engineering-cover.jpg">
     <meta property="og:url" content="https://www.mindsemachine.site/ai-engineering-chip-huyen">
     <meta name="twitter:card" content="summary_large_image">
@@ -21,19 +22,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="../css_/Menu.css?v=1.1">
     <link rel="stylesheet" href="../css_/mindsBook.css?v=1.1">
-    <link rel="stylesheet" href="../css_/minds.css?v=1.1">
+    <link rel="stylesheet" href="../css_/minds.css">
     <link rel="stylesheet" href="../css_/Register.css">
     <link rel="stylesheet" href="../css_/Mobile.css?v=1.1">
 
     <script src="../js_/Advertisements_API" defer></script>
     <script src="../js_/Register.js" defer></script>
+    <script src="../js_/Modal.js" defer></script>
+    
 </head>
 
 <body>
+    <!--MODAL-Poupup-->
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-content">
+            <span id="close-popup" class="close-btn">&times;</span>
+            <h2>💡</h2>
+            <p>Wellcome to Minds&Machine, and delve deep into technologies and the minds that changed our world</p> <br>
+            <p>if you want to help our site. Support our work by browsing our store</p>
+            <button id="entendido-btn" class="popup-btn">I got it</button>
+        </div>
+    </div>
     <div>
         <img src="../Icon_/LogoMM.png" alt="Minds and Machines Logo">
         <nav class="nav_">
@@ -64,40 +78,54 @@
             </div>
 
             <blockquote class="site-quote">
-                <p>“This model-as-a-service approach has transformed AI from an esoteric discipline into a powerful development tool that anyone can use.”<br><br></p>
+                <p>“This model-as-a-service approach has transformed AI from an esoteric discipline into a powerful
+                    development tool that anyone can use.”<br><br></p>
             </blockquote>
 
             <blockquote class="section-intro">
-                <p>The recent breakthroughs in AI haven't just increased demand for intelligent products; they've lowered the barriers to entry for those who want to build them. In her book, Chip Huyen discusses the process of building applications with readily available foundation models.
+                <p>The recent breakthroughs in AI haven't just increased demand for intelligent products; they've
+                    lowered the barriers to entry for those who want to build them. In her book, Chip Huyen discusses
+                    the process of building applications with readily available foundation models.
                 </p>
             </blockquote>
 
             <section class="section-intro">
                 <h1>The New AI Stack and Democratization</h1>
                 <p>
-                    The book starts by explaining how **AI engineering** differs from traditional Machine Learning (ML). While ML once required deep specialized knowledge, the modern "AI stack" allows developers to leverage pre-trained models. This democratization means that anyone, including those with minimal or no prior AI experience, can now build sophisticated applications.
+                    The book starts by explaining how **AI engineering** differs from traditional Machine Learning (ML).
+                    While ML once required deep specialized knowledge, the modern "AI stack" allows developers to
+                    leverage pre-trained models. This democratization means that anyone, including those with minimal or
+                    no prior AI experience, can now build sophisticated applications.
                 </p>
             </section>
 
             <section class="section-detail">
                 <h1>Evaluation and the "AI-as-a-Judge" Approach</h1>
                 <p>
-                    A critical challenge in this new landscape is that as AI usage increases, the opportunity for catastrophic failures grows. Consequently, the book emphasizes the importance of evaluation. Huyen introduces the **"AI-as-a-judge"** approach as a framework for assessing open-ended models, ensuring that applications remain reliable and safe.
+                    A critical challenge in this new landscape is that as AI usage increases, the opportunity for
+                    catastrophic failures grows. Consequently, the book emphasizes the importance of evaluation. Huyen
+                    introduces the **"AI-as-a-judge"** approach as a framework for assessing open-ended models, ensuring
+                    that applications remain reliable and safe.
                 </p>
 
                 <h1>The Architect’s Roadmap</h1>
                 <p>
-                    From datasets and evaluation benchmarks to infinite use cases and application patterns, the book provides a structured framework for navigating the AI landscape. It guides developers through simple techniques and progresses toward more sophisticated methods, helping them master the art of integrating Foundation Models into real-world software.
+                    From datasets and evaluation benchmarks to infinite use cases and application patterns, the book
+                    provides a structured framework for navigating the AI landscape. It guides developers through simple
+                    techniques and progresses toward more sophisticated methods, helping them master the art of
+                    integrating Foundation Models into real-world software.
                 </p>
-                
-                <h3 class="estilo_referencia">This summary is based on 'AI Engineering' by Chip Huyen (O'Reilly Media).</h3>
+
+                <h3 class="estilo_referencia">This summary is based on 'AI Engineering' by Chip Huyen (O'Reilly Media).
+                </h3>
             </section>
         </div>
 
         <aside class="ad-sidebar">
             <div class="img-advert">
                 <h6 class="membrosApoiadores">Supporting Members</h6>
-                <a href="https://www.amazon.com.br/AI-Engineering-Building-Applications-Foundation/dp/1098166302" id="link9" target="_blank">
+                <a href="https://www.amazon.com.br/AI-Engineering-Building-Applications-Foundation/dp/1098166302"
+                    id="link9" target="_blank">
                     <img src="" alt="AI Course/Book" id="publi9">
                 </a>
             </div>
@@ -129,11 +157,16 @@
     </main>
 
     <footer>
-        <div><a href="../index.html" class="Icon_img_container"><img src="../Icon_/Home.png" alt="Home"><span class="Icon_title">Base</span></a></div>
-        <div><a href="mindsbooks.html" class="Icon_img_container"><img src="../Icon_/AudioBook.png" alt="MindsBook"><span class="Icon_title">MindsBook</span></a></div>
-        <div><a href="machine.html" class="Icon_img_container"><img src="../Icon_/WriteMachine.png" alt="Machines"><span class="Icon_title">Machines</span></a></div>
-        <div><a href="articles.html" class="Icon_img_container"><img src="../Icon_/Article.png" alt="Articles"><span class="Icon_title">Articles</span></a></div>
-        <div><a href="minds.html" class="Icon_img_container"><img src="../Icon_/Minds1.png" alt="Minds"><span class="Icon_title">Minds</span></a></div>
+        <div><a href="../index.html" class="Icon_img_container"><img src="../Icon_/Home.png" alt="Home"><span
+                    class="Icon_title">Base</span></a></div>
+        <div><a href="mindsbooks.html" class="Icon_img_container"><img src="../Icon_/AudioBook.png"
+                    alt="MindsBook"><span class="Icon_title">MindsBook</span></a></div>
+        <div><a href="machine.html" class="Icon_img_container"><img src="../Icon_/WriteMachine.png" alt="Machines"><span
+                    class="Icon_title">Machines</span></a></div>
+        <div><a href="articles.html" class="Icon_img_container"><img src="../Icon_/Article.png" alt="Articles"><span
+                    class="Icon_title">Articles</span></a></div>
+        <div><a href="minds.html" class="Icon_img_container"><img src="../Icon_/Minds1.png" alt="Minds"><span
+                    class="Icon_title">Minds</span></a></div>
     </footer>
 
     <div class="Register">
@@ -160,4 +193,5 @@
         API_ML_minds();
     </script>
 </body>
+
 </html>
