@@ -24,3 +24,14 @@ btnEnviar.addEventListener('click', () => {
 
     emailInput.value = '';
 })
+
+/*Data atual */
+//obtem a data atual
+//const agora = new Date();
+//Formata a data DD/MM/AAAA
+//const dataFormatada= agora.toLocaleDateString('pt-BR');
+
+//Insere no Html
+//document.getElementById('data_actual').innerText= dataFormatada;
+//=================se quiser apenas o ano=========================
+document.getElementById('data_actual').innerText= new Date().getFullYear();
