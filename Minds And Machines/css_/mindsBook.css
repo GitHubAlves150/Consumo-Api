@@ -76,13 +76,7 @@ header h6 {
 
 }
 
-/*------------------CITAÇÃO--------------------------*/
-.site-quote {
-    background-color: var(--cor-fundo);
-    padding: 2em;
-    border-left: 5px solid var(--cor-destaque);
-    font-family: monospace;
-}
+
 
 /*------------------Capa do Livro--------------------*/
 .img-book {
